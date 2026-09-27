@@ -1,0 +1,213 @@
+{
+  "schema_version": "ata-nlp-select-certify-revisions-12.0",
+  "status": "resolved_before_v12_model_or_deployment_outcomes",
+  "datasets": {
+    "arxiv_temporal_primary_category_v12": {
+      "hf_id": "TimSchopf/arxiv_categories",
+      "requested_revision": "main",
+      "resolved_revision": "9d9134623458dc824a96c963722037d914d37638",
+      "expected_source_files": [],
+      "expected_source_bytes": 0,
+      "repository_file_count": 6,
+      "repository_known_bytes": 126839546,
+      "source_inventory": {
+        ".gitattributes": {
+          "bytes": 2307,
+          "blob_id": "28df5f900b358436f0267334b3e3e9af33f917ba",
+          "lfs_sha256": null
+        },
+        "README.md": {
+          "bytes": 4483,
+          "blob_id": "6a1591e73621ce28a71765a319e8745943979a14",
+          "lfs_sha256": null
+        },
+        "arxiv_category_descriptions/arxiv_category_descriptions-00000-of-00001.parquet": {
+          "bytes": 29500,
+          "blob_id": "cb9a5e35ba8c353f720662e42aa7dc275c1f88b4",
+          "lfs_sha256": "15d15eeb4146ee4d5763656f1051ff47f23a534e880f91288a0ecf0aed26c7b9"
+        },
+        "data/test-00000-of-00001.parquet": {
+          "bytes": 12693318,
+          "blob_id": "7512f95a30915a3c59ff0f50889d8c00418d09fe",
+          "lfs_sha256": "519e7a66aa218d8038816968007d5fef946a23abcc38709e2178232f3b0fc65e"
+        },
+        "data/train-00000-of-00001.parquet": {
+          "bytes": 101431794,
+          "blob_id": "c1559bb18f66174fb833acaebdcc4a3573cbe580",
+          "lfs_sha256": "d07b4fe021959faf1bea7a81f76159c238049b84040e6791abe5fdf56d0ae4cb"
+        },
+        "data/validation-00000-of-00001.parquet": {
+          "bytes": 12678144,
+          "blob_id": "293fe81a7de5b04a582ad71172cc4e7d3155fe9c",
+          "lfs_sha256": "34e016f2bc7545413135b1f3feef719c88fac589dfd613e03ed8621f479d09be"
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12": {
+      "hf_id": "amylonidis/PatClass2011",
+      "requested_revision": "main",
+      "resolved_revision": "3e9e62de225b2a1696dce0b6369553cb9b1af606",
+      "expected_source_files": [
+        "data/years/1978/clefip2011_en_classification_1978_validated.csv",
+        "data/years/1979/clefip2011_en_classification_1979_validated.csv",
+        "data/years/1980/clefip2011_en_classification_1980_validated.csv",
+        "data/years/1981/clefip2011_en_classification_1981_validated.csv",
+        "data/years/1982/clefip2011_en_classification_1982_validated.csv",
+        "data/years/1983/clefip2011_en_classification_1983_validated.csv",
+        "data/years/1984/clefip2011_en_classification_1984_validated.csv",
+        "data/years/1985/clefip2011_en_classification_1985_validated.csv",
+        "data/years/1986/clefip2011_en_classification_1986_validated.csv",
+        "data/years/1987/clefip2011_en_classification_1987_validated.csv",
+        "data/years/1988/clefip2011_en_classification_1988_validated.csv",
+        "data/years/1989/clefip2011_en_classification_1989_validated.csv",
+        "data/years/1990/clefip2011_en_classification_1990_validated.csv",
+        "data/years/1991/clefip2011_en_classification_1991_validated.csv",
+        "data/years/1992/clefip2011_en_classification_1992_validated.csv",
+        "data/years/1993/clefip2011_en_classification_1993_validated.csv",
+        "data/years/1994/clefip2011_en_classification_1994_validated.csv",
+        "data/years/1995/clefip2011_en_classification_1995_validated.csv",
+        "data/years/1996/clefip2011_en_classification_1996_validated.csv",
+        "data/years/1997/clefip2011_en_classification_1997_validated.csv",
+        "data/years/1998/clefip2011_en_classification_1998_validated.csv",
+        "data/years/1999/clefip2011_en_classification_1999_validated.csv",
+        "data/years/2000/clefip2011_en_classification_2000_validated.csv",
+        "data/years/2001/clefip2011_en_classification_2001_validated.csv",
+        "data/years/2002/clefip2011_en_classification_2002_validated.csv"
+      ],
+      "expected_source_bytes": 24908894912,
+      "repository_file_count": 28,
+      "repository_known_bytes": 24909537184,
+      "source_inventory": {
+        "data/years/1978/clefip2011_en_classification_1978_validated.csv": {
+          "bytes": 6851388,
+          "blob_id": "66d4495186a2a0dd064d78b66612b45a8585e376",
+          "lfs_sha256": null
+        },
+        "data/years/1979/clefip2011_en_classification_1979_validated.csv": {
+          "bytes": 59871168,
+          "blob_id": "e4e10203d693de4b7503240eecb7d88e4afef532",
+          "lfs_sha256": "5bf4fdaef379720ad14b012cc0116c252cc642b3cdc02f0b3ddc09d4a4b76ec5"
+        },
+        "data/years/1980/clefip2011_en_classification_1980_validated.csv": {
+          "bytes": 113683939,
+          "blob_id": "d2ab24e2aa227131d761535f9922aa78490ac1ac",
+          "lfs_sha256": "43d9fb521aa425a63b3485b6db0e1a1ae66e320199b7d87d6e3e86c90d422659"
+        },
+        "data/years/1981/clefip2011_en_classification_1981_validated.csv": {
+          "bytes": 136494516,
+          "blob_id": "7a0d07974681a75d789ed804ef964bd7acc60634",
+          "lfs_sha256": "62090f3413bbb24a911f477ea3977081e1c6822ba71f6700ced5e46cb7f462eb"
+        },
+        "data/years/1982/clefip2011_en_classification_1982_validated.csv": {
+          "bytes": 190169230,
+          "blob_id": "5e0e9d4a341f364cc3d071e7e3143e0fb0246104",
+          "lfs_sha256": "56ca5f1ea7c25a408916dfb005e1524948d18ab23e532d1664b0761de2932e5e"
+        },
+        "data/years/1983/clefip2011_en_classification_1983_validated.csv": {
+          "bytes": 209008602,
+          "blob_id": "159055d12dbb9ce6c01b22b9b778393fc5344004",
+          "lfs_sha256": "740f27215bb8ee012c2e099b655c1f7823153bf5ec09cd9a027c98652fbe0e24"
+        },
+        "data/years/1984/clefip2011_en_classification_1984_validated.csv": {
+          "bytes": 271186702,
+          "blob_id": "9972bd07d8ae9fcc1a17126b723f0c92e67ba73a",
+          "lfs_sha256": "f03b27074b0591b7bc5476683474b885484264a026b58d4ab913e65f4f1ca758"
+        },
+        "data/years/1985/clefip2011_en_classification_1985_validated.csv": {
+          "bytes": 354002623,
+          "blob_id": "dd4d740beb9a5f42d83c05bd2e9be2250dcf6058",
+          "lfs_sha256": "a46f05678b75cd728000256e1c8fb53f96d32f3c8d22111c78e560b633d6e966"
+        },
+        "data/years/1986/clefip2011_en_classification_1986_validated.csv": {
+          "bytes": 512817115,
+          "blob_id": "2a8c2e83326a8b4c4bd00eda297e2b9f24185181",
+          "lfs_sha256": "ad1182e24b9b2d26382869073ae5dc4c21aa6c1bd9003243566ce6d3d5a8f546"
+        },
+        "data/years/1987/clefip2011_en_classification_1987_validated.csv": {
+          "bytes": 603989602,
+          "blob_id": "45c9f08393587540b6d2bc341acfe1bca0471514",
+          "lfs_sha256": "cbb4955fc3b30007fa4e3a54108fa0a7761b830bdf7e0b6d81382d625f586392"
+        },
+        "data/years/1988/clefip2011_en_classification_1988_validated.csv": {
+          "bytes": 718538176,
+          "blob_id": "ebbdf4322ec9513b386e609b8d746afab0f965c8",
+          "lfs_sha256": "170381d0b8fa54d798233314e79a4b580d27ee3ac7d22844f288d9758b99cbf2"
+        },
+        "data/years/1989/clefip2011_en_classification_1989_validated.csv": {
+          "bytes": 807438339,
+          "blob_id": "a3456ae3ed0b99121cb7ee56d3475f3e3ce9a057",
+          "lfs_sha256": "f9e521f63c477584355b88e770d54e45bb2222f996334f385e6e9ad183cebe7e"
+        },
+        "data/years/1990/clefip2011_en_classification_1990_validated.csv": {
+          "bytes": 959162466,
+          "blob_id": "63cd4b67e44bc34fcbd4d97ebb6ebeab1952d586",
+          "lfs_sha256": "cc9db77747dce3fcec9fcb1ced6682cbecb04dd9926d123f132ab79b5c5fa65b"
+        },
+        "data/years/1991/clefip2011_en_classification_1991_validated.csv": {
+          "bytes": 997793941,
+          "blob_id": "ba8034b31db983ddf8799434d3c4180889bb5a8b",
+          "lfs_sha256": "82be235e91ccfbdea131e87575f9d7e7c2a069bf36fd8c5fef66825f28246865"
+        },
+        "data/years/1992/clefip2011_en_classification_1992_validated.csv": {
+          "bytes": 1064685735,
+          "blob_id": "56737ddf0f037ec2307511f6571e63fcc45b87ba",
+          "lfs_sha256": "64379492f28f3a10cc6974bcee10fa46465f622fe9b50f252d232bddbddf6552"
+        },
+        "data/years/1993/clefip2011_en_classification_1993_validated.csv": {
+          "bytes": 1268742582,
+          "blob_id": "1f2cfefec7c09a63d6ab45fe00c5c266f39b91dc",
+          "lfs_sha256": "6755a37f6b0f18220ed513e39b5f452e8be1bea567f81e502efd5decd9fc397b"
+        },
+        "data/years/1994/clefip2011_en_classification_1994_validated.csv": {
+          "bytes": 1426054554,
+          "blob_id": "d99df4beb67839f044afc6c01ee566aed00e83e5",
+          "lfs_sha256": "dad063008276ee72fbf1dc5824c2297c88c4b1f610cb8f8c4e5293d65ffd2209"
+        },
+        "data/years/1995/clefip2011_en_classification_1995_validated.csv": {
+          "bytes": 1548599999,
+          "blob_id": "9fd20d06d1c4183e336efbc4b859304b4c4db136",
+          "lfs_sha256": "c58d0728e4bc8f7e23fa404c9cbd00dfa344d4e8a320d9a6d8e7eb4114a00031"
+        },
+        "data/years/1996/clefip2011_en_classification_1996_validated.csv": {
+          "bytes": 1814099228,
+          "blob_id": "9252e942154c083f433bb00e8f81ce5c289c279d",
+          "lfs_sha256": "c7a37552dcae99e145f5e7a17affbb6ea0ad898d1d28bc153f136a86baacc2ed"
+        },
+        "data/years/1997/clefip2011_en_classification_1997_validated.csv": {
+          "bytes": 1956143077,
+          "blob_id": "1e5013c9d7365c2cfab7268f2611185b934cf6fa",
+          "lfs_sha256": "e2bc546a45792b95b3098bd205d514f5aacd92592e4d93c0d749fd93c07d0b9c"
+        },
+        "data/years/1998/clefip2011_en_classification_1998_validated.csv": {
+          "bytes": 2118992212,
+          "blob_id": "6e467f213247c13dff5b944ca93655a7140e79ab",
+          "lfs_sha256": "b1f3ce2b7a90ca4b70aa75b77fd3de39285d4390d248f4ca330d2336d743fac3"
+        },
+        "data/years/1999/clefip2011_en_classification_1999_validated.csv": {
+          "bytes": 2308912318,
+          "blob_id": "ea0474b633f3cc38e4e7f3aa4bb71e627c767543",
+          "lfs_sha256": "b6fdd507f7aa42c98945582790b39ed1b1bc75c36f51098904dee0a8fb515871"
+        },
+        "data/years/2000/clefip2011_en_classification_2000_validated.csv": {
+          "bytes": 2645834536,
+          "blob_id": "2c8d895e22b7526e9e177108fb69ad99d238969f",
+          "lfs_sha256": "5b0a0b88418e5f1f94a66862673dfeb6e42ddade9cd0a5489b1b1339e3ac951f"
+        },
+        "data/years/2001/clefip2011_en_classification_2001_validated.csv": {
+          "bytes": 2815696384,
+          "blob_id": "2612e1e8180245d5fc66432d6b3c400c19fec463",
+          "lfs_sha256": "a67d2017eccd9887488c3fc8d045a4544c6a2bff66729ba93368e2c696f4d012"
+        },
+        "data/years/2002/clefip2011_en_classification_2002_validated.csv": {
+          "bytes": 126480,
+          "blob_id": "e55fe8df9ae0a4ef2a2ce165e922d90a8f994670",
+          "lfs_sha256": "c9c41fd0657cd1cc62e67070a70c6f3cb6d2758c81d67fac07511bbbae23c8ab"
+        }
+      }
+    }
+  },
+  "models": {
+    "roberta-base": "e2da8e2f811d1448a5b465c236feacd80ffbac7b"
+  },
+  "test_outcomes_used": false
+}

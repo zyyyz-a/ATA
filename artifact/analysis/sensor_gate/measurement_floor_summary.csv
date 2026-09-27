@@ -1,0 +1,5 @@
+dataset,metric,trajectories,nonpositive_signal_variance,finite_requirement_trajectories,median_current_full_block_n,median_required_total_block_n_among_finite,q25_required_total_block_n_among_finite,q75_required_total_block_n_among_finite,median_required_multiplier_among_finite,q25_required_multiplier_among_finite,q75_required_multiplier_among_finite
+arxiv_temporal_primary_category_v12,c,24,13,11,75.375,2372.253725479978,1837.8151471993551,4787.181616344582,31.47268624185709,24.38229051010753,63.485209997110076
+arxiv_temporal_primary_category_v12,s,24,15,9,75.375,2250.3512933036604,1763.3073884480875,3413.4158629373587,29.8430341424439,23.384101297280896,45.285782592867115
+patclass_temporal_ipc_section_v12,c,24,12,12,78.125,1416.4280599246185,964.0271175505542,2870.3519413330364,18.13027916703512,12.339547104647094,36.740504849062866
+patclass_temporal_ipc_section_v12,s,24,13,11,78.125,1507.1399134159828,909.1121888141258,2757.024118799055,19.291390891724582,11.636636016820809,35.2899087206279

@@ -1,0 +1,1698 @@
+{
+  "schema_version": "ata-nlp-gpu-closure-summary-10.0",
+  "status": "complete",
+  "job_count_expected": 732,
+  "job_count_complete": 732,
+  "job_count_missing": 0,
+  "phase_completeness": {
+    "posthoc_inference": {
+      "expected": 12,
+      "complete": 12,
+      "missing": 0
+    },
+    "posthoc_candidate_train_and_eval": {
+      "expected": 528,
+      "complete": 528,
+      "missing": 0
+    },
+    "posthoc_history_train": {
+      "expected": 36,
+      "complete": 36,
+      "missing": 0
+    },
+    "prospective_history_train": {
+      "expected": 12,
+      "complete": 12,
+      "missing": 0
+    },
+    "prospective_candidate_train_cert_fit_cert_gate": {
+      "expected": 72,
+      "complete": 72,
+      "missing": 0
+    },
+    "prospective_deploy_after_group_lock": {
+      "expected": 72,
+      "complete": 72,
+      "missing": 0
+    }
+  },
+  "missing_job_ids": [],
+  "failure_artifact_count": 36,
+  "aggregates_cell_level_descriptive_not_independent_dataset_inference": {
+    "S1_jigsaw_intervention_and_identity_audit::jigsaw_civil_comments_temporal_external::cert_macro_f1_threshold": {
+      "deploy_gain_points": {
+        "n": 12,
+        "mean": 0.1056811775755608,
+        "sd": 0.3181273054385903,
+        "ci95_low": -0.07431629014734882,
+        "ci95_high": 0.2856786452984704
+      }
+    },
+    "S1_jigsaw_intervention_and_identity_audit::jigsaw_civil_comments_temporal_external::cert_scalar_clipped_0_1": {
+      "deploy_gain_points": {
+        "n": 12,
+        "mean": -0.023898138183033508,
+        "sd": 0.11323191637483979,
+        "ci95_low": -0.08796512603490704,
+        "ci95_high": 0.04016884966884003
+      }
+    },
+    "S1_jigsaw_intervention_and_identity_audit::jigsaw_civil_comments_temporal_external::cert_scalar_plus_macro_f1_threshold": {
+      "deploy_gain_points": {
+        "n": 12,
+        "mean": 0.12890662807689598,
+        "sd": 0.2444730150594071,
+        "ci95_low": -0.009417001756169191,
+        "ci95_high": 0.26723025790996113
+      }
+    },
+    "S1_jigsaw_intervention_and_identity_audit::jigsaw_civil_comments_temporal_external::cert_scalar_shrunk_50_percent": {
+      "deploy_gain_points": {
+        "n": 12,
+        "mean": -0.019077768046603844,
+        "sd": 0.0674783727135768,
+        "ci95_low": -0.057257251564252085,
+        "ci95_high": 0.019101715471044393
+      }
+    },
+    "S1_jigsaw_intervention_and_identity_audit::jigsaw_civil_comments_temporal_external::cert_scalar_unbounded": {
+      "deploy_gain_points": {
+        "n": 12,
+        "mean": -0.035783981958575906,
+        "sd": 0.2554759528911341,
+        "ci95_low": -0.18033310992828488,
+        "ci95_high": 0.10876514601113307
+      }
+    },
+    "S1_jigsaw_intervention_and_identity_audit::jigsaw_civil_comments_temporal_external::cert_temperature": {
+      "deploy_gain_points": {
+        "n": 12,
+        "mean": -0.21996251986240076,
+        "sd": 0.21318372073778294,
+        "ci95_low": -0.34058256484610966,
+        "ci95_high": -0.09934247487869187
+      }
+    },
+    "S1_jigsaw_intervention_and_identity_audit::jigsaw_civil_comments_temporal_external::raw_alpha_1": {
+      "deploy_gain_points": {
+        "n": 12,
+        "mean": -0.21996251986240076,
+        "sd": 0.21318372073778294,
+        "ci95_low": -0.34058256484610966,
+        "ci95_high": -0.09934247487869187
+      }
+    },
+    "S2_unified_adapter_baselines::jigsaw_civil_comments_temporal_external::bottleneck": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -1.8042062638053247,
+        "sd": 0.4865449379234281,
+        "ci95_low": -2.079494977670607,
+        "ci95_high": -1.5289175499400425
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 743014400.0,
+        "sd": 0.0,
+        "ci95_low": 743014400.0,
+        "ci95_high": 743014400.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -1.9571491223628428,
+        "sd": 0.9233827137442467,
+        "ci95_low": -2.479602075541225,
+        "ci95_high": -1.4346961691844604
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 12.870041513737911,
+        "sd": 0.11787140111319022,
+        "ci95_low": 12.803349490278702,
+        "ci95_high": 12.93673353719712
+      }
+    },
+    "S2_unified_adapter_baselines::jigsaw_civil_comments_temporal_external::classifier_head_only": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.25,
+        "sd": 0.45226701686664544,
+        "ci95_low": -0.0058941542548758274,
+        "ci95_high": 0.5058941542548758
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.055052493401850734,
+        "sd": 0.21498756258290647,
+        "ci95_low": -0.17669315798892005,
+        "ci95_high": 0.06658817118521859
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 622704640.0,
+        "sd": 0.0,
+        "ci95_low": 622704640.0,
+        "ci95_high": 622704640.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.05488745222235932,
+        "sd": 0.12946378682750873,
+        "ci95_low": -0.1281384853540264,
+        "ci95_high": 0.01836358090930775
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": -0.004117213723432249,
+        "sd": 0.05027659669145438,
+        "ci95_low": -0.032563876224506696,
+        "ci95_high": 0.024329448777642197
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 12.404282534999462,
+        "sd": 0.11156306248057739,
+        "ci95_low": 12.341159790127778,
+        "ci95_high": 12.467405279871146
+      }
+    },
+    "S2_unified_adapter_baselines::jigsaw_civil_comments_temporal_external::full_tune": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.9166666666666666,
+        "sd": 0.28867513459481287,
+        "ci95_low": 0.7533333333333333,
+        "ci95_high": 1.08
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.23011644613661433,
+        "sd": 0.316194978009884,
+        "ci95_low": 0.0512122955796083,
+        "ci95_high": 0.40902059669362034
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.08333333333333333,
+        "sd": 0.28867513459481287,
+        "ci95_low": -0.08,
+        "ci95_high": 0.24666666666666665
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 2541383168.0,
+        "sd": 0.0,
+        "ci95_low": 2541383168.0,
+        "ci95_high": 2541383168.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.5127256552999356,
+        "sd": 0.6440169126485734,
+        "ci95_low": 0.14833878417721658,
+        "ci95_high": 0.8771125264226547
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.5212753875829822,
+        "sd": 0.6357332442008011,
+        "ci95_low": 0.1615754431042981,
+        "ci95_high": 0.8809753320616662
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 185.86179829450944,
+        "sd": 1.9788332341606316,
+        "ci95_low": 184.7421679920939,
+        "ci95_high": 186.98142859692499
+      }
+    },
+    "S2_unified_adapter_baselines::jigsaw_civil_comments_temporal_external::lora": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.25,
+        "sd": 0.45226701686664544,
+        "ci95_low": -0.0058941542548758274,
+        "ci95_high": 0.5058941542548758
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.4345073900141892,
+        "sd": 0.4638063567970837,
+        "ci95_low": -0.6969305404638719,
+        "ci95_high": -0.1720842395645064
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1394466304.0,
+        "sd": 0.0,
+        "ci95_low": 1394466304.0,
+        "ci95_high": 1394466304.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.3067447208207036,
+        "sd": 0.3500650854654221,
+        "ci95_low": -0.5048126887215074,
+        "ci95_high": -0.10867675291989981
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": -0.005483394623218933,
+        "sd": 0.09019489808016065,
+        "ci95_low": -0.056515962335608315,
+        "ci95_high": 0.045549173089170454
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 86.33030158521917,
+        "sd": 1.343063733782639,
+        "ci95_low": 85.57039174114571,
+        "ci95_high": 87.09021142929264
+      }
+    },
+    "S2_unified_adapter_baselines::jigsaw_civil_comments_temporal_external::vector_logit_scaling": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.5,
+        "sd": 0.5222329678670935,
+        "ci95_low": 0.20451888231379162,
+        "ci95_high": 0.7954811176862084
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.003998957322697468,
+        "sd": 0.013089257723418601,
+        "ci95_low": -0.0034069874180084874,
+        "ci95_high": 0.011404902063403423
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 705747456.0,
+        "sd": 0.0,
+        "ci95_low": 705747456.0,
+        "ci95_high": 705747456.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.00711236091999005,
+        "sd": 0.0193311805764861,
+        "ci95_low": -0.0038252841434057135,
+        "ci95_high": 0.018050005983385815
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.00486789218177112,
+        "sd": 0.0147318621607889,
+        "ci95_low": -0.0034674435107408955,
+        "ci95_high": 0.013203227874283137
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 10.400171238560384,
+        "sd": 0.03308132749626891,
+        "ci95_low": 10.381453715491965,
+        "ci95_high": 10.418888761628804
+      }
+    },
+    "S2_unified_adapter_baselines::spatiotemporal_news_location_external::bottleneck": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.6666666666666666,
+        "sd": 0.49236596391733095,
+        "ci95_low": 0.38808439729533567,
+        "ci95_high": 0.9452489360379976
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.8666308060017447,
+        "sd": 1.809656351747887,
+        "ci95_low": -0.1572786641841668,
+        "ci95_high": 1.8905402761876562
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 743020544.0,
+        "sd": 0.0,
+        "ci95_low": 743020544.0,
+        "ci95_high": 743020544.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.5376977695855748,
+        "sd": 2.1068810019351494,
+        "ci95_low": -0.6543823777598369,
+        "ci95_high": 1.7297779169309866
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 1.0587969577003467,
+        "sd": 1.4775728994436483,
+        "ci95_low": 0.22278138868408215,
+        "ci95_high": 1.8948125267166112
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 12.83690322652304,
+        "sd": 0.11071043860517679,
+        "ci95_low": 12.774262899022855,
+        "ci95_high": 12.899543554023225
+      }
+    },
+    "S2_unified_adapter_baselines::spatiotemporal_news_location_external::classifier_head_only": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.4166666666666667,
+        "sd": 0.5149286505444373,
+        "ci95_low": 0.12531835556149074,
+        "ci95_high": 0.7080149777718426
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.2988320298870149,
+        "sd": 1.9266923818401918,
+        "ci95_low": -0.7912968081080005,
+        "ci95_high": 1.3889608678820302
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 622729216.0,
+        "sd": 0.0,
+        "ci95_low": 622729216.0,
+        "ci95_high": 622729216.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.1347870485680562,
+        "sd": 1.9951346146915245,
+        "ci95_low": -1.2636407252925144,
+        "ci95_high": 0.9940666281564019
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.67467353656675,
+        "sd": 1.3211763989434029,
+        "ci95_low": -0.07285238201866506,
+        "ci95_high": 1.422199455152165
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 12.417329983126061,
+        "sd": 0.09256957460724614,
+        "ci95_low": 12.364953815684164,
+        "ci95_high": 12.469706150567959
+      }
+    },
+    "S2_unified_adapter_baselines::spatiotemporal_news_location_external::full_tune": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.3333333333333333,
+        "sd": 0.49236596391733095,
+        "ci95_low": 0.054751063962002355,
+        "ci95_high": 0.6119156027046643
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -1.0023414375154878,
+        "sd": 2.703184481460754,
+        "ci95_low": -2.5318120397952617,
+        "ci95_high": 0.527129164764286
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 2541413888.0,
+        "sd": 0.0,
+        "ci95_low": 2541413888.0,
+        "ci95_high": 2541413888.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -1.5184793015112552,
+        "sd": 2.743424184268319,
+        "ci95_low": -3.070717658974126,
+        "ci95_high": 0.033759055951615435
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.5106686853487863,
+        "sd": 1.111448717451608,
+        "ci95_low": -0.11819262653814078,
+        "ci95_high": 1.1395299972357134
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 184.45835874941744,
+        "sd": 1.7508285510124597,
+        "ci95_low": 183.46773424089017,
+        "ci95_high": 185.44898325794472
+      }
+    },
+    "S2_unified_adapter_baselines::spatiotemporal_news_location_external::lora": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.3333333333333333,
+        "sd": 0.49236596391733095,
+        "ci95_low": 0.054751063962002355,
+        "ci95_high": 0.6119156027046643
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -1.1285377284608498,
+        "sd": 3.033484717301509,
+        "ci95_low": -2.8448932822151587,
+        "ci95_high": 0.5878178252934594
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1394497024.0,
+        "sd": 0.0,
+        "ci95_low": 1394497024.0,
+        "ci95_high": 1394497024.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -1.519960066233353,
+        "sd": 2.8286372559365835,
+        "ci95_low": -3.1204122577650484,
+        "ci95_high": 0.08049212529834215
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.34942763942862515,
+        "sd": 0.7615591542060605,
+        "ci95_low": -0.08146501560237374,
+        "ci95_high": 0.780320294459624
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 86.36524063864879,
+        "sd": 1.631056014105333,
+        "ci95_low": 85.44238382241785,
+        "ci95_high": 87.28809745487972
+      }
+    },
+    "S2_unified_adapter_baselines::spatiotemporal_news_location_external::vector_logit_scaling": {
+      "authorized": {
+        "n": 12,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 1.2087684378734698,
+        "sd": 1.0688480753131018,
+        "ci95_low": 0.6040107083487337,
+        "ci95_high": 1.813526167398206
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 705753600.0,
+        "sd": 0.0,
+        "ci95_low": 705753600.0,
+        "ci95_high": 705753600.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 1.030668139855707,
+        "sd": 1.009469928857854,
+        "ci95_low": 0.4595067593940908,
+        "ci95_high": 1.601829520317323
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 1.030668139855707,
+        "sd": 1.009469928857854,
+        "ci95_low": 0.4595067593940908,
+        "ci95_high": 1.601829520317323
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 10.381174182150668,
+        "sd": 0.01628253670227742,
+        "ci95_low": 10.37196146974148,
+        "ci95_high": 10.390386894559855
+      }
+    },
+    "S2_unified_adapter_baselines::swiss_judgment_de_temporal_external::bottleneck": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.024561149255727943,
+        "sd": 0.08508231680640663,
+        "ci95_low": -0.07270100179695471,
+        "ci95_high": 0.023578703285498825
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1355382784.0,
+        "sd": 0.0,
+        "ci95_low": 1355382784.0,
+        "ci95_high": 1355382784.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.029271812095423472,
+        "sd": 0.10140053155776532,
+        "ci95_low": -0.08664456380245349,
+        "ci95_high": 0.028100939611606545
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 12.878455929283518,
+        "sd": 0.10590520229127534,
+        "ci95_low": 12.818534420173098,
+        "ci95_high": 12.938377438393939
+      }
+    },
+    "S2_unified_adapter_baselines::swiss_judgment_de_temporal_external::classifier_head_only": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.024561149255727943,
+        "sd": 0.08508231680640663,
+        "ci95_low": -0.07270100179695471,
+        "ci95_high": 0.023578703285498825
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1235073024.0,
+        "sd": 0.0,
+        "ci95_low": 1235073024.0,
+        "ci95_high": 1235073024.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.029271812095423472,
+        "sd": 0.10140053155776532,
+        "ci95_low": -0.08664456380245349,
+        "ci95_high": 0.028100939611606545
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 12.349665446439758,
+        "sd": 0.11317440425408641,
+        "ci95_low": 12.285630999133515,
+        "ci95_high": 12.413699893746001
+      }
+    },
+    "S2_unified_adapter_baselines::swiss_judgment_de_temporal_external::full_tune": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.4166666666666667,
+        "sd": 0.5149286505444373,
+        "ci95_low": 0.12531835556149074,
+        "ci95_high": 0.7080149777718426
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 2.2515801177456893,
+        "sd": 3.767071542338344,
+        "ci95_low": 0.12015874410058025,
+        "ci95_high": 4.383001491390798
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 5605060096.0,
+        "sd": 0.0,
+        "ci95_low": 5605060096.0,
+        "ci95_high": 5605060096.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 2.065438521437891,
+        "sd": 3.3756085609566004,
+        "ci95_low": 0.15550818031773428,
+        "ci95_high": 3.9753688625580477
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 2.0947103335333144,
+        "sd": 3.3542019612362957,
+        "ci95_low": 0.1968919164018912,
+        "ci95_high": 3.9925287506647376
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 195.94781150798858,
+        "sd": 1.6995379514258195,
+        "ci95_low": 194.98620738810996,
+        "ci95_high": 196.9094156278672
+      }
+    },
+    "S2_unified_adapter_baselines::swiss_judgment_de_temporal_external::lora": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.024561149255727943,
+        "sd": 0.08508231680640663,
+        "ci95_low": -0.07270100179695471,
+        "ci95_high": 0.023578703285498825
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 2008713386.6666667,
+        "sd": 756744.5448322262,
+        "ci95_low": 2008285218.1333334,
+        "ci95_high": 2009141555.2
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.029271812095423472,
+        "sd": 0.10140053155776532,
+        "ci95_low": -0.08664456380245349,
+        "ci95_high": 0.028100939611606545
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 85.71463133959332,
+        "sd": 1.6078064740664295,
+        "ci95_low": 84.80492918899839,
+        "ci95_high": 86.62433349018826
+      }
+    },
+    "S2_unified_adapter_baselines::swiss_judgment_de_temporal_external::vector_logit_scaling": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.16666666666666666,
+        "sd": 0.3892494720807615,
+        "ci95_low": -0.053571955071325755,
+        "ci95_high": 0.3869052884046591
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.06939245448461112,
+        "sd": 0.18404565893704303,
+        "ci95_low": -0.034741180031263044,
+        "ci95_high": 0.17352608900048527
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1318115840.0,
+        "sd": 0.0,
+        "ci95_low": 1318115840.0,
+        "ci95_high": 1318115840.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.03431795792733181,
+        "sd": 0.11888089348429964,
+        "ci95_low": -0.03294523961023855,
+        "ci95_high": 0.10158115546490218
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.03431795792733181,
+        "sd": 0.11888089348429964,
+        "ci95_low": -0.03294523961023855,
+        "ci95_high": 0.10158115546490218
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 10.38993529707659,
+        "sd": 0.033966912051724286,
+        "ci95_low": 10.37071670737632,
+        "ci95_high": 10.409153886776862
+      }
+    },
+    "S3_cross_backbone_controls::jigsaw_civil_comments_temporal_external::ata_output_residual": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.3333333333333333,
+        "sd": 0.49236596391733095,
+        "ci95_low": 0.054751063962002355,
+        "ci95_high": 0.6119156027046643
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.06111402127429999,
+        "sd": 0.2874730284679968,
+        "ci95_low": -0.22376719903763984,
+        "ci95_high": 0.10153915648903986
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1113723392.0,
+        "sd": 0.0,
+        "ci95_low": 1113723392.0,
+        "ci95_high": 1113723392.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.018733168014076207,
+        "sd": 0.5500097309301252,
+        "ci95_low": -0.2924641328711568,
+        "ci95_high": 0.3299304688993092
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.15490877985874785,
+        "sd": 0.477888751646356,
+        "ci95_low": -0.11548223555885567,
+        "ci95_high": 0.42529979527635137
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 25.962878778072383,
+        "sd": 0.1011932817551589,
+        "ci95_low": 25.90562328898009,
+        "ci95_high": 26.020134267164675
+      }
+    },
+    "S3_cross_backbone_controls::jigsaw_civil_comments_temporal_external::full_tune": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.9166666666666666,
+        "sd": 0.28867513459481287,
+        "ci95_low": 0.7533333333333333,
+        "ci95_high": 1.08
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.5407131536431334,
+        "sd": 1.0687342021948645,
+        "ci95_low": -0.0639801460996442,
+        "ci95_high": 1.145406453385911
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 3742807552.0,
+        "sd": 0.0,
+        "ci95_low": 3742807552.0,
+        "ci95_high": 3742807552.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.7242115075385996,
+        "sd": 1.5393640999509162,
+        "ci95_low": -0.1467657243991577,
+        "ci95_high": 1.5951887394763569
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.837044995094736,
+        "sd": 1.4180266361399183,
+        "ci95_low": 0.03472089620316343,
+        "ci95_high": 1.6393690939863084
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 411.32117340370314,
+        "sd": 5.393031103566424,
+        "ci95_low": 408.26977880349887,
+        "ci95_high": 414.3725680039074
+      }
+    },
+    "S3_cross_backbone_controls::jigsaw_civil_comments_temporal_external::lora": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.6666666666666666,
+        "sd": 0.49236596391733095,
+        "ci95_low": 0.38808439729533567,
+        "ci95_high": 0.9452489360379976
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.014539455605915482,
+        "sd": 0.2737012861286598,
+        "ci95_low": -0.16940053660536544,
+        "ci95_high": 0.14032162539353446
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 2976212480.0,
+        "sd": 0.0,
+        "ci95_low": 2976212480.0,
+        "ci95_high": 2976212480.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.08810493470475615,
+        "sd": 0.2508178705253599,
+        "ci95_low": -0.2300185044688337,
+        "ci95_high": 0.05380863505932139
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": -0.023663217500672722,
+        "sd": 0.2009471718910383,
+        "ci95_low": -0.137359783209174,
+        "ci95_high": 0.09003334820782855
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 127.73546588349079,
+        "sd": 4.739075114220693,
+        "ci95_low": 125.05408171644372,
+        "ci95_high": 130.41685005053785
+      }
+    },
+    "S3_cross_backbone_controls::spatiotemporal_news_location_external::ata_output_residual": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.5833333333333334,
+        "sd": 0.5149286505444373,
+        "ci95_low": 0.2919850222281574,
+        "ci95_high": 0.8746816444385093
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.3528671116502486,
+        "sd": 2.437780355035222,
+        "ci95_low": -1.026436969670423,
+        "ci95_high": 1.7321711929709203
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1113729536.0,
+        "sd": 0.0,
+        "ci95_low": 1113729536.0,
+        "ci95_high": 1113729536.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.4047168863542292,
+        "sd": 2.16732963818701,
+        "ci95_low": -0.8215652966750966,
+        "ci95_high": 1.630999069383555
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.9462281966338821,
+        "sd": 1.450028106404626,
+        "ci95_low": 0.12579756141995269,
+        "ci95_high": 1.7666588318478116
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 26.511326809045084,
+        "sd": 1.0401977889359193,
+        "ci95_low": 25.92277950506153,
+        "ci95_high": 27.099874113028637
+      }
+    },
+    "S3_cross_backbone_controls::spatiotemporal_news_location_external::full_tune": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.3333333333333333,
+        "sd": 0.49236596391733095,
+        "ci95_low": 0.054751063962002355,
+        "ci95_high": 0.6119156027046643
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -1.1229588392645578,
+        "sd": 3.8796057872282024,
+        "ci95_low": -3.3180524559582736,
+        "ci95_high": 1.0721347774291583
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 3742838272.0,
+        "sd": 0.0,
+        "ci95_low": 3742838272.0,
+        "ci95_high": 3742838272.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -1.1728570478174143,
+        "sd": 3.836620646089115,
+        "ci95_low": -3.34362953135948,
+        "ci95_high": 0.9979154357246516
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 1.1624988939357446,
+        "sd": 2.1980730580322696,
+        "ci95_low": -0.08117801638258215,
+        "ci95_high": 2.4061758042540715
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 414.92339602506644,
+        "sd": 5.164719252680156,
+        "ci95_low": 412.0011810152592,
+        "ci95_high": 417.8456110348737
+      }
+    },
+    "S3_cross_backbone_controls::spatiotemporal_news_location_external::lora": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.4166666666666667,
+        "sd": 0.5149286505444373,
+        "ci95_low": 0.12531835556149074,
+        "ci95_high": 0.7080149777718426
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": -0.8818964609098089,
+        "sd": 3.4991801422094073,
+        "ci95_low": -2.8617440060164516,
+        "ci95_high": 1.0979510841968336
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 2976243200.0,
+        "sd": 0.0,
+        "ci95_low": 2976243200.0,
+        "ci95_high": 2976243200.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": -0.8708817832622183,
+        "sd": 3.4538600234063788,
+        "ci95_low": -2.825087057234039,
+        "ci95_high": 1.0833234907096028
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.9277262457038166,
+        "sd": 1.8268827650174309,
+        "ci95_low": -0.10592998533367093,
+        "ci95_high": 1.9613824767413042
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 132.55302051105537,
+        "sd": 5.384858357656502,
+        "ci95_low": 129.50625007716118,
+        "ci95_high": 135.59979094494955
+      }
+    },
+    "S3_cross_backbone_controls::swiss_judgment_de_temporal_external::ata_output_residual": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 1491210752.0,
+        "sd": 0.0,
+        "ci95_low": 1491210752.0,
+        "ci95_high": 1491210752.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 26.05027734461085,
+        "sd": 0.1324231373032145,
+        "ci95_low": 25.975351901321286,
+        "ci95_high": 26.125202787900417
+      }
+    },
+    "S3_cross_backbone_controls::swiss_judgment_de_temporal_external::full_tune": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.08333333333333333,
+        "sd": 0.28867513459481287,
+        "ci95_low": -0.08,
+        "ci95_high": 0.24666666666666665
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.06920966397587121,
+        "sd": 0.23974930876195674,
+        "ci95_low": -0.06644127741683638,
+        "ci95_high": 0.2048606053685788
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 5630244352.0,
+        "sd": 0.0,
+        "ci95_low": 5630244352.0,
+        "ci95_high": 5630244352.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.05995023896955646,
+        "sd": 0.2076737196423349,
+        "ci95_low": -0.05755222941077421,
+        "ci95_high": 0.17745270734988713
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.05995023896955646,
+        "sd": 0.2076737196423349,
+        "ci95_low": -0.05755222941077421,
+        "ci95_high": 0.17745270734988713
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 415.59091475454625,
+        "sd": 6.659840625562874,
+        "ci95_low": 411.8227551921761,
+        "ci95_high": 419.3590743169164
+      }
+    },
+    "S3_cross_backbone_controls::swiss_judgment_de_temporal_external::lora": {
+      "authorized": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "cert_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 12,
+        "mean": 3353699840.0,
+        "sd": 0.0,
+        "ci95_low": 3353699840.0,
+        "ci95_high": 3353699840.0
+      },
+      "raw_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "served_T_gain_points": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "train_seconds": {
+        "n": 12,
+        "mean": 134.6493049095734,
+        "sd": 4.738626023084758,
+        "ci95_low": 131.96817483975678,
+        "ci95_high": 137.33043497939002
+      }
+    },
+    "S4_budget_and_geometry_sensitivity::jigsaw_civil_comments_temporal_external::ata_output_residual": {
+      "authorized": {
+        "n": 120,
+        "mean": 0.25833333333333336,
+        "sd": 0.4395535040392299,
+        "ci95_low": 0.1796872326650434,
+        "ci95_high": 0.33697943400162333
+      },
+      "cert_gain_points": {
+        "n": 120,
+        "mean": -0.385560447342632,
+        "sd": 0.6155221043355864,
+        "ci95_low": -0.4956913254639307,
+        "ci95_high": -0.2754295692213333
+      },
+      "harmful_served_action": {
+        "n": 120,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 120,
+        "mean": 741494476.8,
+        "sd": 49496.713911399114,
+        "ci95_low": 741485620.714201,
+        "ci95_high": 741503332.8857989
+      },
+      "raw_T_gain_points": {
+        "n": 120,
+        "mean": -0.42678853176058207,
+        "sd": 0.6913733492515972,
+        "ci95_low": -0.5504909195812945,
+        "ci95_high": -0.30308614393986966
+      },
+      "served_T_gain_points": {
+        "n": 120,
+        "mean": 0.006238570524835414,
+        "sd": 0.10834795833205949,
+        "ci95_low": -0.013147338948943522,
+        "ci95_high": 0.02562447999861435
+      },
+      "train_seconds": {
+        "n": 120,
+        "mean": 12.02036918209827,
+        "sd": 4.968576467853541,
+        "ci95_low": 11.131378054788245,
+        "ci95_high": 12.909360309408294
+      }
+    },
+    "S4_budget_and_geometry_sensitivity::spatiotemporal_news_location_external::ata_output_residual": {
+      "authorized": {
+        "n": 120,
+        "mean": 0.8166666666666667,
+        "sd": 0.3885619540779343,
+        "ci95_low": 0.7471441119026547,
+        "ci95_high": 0.8861892214306786
+      },
+      "cert_gain_points": {
+        "n": 120,
+        "mean": 0.8156372300524326,
+        "sd": 1.3717517718009005,
+        "ci95_low": 0.5701996964061754,
+        "ci95_high": 1.0610747636986897
+      },
+      "harmful_served_action": {
+        "n": 120,
+        "mean": 0.008333333333333333,
+        "sd": 0.09128709291752768,
+        "ci95_low": -0.007999999999999998,
+        "ci95_high": 0.024666666666666663
+      },
+      "peak_gpu_memory_bytes": {
+        "n": 120,
+        "mean": 741500620.8,
+        "sd": 49496.713911399114,
+        "ci95_low": 741491764.714201,
+        "ci95_high": 741509476.8857989
+      },
+      "raw_T_gain_points": {
+        "n": 120,
+        "mean": 0.5957156980010383,
+        "sd": 1.5377169170165153,
+        "ci95_low": 0.3205832321153383,
+        "ci95_high": 0.8708481638867382
+      },
+      "served_T_gain_points": {
+        "n": 120,
+        "mean": 0.8814560420094094,
+        "sd": 1.1296092857855167,
+        "ci95_low": 0.6793432962586805,
+        "ci95_high": 1.0835687877601383
+      },
+      "train_seconds": {
+        "n": 120,
+        "mean": 12.043494605174056,
+        "sd": 4.968970762737166,
+        "ci95_low": 11.154432929558022,
+        "ci95_high": 12.93255628079009
+      }
+    },
+    "S5_multieurlex_fourth_untouched_external::multieurlex_en_level1_temporal_external::ata_output_residual": {
+      "authorized": {
+        "n": 24,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "calibrated_candidate_gain_points": {
+        "n": 12,
+        "mean": 2.7993620346078028,
+        "sd": 1.2241796158389469,
+        "ci95_low": 2.1067172124815556,
+        "ci95_high": 3.49200685673405
+      },
+      "cert_gate_gain_points": {
+        "n": 12,
+        "mean": 2.6490880417067753,
+        "sd": 0.8971953455672916,
+        "ci95_low": 2.141451986913399,
+        "ci95_high": 3.1567240965001515
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "raw_candidate_gain_points": {
+        "n": 12,
+        "mean": -0.10076909217183368,
+        "sd": 0.44086639367730296,
+        "ci95_low": -0.35021273661675906,
+        "ci95_high": 0.14867455227309173
+      },
+      "served_gain_points": {
+        "n": 12,
+        "mean": 2.7993620346078028,
+        "sd": 1.2241796158389469,
+        "ci95_low": 2.1067172124815556,
+        "ci95_high": 3.49200685673405
+      }
+    },
+    "S5_multieurlex_fourth_untouched_external::multieurlex_en_level1_temporal_external::bottleneck": {
+      "authorized": {
+        "n": 24,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "calibrated_candidate_gain_points": {
+        "n": 12,
+        "mean": 3.2350631618747414,
+        "sd": 1.3503383026704034,
+        "ci95_low": 2.471037342981798,
+        "ci95_high": 3.999088980767685
+      },
+      "cert_gate_gain_points": {
+        "n": 12,
+        "mean": 3.18849358435839,
+        "sd": 0.8569826657943552,
+        "ci95_low": 2.70360999502692,
+        "ci95_high": 3.6733771736898597
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "raw_candidate_gain_points": {
+        "n": 12,
+        "mean": -0.21644810850114196,
+        "sd": 0.8597997682357464,
+        "ci95_low": -0.7029256235884264,
+        "ci95_high": 0.2700294065861424
+      },
+      "served_gain_points": {
+        "n": 12,
+        "mean": 3.2350631618747414,
+        "sd": 1.3503383026704034,
+        "ci95_low": 2.471037342981798,
+        "ci95_high": 3.999088980767685
+      }
+    },
+    "S5_multieurlex_fourth_untouched_external::multieurlex_en_level1_temporal_external::classifier_head_only": {
+      "authorized": {
+        "n": 24,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "calibrated_candidate_gain_points": {
+        "n": 12,
+        "mean": 3.165708306334754,
+        "sd": 1.4030930387159704,
+        "ci95_low": 2.3718336856060134,
+        "ci95_high": 3.9595829270634946
+      },
+      "cert_gate_gain_points": {
+        "n": 12,
+        "mean": 3.0776633186750826,
+        "sd": 0.8843414433599023,
+        "ci95_low": 2.5773000437032882,
+        "ci95_high": 3.578026593646877
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "raw_candidate_gain_points": {
+        "n": 12,
+        "mean": 0.21081981225181864,
+        "sd": 0.7421489495295904,
+        "ci95_low": -0.20909048562209423,
+        "ci95_high": 0.6307301101257315
+      },
+      "served_gain_points": {
+        "n": 12,
+        "mean": 3.165708306334754,
+        "sd": 1.4030930387159704,
+        "ci95_low": 2.3718336856060134,
+        "ci95_high": 3.9595829270634946
+      }
+    },
+    "S5_multieurlex_fourth_untouched_external::multieurlex_en_level1_temporal_external::full_tune": {
+      "authorized": {
+        "n": 24,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "calibrated_candidate_gain_points": {
+        "n": 12,
+        "mean": 4.884060649037463,
+        "sd": 1.6446624383605581,
+        "ci95_low": 3.9535052735541987,
+        "ci95_high": 5.814616024520727
+      },
+      "cert_gate_gain_points": {
+        "n": 12,
+        "mean": 4.9327542220551805,
+        "sd": 0.7591440501741069,
+        "ci95_low": 4.503228040767891,
+        "ci95_high": 5.36228040334247
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "raw_candidate_gain_points": {
+        "n": 12,
+        "mean": 1.7732617130056167,
+        "sd": 1.6161148849813471,
+        "ci95_low": 0.8588586363979817,
+        "ci95_high": 2.687664789613252
+      },
+      "served_gain_points": {
+        "n": 12,
+        "mean": 4.884060649037463,
+        "sd": 1.6446624383605581,
+        "ci95_low": 3.9535052735541987,
+        "ci95_high": 5.814616024520727
+      }
+    },
+    "S5_multieurlex_fourth_untouched_external::multieurlex_en_level1_temporal_external::lora": {
+      "authorized": {
+        "n": 24,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "calibrated_candidate_gain_points": {
+        "n": 12,
+        "mean": 3.9732394182028785,
+        "sd": 1.8041525536675302,
+        "ci95_low": 2.9524440149341613,
+        "ci95_high": 4.994034821471596
+      },
+      "cert_gate_gain_points": {
+        "n": 12,
+        "mean": 4.060676391942165,
+        "sd": 0.6136988574592401,
+        "ci95_low": 3.713443575397816,
+        "ci95_high": 4.4079092084865135
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "raw_candidate_gain_points": {
+        "n": 12,
+        "mean": 0.7847457040112628,
+        "sd": 1.2880534223729125,
+        "ci95_low": 0.05596087367639535,
+        "ci95_high": 1.5135305343461303
+      },
+      "served_gain_points": {
+        "n": 12,
+        "mean": 3.9732394182028785,
+        "sd": 1.8041525536675302,
+        "ci95_low": 2.9524440149341613,
+        "ci95_high": 4.994034821471596
+      }
+    },
+    "S5_multieurlex_fourth_untouched_external::multieurlex_en_level1_temporal_external::vector_logit_scaling": {
+      "authorized": {
+        "n": 24,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "calibrated_candidate_gain_points": {
+        "n": 12,
+        "mean": 2.8604354105933396,
+        "sd": 1.1979137063164718,
+        "ci95_low": 2.1826519258017374,
+        "ci95_high": 3.538218895384942
+      },
+      "cert_gate_gain_points": {
+        "n": 12,
+        "mean": 2.5884206227944246,
+        "sd": 0.8490799328557951,
+        "ci95_low": 2.108008425552578,
+        "ci95_high": 3.0688328200362713
+      },
+      "harmful_served_action": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "raw_candidate_gain_points": {
+        "n": 12,
+        "mean": 0.0025196885908250013,
+        "sd": 0.048715803759567355,
+        "ci95_low": -0.025043872175262688,
+        "ci95_high": 0.030083249356912693
+      },
+      "served_gain_points": {
+        "n": 12,
+        "mean": 2.8604354105933396,
+        "sd": 1.1979137063164718,
+        "ci95_low": 2.1826519258017374,
+        "ci95_high": 3.538218895384942
+      }
+    }
+  },
+  "statistical_warning": "Origins and seeds are nested repeated measurements; dataset is the independent generalization unit.",
+  "artifact_content_hash": "2305b40a658a7fd677507cdffa1160806293cc89c4a99214293da99783623a3f"
+}

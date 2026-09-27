@@ -1,0 +1,117 @@
+{
+  "schema_version": "ata-nlp-prepared-rolling-origins-6.0",
+  "status": "post_quarantine_requires_clean_reaudit",
+  "dataset_id": "swiss_judgment_de_temporal_external",
+  "hf_id": "rcds/swiss_judgment_prediction",
+  "resolved_revision": "29806f87bba4f23d0707d3b6d9ea5432afefbe2f",
+  "source_dataset_fingerprint": "af11509a863e41bfcf170bacf6847875aac2ee735b4c829a85a31fc796c9820c",
+  "source_rows_after_deterministic_sample": 49888,
+  "selected_index_hash": "6dcf48f7abe6902a91f6f76d532b5939edda6154c6233e17e86ba1022469df37",
+  "static_source_files": [
+    {
+      "split": "train",
+      "filename": "train.jsonl",
+      "url": "https://zenodo.org/api/records/7109926/files/train.jsonl/content",
+      "landing_url": "https://zenodo.org/records/7109926",
+      "cache_path": "source_cache_nlp_ata/v6/swiss_judgment_de_temporal_external/train.jsonl",
+      "bytes": 234401262,
+      "sha256": "191992c204ad10d76c2a08005f1cdd94531b531ba12f5ea889cec7cd94dbb232"
+    },
+    {
+      "split": "validation",
+      "filename": "val.jsonl",
+      "url": "https://zenodo.org/api/records/7109926/files/val.jsonl/content",
+      "landing_url": "https://zenodo.org/records/7109926",
+      "cache_path": "source_cache_nlp_ata/v6/swiss_judgment_de_temporal_external/val.jsonl",
+      "bytes": 29157311,
+      "sha256": "a395f523de0e536953ac3af7960243b7be90423183097a1856275fc694b6e415"
+    },
+    {
+      "split": "test",
+      "filename": "test.jsonl",
+      "url": "https://zenodo.org/api/records/7109926/files/test.jsonl/content",
+      "landing_url": "https://zenodo.org/records/7109926",
+      "cache_path": "source_cache_nlp_ata/v6/swiss_judgment_de_temporal_external/test.jsonl",
+      "bytes": 68876958,
+      "sha256": "3e7a6542cd061579599cd93ec4c3af48171f0f8c2331c81477e77fac253247c1"
+    }
+  ],
+  "protocol_hash": "6a6d90525973a3cec15e7724710e3a9c5cfcbaad4c8972cdf99b478997299444",
+  "registry_hash": "749e2ad8ec7ae69e394e1107de31d341905ce479a136ed7f168daab62154b8c3",
+  "preflight_file_hash": "6e58e34a15967cbfbef7d3e5e74608eb62a350fb9e40f78115fbc39b7a8244f1",
+  "quarantine_audit_file_hash": "e9c03f1ac0025150a640d0c3aa52c0c992d008222f95eeee4bb7d5bdc6106e3c",
+  "label_mapping": {
+    "dismissal": 0,
+    "approval": 1
+  },
+  "origin_audits": [
+    {
+      "origin_id": "o1",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 10,
+      "retained_counts": {
+        "history": 20986,
+        "adapt": 4998,
+        "cert": 4710,
+        "deploy": 4754
+      }
+    },
+    {
+      "origin_id": "o2",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 10,
+      "retained_counts": {
+        "history": 25984,
+        "adapt": 4710,
+        "cert": 4754,
+        "deploy": 4705
+      }
+    },
+    {
+      "origin_id": "o3",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 6,
+      "retained_counts": {
+        "history": 30699,
+        "adapt": 4754,
+        "cert": 4705,
+        "deploy": 4777
+      }
+    },
+    {
+      "origin_id": "o4",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 7,
+      "retained_counts": {
+        "history": 35453,
+        "adapt": 4705,
+        "cert": 4777,
+        "deploy": 4946
+      }
+    }
+  ],
+  "file_rows": {
+    "o1/history.jsonl": 20986,
+    "o1/adapt.jsonl": 4998,
+    "o1/cert.jsonl": 4710,
+    "o1/deploy.jsonl": 4754,
+    "o2/history.jsonl": 25984,
+    "o2/adapt.jsonl": 4710,
+    "o2/cert.jsonl": 4754,
+    "o2/deploy.jsonl": 4705,
+    "o3/history.jsonl": 30699,
+    "o3/adapt.jsonl": 4754,
+    "o3/cert.jsonl": 4705,
+    "o3/deploy.jsonl": 4777,
+    "o4/history.jsonl": 35453,
+    "o4/adapt.jsonl": 4705,
+    "o4/cert.jsonl": 4777,
+    "o4/deploy.jsonl": 4946
+  },
+  "model_loaded": false,
+  "model_inference_performed": false,
+  "deployment_outcomes_computed": false,
+  "raw_text_redistribution_forbidden": true,
+  "written_at_utc": "2026-09-10T17:28:21.108084Z",
+  "artifact_content_hash": "0ee643eb266776aec1804b27295379ddbf3f2761bf063cb09d69e63be1bc9f36"
+}

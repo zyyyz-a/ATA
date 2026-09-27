@@ -1,0 +1,13 @@
+* text=auto
+*.csv text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.pdf binary
+*.png binary
+*.tiff binary
+
+# Frozen audit material is content-addressed. Keep its bytes unchanged across
+# platforms so that a fresh clone preserves the recorded digests.
+artifact/** -text
+locks/** -text

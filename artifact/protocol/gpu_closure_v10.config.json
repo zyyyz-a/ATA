@@ -1,0 +1,291 @@
+{
+  "schema_version": "ata-nlp-gpu-closure-10.0-draft",
+  "protocol_id": "ata_nlp_gpu_closure_v10_20260915",
+  "status": "draft_preparation_only_no_new_model_outcomes",
+  "purpose": "Prepare every GPU experiment required by the current adversarial gap audit without changing the manuscript or omitting negative results.",
+  "created_after": {
+    "time_series_stages": "0-106",
+    "nlp_external_protocols": ["v3", "v7.1", "v9.2"],
+    "jigsaw_outcome_status": "opened_and_included_as_a_negative_boundary_result"
+  },
+  "global_rules": {
+    "gpu_required": true,
+    "allow_result_overwrite": false,
+    "all_results_json": true,
+    "failed_jobs_retained": true,
+    "seeds": [42, 2025, 2026],
+    "origins": ["o1", "o2", "o3", "o4"],
+    "optimizer": "AdamW",
+    "candidate_effective_batch_size": 64,
+    "default_candidate_steps": 256,
+    "primary_metric": "task_macro_f1",
+    "harm_threshold_points": 0.5,
+    "independent_generalization_unit": "dataset",
+    "nested_units": ["origin", "seed", "deployment_bin"],
+    "forbid_seed_as_independent_dataset": true,
+    "write_prediction_rows": "hashed_record_id_only_no_raw_text",
+    "test_outcomes_never_select_prospective_actions": true
+  },
+  "runtime": {
+    "history": {
+      "epochs": 3,
+      "learning_rate": 0.00002,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "micro_batch_size": 8,
+      "gradient_accumulation_steps": 1,
+      "mixed_precision": "bf16_if_supported_else_fp16"
+    },
+    "candidates": {
+      "ata_output_residual": {"learning_rate": 0.0003, "micro_batch_size": 16, "gradient_accumulation_steps": 4, "weight_decay": 0.01, "warmup_steps": 16},
+      "vector_logit_scaling": {"learning_rate": 0.0003, "micro_batch_size": 32, "gradient_accumulation_steps": 2, "weight_decay": 0.01, "warmup_steps": 16},
+      "bottleneck": {"learning_rate": 0.0003, "micro_batch_size": 16, "gradient_accumulation_steps": 4, "weight_decay": 0.01, "warmup_steps": 16},
+      "lora": {"learning_rate": 0.0001, "micro_batch_size": 8, "gradient_accumulation_steps": 8, "weight_decay": 0.01, "warmup_steps": 16},
+      "classifier_head_only": {"learning_rate": 0.00002, "micro_batch_size": 16, "gradient_accumulation_steps": 4, "weight_decay": 0.01, "warmup_steps": 16},
+      "full_tune": {"learning_rate": 0.00002, "micro_batch_size": 4, "gradient_accumulation_steps": 16, "weight_decay": 0.01, "warmup_steps": 16}
+    },
+    "evaluation_micro_batch_size": 32,
+    "mixed_precision": "bf16_if_supported_else_fp16"
+  },
+  "existing_dataset_bindings": {
+    "spatiotemporal_news_location_external": {
+      "protocol_generation": "v7.1",
+      "task_type": "sequence_classification",
+      "num_labels": 4,
+      "primary_backbone": "roberta-base",
+      "secondary_backbone": "microsoft/deberta-v3-base",
+      "prepared_root_candidates": [
+        "data_nlp_ata_v7/spatiotemporal_news_location_external/post_quarantine_v1",
+        "phase1_hardening_20260910/data_nlp_ata_v7/spatiotemporal_news_location_external/post_quarantine_v1"
+      ],
+      "history_root_candidates": [
+        "checkpoints_nlp_ata/v7/history/spatiotemporal_news_location_external",
+        "phase1_hardening_20260910/checkpoints_nlp_ata/v7/history/spatiotemporal_news_location_external"
+      ]
+    },
+    "swiss_judgment_de_temporal_external": {
+      "protocol_generation": "v7.1",
+      "task_type": "sequence_classification",
+      "num_labels": 2,
+      "primary_backbone": "xlm-roberta-base",
+      "secondary_backbone": "microsoft/mdeberta-v3-base",
+      "prepared_root_candidates": [
+        "data_nlp_ata_v7/swiss_judgment_de_temporal_external/post_quarantine_v1",
+        "phase1_hardening_20260910/data_nlp_ata_v7/swiss_judgment_de_temporal_external/post_quarantine_v1"
+      ],
+      "history_root_candidates": [
+        "checkpoints_nlp_ata/v7/history/swiss_judgment_de_temporal_external",
+        "phase1_hardening_20260910/checkpoints_nlp_ata/v7/history/swiss_judgment_de_temporal_external"
+      ]
+    },
+    "jigsaw_civil_comments_temporal_external": {
+      "protocol_generation": "v9.2",
+      "task_type": "sequence_classification",
+      "num_labels": 2,
+      "primary_backbone": "roberta-base",
+      "secondary_backbone": "microsoft/deberta-v3-base",
+      "prepared_root_candidates": [
+        "data_nlp_ata_v9/jigsaw_civil_comments_temporal_external/post_quarantine_v1"
+      ],
+      "history_root_candidates": [
+        "checkpoints_nlp_ata/v9/history/jigsaw_civil_comments_temporal_external"
+      ],
+      "candidate_root_candidates": [
+        "checkpoints_nlp_ata/v9/candidates/jigsaw_civil_comments_temporal_external/ata_output_residual"
+      ],
+      "source_cache_candidates": [
+        "source_cache_nlp_ata/v9_jigsaw"
+      ]
+    }
+  },
+  "suites": [
+    {
+      "suite_id": "S1_jigsaw_intervention_and_identity_audit",
+      "evidence_role": "posthoc_mechanism_development_after_T_open",
+      "datasets": ["jigsaw_civil_comments_temporal_external"],
+      "backbones": ["primary"],
+      "actions": ["ata_output_residual_existing_checkpoint"],
+      "interventions": [
+        "raw_alpha_1",
+        "cert_scalar_unbounded",
+        "cert_scalar_clipped_0_1",
+        "cert_scalar_shrunk_50_percent",
+        "cert_macro_f1_threshold",
+        "cert_temperature",
+        "cert_scalar_plus_macro_f1_threshold"
+      ],
+      "subgroup_endpoints": [
+        "identity_subgroup_macro_f1",
+        "identity_subgroup_fpr",
+        "identity_subgroup_fnr",
+        "subgroup_auc",
+        "bpsn_auc",
+        "bnsp_auc",
+        "worst_group_macro_f1",
+        "harmful_bins_by_identity"
+      ],
+      "gpu_job_count": 12,
+      "training_jobs": 0,
+      "inference_jobs": 12,
+      "test_firewall_status": "not_confirmatory_T_already_opened",
+      "must_not_claim": "prospective validation of the intervention"
+    },
+    {
+      "suite_id": "S2_unified_adapter_baselines",
+      "evidence_role": "posthoc_equal_information_equal_step_capacity_control",
+      "datasets": [
+        "spatiotemporal_news_location_external",
+        "swiss_judgment_de_temporal_external",
+        "jigsaw_civil_comments_temporal_external"
+      ],
+      "backbones": ["primary"],
+      "actions": [
+        "lora",
+        "bottleneck",
+        "full_tune",
+        "classifier_head_only",
+        "vector_logit_scaling"
+      ],
+      "optimizer_steps": 256,
+      "gpu_job_count": 180,
+      "training_jobs": 180,
+      "inference_in_same_job": true,
+      "test_firewall_status": "not_confirmatory_existing_T_already_opened",
+      "comparison_language": "equal information and update budget; not equal parameter count or FLOPs"
+    },
+    {
+      "suite_id": "S3_cross_backbone_controls",
+      "evidence_role": "posthoc_dataset_backbone_deconfounding",
+      "datasets": [
+        "spatiotemporal_news_location_external",
+        "swiss_judgment_de_temporal_external",
+        "jigsaw_civil_comments_temporal_external"
+      ],
+      "backbones": ["secondary"],
+      "actions": ["ata_output_residual", "lora", "full_tune"],
+      "history_gpu_jobs": 36,
+      "candidate_gpu_jobs": 108,
+      "gpu_job_count": 144,
+      "test_firewall_status": "not_confirmatory_existing_T_already_opened"
+    },
+    {
+      "suite_id": "S4_budget_and_geometry_sensitivity",
+      "evidence_role": "posthoc_robustness_not_model_selection",
+      "datasets": [
+        "spatiotemporal_news_location_external",
+        "jigsaw_civil_comments_temporal_external"
+      ],
+      "backbones": ["primary"],
+      "action": "ata_output_residual",
+      "variants": {
+        "optimizer_steps": [64, 128, 512],
+        "rank": [1, 2, 8, 16],
+        "temporal_geometry": ["short_cert", "long_cert", "one_bucket_gap"]
+      },
+      "reference_variant_not_repeated": {"optimizer_steps": 256, "rank": 4, "temporal_geometry": "v7_v9_original"},
+      "gpu_job_count": 240,
+      "training_jobs": 240,
+      "test_firewall_status": "not_confirmatory_existing_T_already_opened",
+      "reporting_rule": "complete grid with no best-variant-only reporting"
+    },
+    {
+      "suite_id": "S5_multieurlex_fourth_untouched_external",
+      "evidence_role": "prospective_confirmation_after_jigsaw",
+      "dataset_id": "multieurlex_en_level1_temporal_external",
+      "source": {
+        "hf_id": "coastalcph/multi_eurlex",
+        "hf_config": "en",
+        "requested_revision": "main",
+        "revision_must_be_resolved_and_locked": true,
+        "license": "CC-BY-4.0 source-data statement; Hub metadata also reports CC-BY-SA-4.0 and the discrepancy must be retained",
+        "task_type": "multi_label_sequence_classification",
+        "label_level": 1,
+        "num_labels": 21,
+        "record_id_field": "celex_id",
+        "text_field": "text",
+        "labels_field": "labels",
+        "chronology": "official chronological split plus CELEX-year audit",
+        "language": "en",
+        "max_length": 256,
+        "raw_text_redistribution": false
+      },
+      "rolling_origins": [
+        {"origin_id": "o1", "history_end": 0.40, "adapt_end": 0.50, "cert_fit_end": 0.55, "cert_gate_end": 0.60, "deploy_end": 0.70},
+        {"origin_id": "o2", "history_end": 0.50, "adapt_end": 0.60, "cert_fit_end": 0.65, "cert_gate_end": 0.70, "deploy_end": 0.80},
+        {"origin_id": "o3", "history_end": 0.60, "adapt_end": 0.70, "cert_fit_end": 0.75, "cert_gate_end": 0.80, "deploy_end": 0.90},
+        {"origin_id": "o4", "history_end": 0.70, "adapt_end": 0.80, "cert_fit_end": 0.85, "cert_gate_end": 0.90, "deploy_end": 1.00}
+      ],
+      "backbones": ["roberta-base"],
+      "actions": [
+        "ata_output_residual",
+        "lora",
+        "bottleneck",
+        "full_tune",
+        "classifier_head_only",
+        "vector_logit_scaling"
+      ],
+      "prospective_calibration": {
+        "fit_window": "cert_fit",
+        "authorization_window": "cert_gate",
+        "methods": [
+          "raw_alpha_1",
+          "cert_fit_scalar_clipped_0_1",
+          "cert_fit_macro_f1_threshold",
+          "cert_fit_scalar_plus_threshold"
+        ],
+        "selection_rule": "method_choice_locked_before_any_MultiEURLEX_model_outcome; calibration parameters fit on cert_fit and authorization computed on disjoint cert_gate",
+        "primary_policy": "task_positive_on_cert_gate_after_cert_fit_scalar_and_threshold"
+      },
+      "history_gpu_jobs": 12,
+      "candidate_cert_gpu_jobs": 72,
+      "deployment_gpu_jobs_after_group_locks": 72,
+      "gpu_job_count": 156,
+      "test_firewall_status": "strict_prospective_group_lock_required",
+      "preflight_rejection_rules": [
+        "resolved source revision or file hash unavailable",
+        "CELEX year parse rate below 0.995",
+        "duplicate CELEX IDs after source merge",
+        "fewer than 12 distinct years in HISTORY or fewer than 2 distinct years in any later role",
+        "any of the 21 labels absent from history or all positive labels absent from a later role",
+        "cross-role CELEX or normalized-text hash overlap",
+        "fewer than 30000 usable English documents",
+        "license provenance cannot be documented"
+      ]
+    }
+  ],
+  "totals": {
+    "gpu_jobs": 732,
+    "history_training_jobs": 48,
+    "candidate_training_jobs": 600,
+    "inference_only_jobs": 84,
+    "prospective_gpu_jobs": 156,
+    "posthoc_or_development_gpu_jobs": 576
+  },
+  "execution_gates": [
+    "G0 static validation and unit tests pass",
+    "G1 remote CUDA and dependency preflight pass without reinstalling torch",
+    "G2 S1 completes and its negative or positive outcomes are retained",
+    "G3 S2-S4 may run in any order but cannot alter S5 method or thresholds",
+    "G4 MultiEURLEX metadata materialization and duplicate/chronology preflight pass",
+    "G5 MultiEURLEX protocol, source hashes, model revision, code hashes, job matrix, thresholds, and matched-coverage salt are sealed",
+    "G6 all HISTORY jobs complete",
+    "G7 all candidate and disjoint cert-fit/cert-gate artifacts complete",
+    "G8 all dataset-action group decisions are serialized before any deploy record is loaded",
+    "G9 deployments complete and every JSON is copied locally before analysis"
+  ],
+  "stop_rules": [
+    "never open prospective T before G8",
+    "never drop a failed dataset, origin, seed, action, subgroup, or bin",
+    "never tune S5 from S5 deployment outcomes",
+    "never call S1-S4 confirmatory",
+    "never call the TEA-inspired control an exact TEA reproduction",
+    "never interpret q near one as meaningful reachability when output rank spans the label dimension"
+  ],
+  "paths": {
+    "manifest_draft": "nlp_ata_experiments/manifests/gpu_closure_v10.draft.json",
+    "result_root": "results_nlp_ata/v10_gpu_closure",
+    "checkpoint_root": "checkpoints_nlp_ata/v10_gpu_closure",
+    "prediction_root": "results_nlp_ata/v10_gpu_closure/predictions_hashed",
+    "failure_root": "results_nlp_ata/v10_gpu_closure/failures"
+  }
+}

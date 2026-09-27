@@ -1,0 +1,23 @@
+{
+  "pdf": "coling2027_ata_language_shift_draft\\figures\\ata_v11_quantitative_evidence.pdf",
+  "auditable": true,
+  "verdict": "PASS",
+  "page_count": 1,
+  "visible_text_box_count": 50,
+  "text_trace_count": 56,
+  "stroke_path_count": 247,
+  "filled_region_count": 181,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "contained_fill_overlays": 2,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": []
+}

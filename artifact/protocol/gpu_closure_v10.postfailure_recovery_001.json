@@ -1,0 +1,87 @@
+{
+  "schema_version": "ata-nlp-gpu-closure-postfailure-recovery-10.0",
+  "status": "frozen_postfailure_before_recovery_outcomes",
+  "created_at_utc": "2026-09-17T16:50:49.725Z",
+  "scope": "Runtime-only recovery of the 36 terminal S3 DeBERTa full-tune failures from the frozen v10 execution. No successful result is rerun or overwritten.",
+  "original_run_summary": {
+    "selected": 732,
+    "complete": 696,
+    "failed": 36
+  },
+  "eligibility": {
+    "suite_id": "S3_cross_backbone_controls",
+    "phase": "posthoc_candidate_train_and_eval",
+    "action": "full_tune",
+    "datasets": [
+      "news",
+      "swiss",
+      "jigsaw"
+    ],
+    "backbones": [
+      "microsoft/deberta-v3-base",
+      "microsoft/mdeberta-v3-base"
+    ],
+    "original_error_contains": "Trying to backward through the graph a second time"
+  },
+  "patch": {
+    "only_change": "Call Transformers gradient checkpointing with use_reentrant=false instead of its version-dependent reentrant default.",
+    "reason": "The 36 jobs failed during backward because reentrant gradient checkpointing retained an incompatible graph path in full-model DeBERTa tuning.",
+    "unchanged": [
+      "dataset bytes and identities",
+      "history/adaptation/certification/test role windows",
+      "manifest job identities",
+      "random seeds",
+      "optimizer and learning rates",
+      "optimization steps and batch construction",
+      "evaluation metrics",
+      "authorization and firewall rules"
+    ],
+    "result_overwrite": false,
+    "original_failure_records_retained": true
+  },
+  "job_ids": [
+    "06d10fe7ba91292d",
+    "0d36bb17c5e2b861",
+    "0ea0051062b2edd8",
+    "141919af2c43c80c",
+    "204b1636a0a7d050",
+    "3455d7499d1d1072",
+    "3f2feca445a23630",
+    "4408a8024a37783e",
+    "48b53533edc3e2e8",
+    "4bbdd60cebe54803",
+    "4fe0ac4e609ff76c",
+    "56fe252cfd53f250",
+    "729c1735eec65783",
+    "76b67efa8ec620c2",
+    "875ca04ba03dcd61",
+    "95c3b2f67c2299da",
+    "9be1103df2b184f6",
+    "a2c0376aee4321d5",
+    "a4399d9cee005e31",
+    "a716eea8ad55f1ce",
+    "a891cce849abc57c",
+    "b01a254a2905d5eb",
+    "b8486aaf5870280a",
+    "bacefe84e8cc5cd4",
+    "be3f27402775579c",
+    "c6f920c3ad51234b",
+    "c82aca7c0dcbc1f0",
+    "ca8ba6e5e58febf4",
+    "d6fbf24806f345d1",
+    "e1a429a9273be381",
+    "e292ff0c797d05a1",
+    "ed767d97219d1bac",
+    "efd38c551bb6722b",
+    "f69bcbf84bbaa4e7",
+    "fd0c5fbc4c522c0d",
+    "fe835a97d3758775"
+  ],
+  "bound_files": {
+    "original_runner_sha256": "c5a9cdd3be853b6b795c2d5025d5ae07501a1c9b0145b41df73d80199bdbe939",
+    "original_execution_lock_sha256": "1840e2495af2571c830f718a0d381daad29a0ef50ccc44c8b5b46de25df2c272",
+    "recovery_runner_sha256": "70639b04d7b135cb3fc6010d3b014c3b2e45f9b705b35422f5c10870cb41d218",
+    "recovery_orchestrator_sha256": "a4ba5901a4bd1b6aea836a5529e705212c054fc22e45da6736f8ade9f12ebcfc",
+    "recovery_launcher_sha256": "e5b64da08ce0b50c602e91d24a7c8f6d302c252af5db4f69d935b9915b379ba9"
+  }
+}

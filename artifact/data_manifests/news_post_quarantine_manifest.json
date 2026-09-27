@@ -1,0 +1,91 @@
+{
+  "schema_version": "ata-nlp-prepared-rolling-origins-6.0",
+  "status": "post_quarantine_requires_clean_reaudit",
+  "dataset_id": "spatiotemporal_news_location_external",
+  "hf_id": "Artur-B/SpatioTemporal-News-Corpus",
+  "resolved_revision": "985fe352b9a6342425c5b330897e8e1055fa0fcb",
+  "source_dataset_fingerprint": "54241cc4dc6e2d2d",
+  "source_rows_after_deterministic_sample": 120000,
+  "selected_index_hash": "2db402a1b3cefefd8754e80ba7ea1883e89064074e464c54e438c54caf2cafbd",
+  "static_source_files": [],
+  "protocol_hash": "6a6d90525973a3cec15e7724710e3a9c5cfcbaad4c8972cdf99b478997299444",
+  "registry_hash": "749e2ad8ec7ae69e394e1107de31d341905ce479a136ed7f168daab62154b8c3",
+  "preflight_file_hash": "1b5be0b98f92a75dc308fbbb6dc64f6150af3d46157c58f48b3d6c1bcc87dbfb",
+  "quarantine_audit_file_hash": "be2e8959c5c100d8b15cb3d1ed2e238be860de2ac2d1cb4fd4565ad0a0493a05",
+  "label_mapping": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3
+  },
+  "origin_audits": [
+    {
+      "origin_id": "o1",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 1310,
+      "retained_counts": {
+        "history": 47207,
+        "adapt": 11273,
+        "cert": 11505,
+        "deploy": 13537
+      }
+    },
+    {
+      "origin_id": "o2",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 1402,
+      "retained_counts": {
+        "history": 58617,
+        "adapt": 11501,
+        "cert": 13482,
+        "deploy": 9886
+      }
+    },
+    {
+      "origin_id": "o3",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 1407,
+      "retained_counts": {
+        "history": 70387,
+        "adapt": 13480,
+        "cert": 9813,
+        "deploy": 12451
+      }
+    },
+    {
+      "origin_id": "o4",
+      "source_group_quarantined_records": 0,
+      "explicit_duplicate_quarantined_records": 1241,
+      "retained_counts": {
+        "history": 84172,
+        "adapt": 9808,
+        "cert": 12428,
+        "deploy": 12351
+      }
+    }
+  ],
+  "file_rows": {
+    "o1/history.jsonl": 47207,
+    "o1/adapt.jsonl": 11273,
+    "o1/cert.jsonl": 11505,
+    "o1/deploy.jsonl": 13537,
+    "o2/history.jsonl": 58617,
+    "o2/adapt.jsonl": 11501,
+    "o2/cert.jsonl": 13482,
+    "o2/deploy.jsonl": 9886,
+    "o3/history.jsonl": 70387,
+    "o3/adapt.jsonl": 13480,
+    "o3/cert.jsonl": 9813,
+    "o3/deploy.jsonl": 12451,
+    "o4/history.jsonl": 84172,
+    "o4/adapt.jsonl": 9808,
+    "o4/cert.jsonl": 12428,
+    "o4/deploy.jsonl": 12351
+  },
+  "model_loaded": false,
+  "model_inference_performed": false,
+  "deployment_outcomes_computed": false,
+  "raw_text_redistribution_forbidden": true,
+  "written_at_utc": "2026-09-10T17:39:19.177173Z",
+  "artifact_content_hash": "395da1015264074149bae2d61cb92dd9d1b0f0558728811b53223ebe4c672126"
+}

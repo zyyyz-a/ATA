@@ -1,0 +1,10 @@
+{
+  "schema_version": "ata-nlp-select-certify-pre-T-barrier-12.0",
+  "status": "all_48_actions_locked_before_any_v12_T_outcome",
+  "test_outcomes_used": false,
+  "decision_count": 48,
+  "config_sha256": "8518b2f16ed708f48027b1c306f17515bb58f8aa7d950f8476f5f672619c5d50",
+  "manifest_sha256": "6f94748b2037c73e6932a362fc40501b6da3d4683abce87692461dd9be7fc913",
+  "execution_lock_sha256": "cef88d868665932926b3eacf0165f1590640c97fc7924734085aa13bd528e540",
+  "action_lock_sha256": "00d10073a8554530710043ecd2a9dbe982e2505b1646f16b36be2dcb7755db95"
+}

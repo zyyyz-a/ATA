@@ -1,0 +1,63 @@
+{
+  "schema_version": "ata-nlp-select-certify-execution-lock-12.0",
+  "status": "frozen_before_v12_model_or_deployment_outcomes",
+  "protocol_id": "ata_nlp_split_select_certify_v12_20260923",
+  "job_count": 624,
+  "bound_files": {
+    "config": "8518b2f16ed708f48027b1c306f17515bb58f8aa7d950f8476f5f672619c5d50",
+    "manifest": "6f94748b2037c73e6932a362fc40501b6da3d4683abce87692461dd9be7fc913",
+    "revision_lock": "5d800b2152d71e15fddf3015049b43c99d455e92992be989a109e9441b320f2d",
+    "runner": "156891b08a031f63e6239c46964c45c83b575fec7eeaeb3e86837e96c20766ec",
+    "shared_runner": "3f27da924a1d27a99368cb42da518813fe5b061de68f0480f5ff11bb692aecdb",
+    "finalizer": "d4ec34e17c144b71a873040082bdcf6f69952f15ffbae4a0ad27e87f28795b94",
+    "materializer": "3b2f9321d06109549f07a1cad9cec38aafae6f29eeb9bbc97139bbeac7a435b8",
+    "selector": "6c2042471ec62635574ccd377bdfbc83160e579cde99001ac42a6cd60eb23386",
+    "closure_runtime": "1596b1465cd067be7ed836987ab984c7a409df44516ead36385cd9dcd25eb115",
+    "base_runtime": "3079cc6634c9f2cb673573edd6c927f986b755fa024b2e80cc9d475acea86aa4",
+    "adapters": "e4025ebfc48d7c38d8725e18c7fe2cf630b906f727c9614f95af6e28205bb7f8"
+  },
+  "bound_code_paths": {
+    "runner": "nlp_ata_experiments/scripts/run_select_certify_v12_job.py",
+    "shared_runner": "nlp_ata_experiments/scripts/run_prospective_v11_job.py",
+    "finalizer": "nlp_ata_experiments/scripts/finalize_select_certify_v12_actions.py",
+    "materializer": "nlp_ata_experiments/scripts/materialize_select_certify_v12.py",
+    "selector": "nlp_ata_experiments/src/ata_nlp/select_certify_v12.py",
+    "closure_runtime": "nlp_ata_experiments/src/ata_nlp/closure_v10.py",
+    "base_runtime": "nlp_ata_experiments/src/ata_nlp/runtime.py",
+    "adapters": "nlp_ata_experiments/src/ata_nlp/adapters.py"
+  },
+  "data_manifest_sha256": {
+    "arxiv_temporal_primary_category_v12": "f52422cd2c717e4b41c575f00e9e4f5fc2a51b74c3e15f1772eb03f08899f6e7",
+    "patclass_temporal_ipc_section_v12": "c6acbca5335d3cef9a2b3035c7b732815f814a4052d2d2d834e2a94887f9ce03"
+  },
+  "test_outcomes_used": false,
+  "primary_policy": {
+    "name": "split_select_then_certify",
+    "calibration_role": "Fit base and candidate decision calibration on C_cal only.",
+    "nomination_role": "Compute calibrated macro-F1 gain on C_select and nominate exactly one of six actions.",
+    "nomination_tie_break_order_low_to_high_capacity": [
+      "vector_logit_scaling",
+      "ata_output_residual",
+      "classifier_head_only",
+      "bottleneck",
+      "lora",
+      "full_tune"
+    ],
+    "authorization_role": "Authorize the nominee iff its 95% chronological-block bootstrap gain LCB on C_gate is strictly positive.",
+    "rejection_action": "serve_calibrated_frozen_base",
+    "fallback_search": "forbidden_no_second_action_may_be_tested_on_C_gate",
+    "deployment_action": "serialize_the_single_nominee_or_base_before_T_is_opened",
+    "renewal": "not_part_of_primary_v12_policy"
+  },
+  "success_rule": {
+    "report_each_dataset_separately": true,
+    "minimum_useful_coverage": 0.25,
+    "target_worst_served_gain_points": -1.0,
+    "origin_cluster_bootstrap_system_gain_LCB_must_exceed_points": 0.0,
+    "matched_coverage_tail_improvement_required": true,
+    "no_dataset_or_failed_job_dropping": true,
+    "claim_go": "both_untouched_datasets_meet_all_primary_criteria",
+    "conditional_go": "one_dataset_meets_all_criteria_and_the_other_improves_tail_over_matched_controls",
+    "no_go": "neither_dataset_meets_the_coverage_and_tail_target"
+  }
+}

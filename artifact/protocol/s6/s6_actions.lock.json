@@ -1,0 +1,2747 @@
+{
+  "schema_version": "ata-nlp-select-certify-action-lock-12.0",
+  "status": "all_actions_serialized_before_any_v12_T_outcome",
+  "policy": "C_cal_calibrate__C_select_top1__C_gate_single_LCB__no_fallback",
+  "config_sha256": "8518b2f16ed708f48027b1c306f17515bb58f8aa7d950f8476f5f672619c5d50",
+  "test_outcomes_used": false,
+  "decision_count": 48,
+  "decisions": {
+    "arxiv_temporal_primary_category_v12::o1::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o1",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "fd4a059fcd1f2513",
+      "select_gain_points": 2.5996610048287683,
+      "gate_gain_points": 3.2183573411462163,
+      "gate_gain_lcb_points": 1.7144109245754628,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "ba32231416fa6f75",
+          "certification_sha256": "fa3af3c6551c02d6806c48e3c53537dcb19edbbffec89edcc9a0e283168f7270",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        },
+        "bottleneck": {
+          "candidate_job_id": "f1dd2c98548ba1cf",
+          "certification_sha256": "b576ce8cd93ad96b40e6919949d58aa08d896fd4875b9fe6a29ca45f9c83e941",
+          "select_gain_points": -0.8788209281457848,
+          "gate_gain_points": 1.7709996216847435,
+          "gate_gain_lcb_points": 0.5287174697173311
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "b8512f0ded27747b",
+          "certification_sha256": "2cfb89234be406e20ffa5f4ff19e724a2e2fe5fa881e5c20cc5a884c9e6bcdac",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.4327504073164512,
+          "gate_gain_lcb_points": 0.0
+        },
+        "full_tune": {
+          "candidate_job_id": "fd4a059fcd1f2513",
+          "certification_sha256": "b1ce9fca782206d6d3e6048484199d0cfb02c49af1536f49703834f80c0a6299",
+          "select_gain_points": 2.5996610048287683,
+          "gate_gain_points": 3.2183573411462163,
+          "gate_gain_lcb_points": 1.7144109245754628
+        },
+        "lora": {
+          "candidate_job_id": "0aba70b65ba6a916",
+          "certification_sha256": "65ff2fdc4b58c9950bf2c282180211531bdfbc894aa34130d2257e8b7a1976e9",
+          "select_gain_points": 0.018318155091567867,
+          "gate_gain_points": 2.4401825330167437,
+          "gate_gain_lcb_points": 1.1982769718844044
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "c8099d44672936c4",
+          "certification_sha256": "fb5330e0320b2c4c923a7aa9d4eee7508064bbdef29e835086ce54f868e23b7a",
+          "select_gain_points": 0.22841961470009275,
+          "gate_gain_points": 0.32594590299508397,
+          "gate_gain_lcb_points": -0.14918356785970088
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o1::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o1",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "d7784ef037a3975d",
+      "select_gain_points": 2.740924968011671,
+      "gate_gain_points": 3.470245801823424,
+      "gate_gain_lcb_points": 1.9330246518065586,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "44816ce0c8310046",
+          "certification_sha256": "646b98f209ebc6848da45dc59afda4ffb7c44a50e7fe2d48c5a355c5fd7468b1",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.009746480870820307,
+          "gate_gain_lcb_points": -0.028481748430597698
+        },
+        "bottleneck": {
+          "candidate_job_id": "7abd9e165d1c3c9d",
+          "certification_sha256": "1119262343c371f9f73bcc66d68f2240758c2a5a1a9918910c79a7393fd1fba0",
+          "select_gain_points": 0.9999716162287897,
+          "gate_gain_points": 0.20189047215898315,
+          "gate_gain_lcb_points": -1.1758335582194246
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "bf6ff3c69c4840fa",
+          "certification_sha256": "0b6486f65a9972a9bf620db6790fc8590cbd52191934a2266da4cd1f8263a5b1",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.21523620599982474,
+          "gate_gain_lcb_points": -0.6209250470437466
+        },
+        "full_tune": {
+          "candidate_job_id": "d7784ef037a3975d",
+          "certification_sha256": "9c677487e7f2ffd1b9a840c6300f9b8a307d9d70371fef2c693d59035e15a8ef",
+          "select_gain_points": 2.740924968011671,
+          "gate_gain_points": 3.470245801823424,
+          "gate_gain_lcb_points": 1.9330246518065586
+        },
+        "lora": {
+          "candidate_job_id": "0bc59bedf34dfaf2",
+          "certification_sha256": "6f340451a340ce8ec37bb2834944a864a464c4a43f66ee30e5158270088438b4",
+          "select_gain_points": 2.1025991714242798,
+          "gate_gain_points": 0.8360164457273722,
+          "gate_gain_lcb_points": -0.6499314375159673
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "d402bfb96238a24a",
+          "certification_sha256": "7802bdbe19a24be47b46d5e5b53c847e173683a08e2647077ec8a70cb2a3a51e",
+          "select_gain_points": 0.2153346239937015,
+          "gate_gain_points": 0.10168679579247719,
+          "gate_gain_lcb_points": -0.4108037931567318
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o1::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o1",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "19a3d62143cd8ac4",
+      "select_gain_points": 1.5534603289570792,
+      "gate_gain_points": 2.3546882348825737,
+      "gate_gain_lcb_points": 0.5932520880784942,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "2e54d80864c843cf",
+          "certification_sha256": "701f8b00e36a3c1f17b6e628cba0dea601c09e1ab446acf57242aac219dea51b",
+          "select_gain_points": 0.014741124305839293,
+          "gate_gain_points": 0.024220026410048945,
+          "gate_gain_lcb_points": -0.24808950694585885
+        },
+        "bottleneck": {
+          "candidate_job_id": "c9aa2ac2d4e48c8f",
+          "certification_sha256": "de1f64004021b29ddf557995e21d3791e6f2549eb128f5cfcae62844d174afb2",
+          "select_gain_points": -0.18032321022362074,
+          "gate_gain_points": 1.2260086964352879,
+          "gate_gain_lcb_points": -0.06216327026783708
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "70b6270c7d8f0ed7",
+          "certification_sha256": "935e328be5671b4cf5b657af37e30db8b217d3bde8b4cec126cdedb78002cef6",
+          "select_gain_points": 0.3727822376245582,
+          "gate_gain_points": 0.4535703578539607,
+          "gate_gain_lcb_points": -0.03958669255026692
+        },
+        "full_tune": {
+          "candidate_job_id": "19a3d62143cd8ac4",
+          "certification_sha256": "525653b279984b7602a9241be84e19b596f4847ee467b6c7f8bb1797c214f59a",
+          "select_gain_points": 1.5534603289570792,
+          "gate_gain_points": 2.3546882348825737,
+          "gate_gain_lcb_points": 0.5932520880784942
+        },
+        "lora": {
+          "candidate_job_id": "c3ce8ea06f4c9664",
+          "certification_sha256": "c66e78d46cb45dd554c57fdca4cfb089aad46ce76926fad132fc7a76c40025cc",
+          "select_gain_points": 1.2412574868740478,
+          "gate_gain_points": 1.0915588140315013,
+          "gate_gain_lcb_points": -0.0645706641182367
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "111aa730e01e7193",
+          "certification_sha256": "2374f14e48f288b63b17f2979b4d538b7026e06883c4019e5e8aeaee584c18fb",
+          "select_gain_points": 0.249204033651107,
+          "gate_gain_points": 0.2180556697127578,
+          "gate_gain_lcb_points": -0.12727989910152615
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o2::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o2",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "68b5d24f958ba40d",
+      "select_gain_points": 3.3673385893815855,
+      "gate_gain_points": 2.3332704192170484,
+      "gate_gain_lcb_points": 1.0808069624314645,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "68f00a42fce6a25e",
+          "certification_sha256": "35b8683e103ab0dc2b4cb8c40ac7d234fadf05e8d2871877ce030fc547e04349",
+          "select_gain_points": -0.04910728118399099,
+          "gate_gain_points": -0.2593418223375332,
+          "gate_gain_lcb_points": -0.5027995019645695
+        },
+        "bottleneck": {
+          "candidate_job_id": "538d4bd01aa54673",
+          "certification_sha256": "182811adfb78f08db1a3bfc3ff24e600503766d69b3dff4d0a6a3d3a96efa046",
+          "select_gain_points": -0.17944250507228032,
+          "gate_gain_points": 0.6840527709243371,
+          "gate_gain_lcb_points": -0.4518187240193816
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "785ff3d9f32f8fed",
+          "certification_sha256": "799ef9ac97dae650cf7c7c3c1c7fe9c711fcecedad928f7c2086e99b4f6236b1",
+          "select_gain_points": 0.1623181686315589,
+          "gate_gain_points": -0.25368362630774355,
+          "gate_gain_lcb_points": -0.4813335368173244
+        },
+        "full_tune": {
+          "candidate_job_id": "68b5d24f958ba40d",
+          "certification_sha256": "3cc9804176678386ee3d157a0aa7d3d2422c270cfe0ddc3839549e2c64324d3a",
+          "select_gain_points": 3.3673385893815855,
+          "gate_gain_points": 2.3332704192170484,
+          "gate_gain_lcb_points": 1.0808069624314645
+        },
+        "lora": {
+          "candidate_job_id": "cdb2ff24049e1ee7",
+          "certification_sha256": "f9b2b9b0eae758b387062065a799483c90cb398ce5aba6f30832feab31a9a490",
+          "select_gain_points": 2.085616937486945,
+          "gate_gain_points": 1.5844526137123949,
+          "gate_gain_lcb_points": -1.22810527574453
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "99f7d37b2d6e68b4",
+          "certification_sha256": "38277f3d61c6683cf2d5b81a69297eca6fa4594e7697dcf4ac0a928a95e41d5d",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o2::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o2",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "1f2d5e8a7d46b7e4",
+      "select_gain_points": 5.04529269634304,
+      "gate_gain_points": 0.7407635653541411,
+      "gate_gain_lcb_points": -1.7894990438189942,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "0a9cc557f8fec77b",
+          "certification_sha256": "52a6af13551261bcef714cb9c19c6f2b1471c5f4aee0f3bdad66da59c3b2d684",
+          "select_gain_points": -0.14580452920154308,
+          "gate_gain_points": -0.11173178076232526,
+          "gate_gain_lcb_points": -0.5059465860722784
+        },
+        "bottleneck": {
+          "candidate_job_id": "a89e7e893bddd3e2",
+          "certification_sha256": "43a9fbece90c9af58d8107911a57625302a401156430c32b0f6bbd95db2ae9dc",
+          "select_gain_points": -0.20434339037473936,
+          "gate_gain_points": 0.9462189199895055,
+          "gate_gain_lcb_points": 0.38144380811409306
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "6817db4e812d217c",
+          "certification_sha256": "c57fec74dff0974c7c9f0c0479028468311de2a21cd8e3a9176e8d795c6fdf2a",
+          "select_gain_points": 0.1727619396125868,
+          "gate_gain_points": 0.5496001407145013,
+          "gate_gain_lcb_points": 0.08918009244630598
+        },
+        "full_tune": {
+          "candidate_job_id": "1f2d5e8a7d46b7e4",
+          "certification_sha256": "d71b04a11330a3f2d0a969f81caff367ac8e0c02beb2cd7e2020023157045461",
+          "select_gain_points": 5.04529269634304,
+          "gate_gain_points": 0.7407635653541411,
+          "gate_gain_lcb_points": -1.7894990438189942
+        },
+        "lora": {
+          "candidate_job_id": "53d7ba110004b554",
+          "certification_sha256": "c3e86db585f3c079b42b506f236fcec5504e2a57a598add024348de72986ac32",
+          "select_gain_points": 2.7309703958263487,
+          "gate_gain_points": 2.6013509953385805,
+          "gate_gain_lcb_points": 1.3460119970213638
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "79621ce3854e9b9b",
+          "certification_sha256": "a0365bcc1b5ec26835daace132cb795646734be3c8f11c503d6a1d9ba501398a",
+          "select_gain_points": 0.036869661869665116,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o2::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o2",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "4bbf7716a9c58930",
+      "select_gain_points": 1.3711112127694935,
+      "gate_gain_points": 1.8749321688057319,
+      "gate_gain_lcb_points": 0.03151917723514386,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "dae7e7bb30c6e586",
+          "certification_sha256": "28c2f98343c3b56de49f1ca6a6ef25b1b8a051082d6941beed181eda4521d514",
+          "select_gain_points": -0.608326558789396,
+          "gate_gain_points": 0.532388922932725,
+          "gate_gain_lcb_points": 0.0330170958413048
+        },
+        "bottleneck": {
+          "candidate_job_id": "bd791c376133cc11",
+          "certification_sha256": "916acc225d2d63c4d5428815f490e65ac8bf25efe40ee322f6dd9e300772072c",
+          "select_gain_points": -0.4252365722089424,
+          "gate_gain_points": 1.0773473023778402,
+          "gate_gain_lcb_points": -0.6302736959657523
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "2003508f662e1b0a",
+          "certification_sha256": "6c987251d20303cb98d5579bcbc07eff8b006cb7425c8207d1f8529b83a2a348",
+          "select_gain_points": -0.16588393120592348,
+          "gate_gain_points": 0.8166667414587381,
+          "gate_gain_lcb_points": -0.05083740282319643
+        },
+        "full_tune": {
+          "candidate_job_id": "4bbf7716a9c58930",
+          "certification_sha256": "d5ef9b2ea0c13ec2e1e07ff5a7c651270cee191d0dc2d341bb864fd258219c71",
+          "select_gain_points": 1.3711112127694935,
+          "gate_gain_points": 1.8749321688057319,
+          "gate_gain_lcb_points": 0.03151917723514386
+        },
+        "lora": {
+          "candidate_job_id": "fadbf9276422f602",
+          "certification_sha256": "ed99b58142fb102db56f31574861520960108068c9c5f70c363afe6c10084654",
+          "select_gain_points": 0.13540119946466866,
+          "gate_gain_points": 1.5911333175221087,
+          "gate_gain_lcb_points": -0.04930827768542395
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "326c2d07d76d6aab",
+          "certification_sha256": "9c2c16fe4e8fcf74c624c8420add70984cba5f2256a3dd380ec3263b20f9f823",
+          "select_gain_points": -0.11671215880892927,
+          "gate_gain_points": -0.018721942344879228,
+          "gate_gain_lcb_points": -0.16317774131187485
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o3::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o3",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "db6eaecb4f415825",
+      "select_gain_points": 2.735443739282928,
+      "gate_gain_points": 1.6047380714139137,
+      "gate_gain_lcb_points": 2.3475978313694092,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "066fec463818bfb2",
+          "certification_sha256": "02e7e04ec419ac1e4f021e459d53fe084ce7980696d2a08bb7d4785ebef79119",
+          "select_gain_points": -0.37888497584401826,
+          "gate_gain_points": 0.1279822509386186,
+          "gate_gain_lcb_points": -0.38222258961257416
+        },
+        "bottleneck": {
+          "candidate_job_id": "9911616b21fb5d9f",
+          "certification_sha256": "34767bdf1aaba532325cc8d89e6f88370e8434027614ad837f1a8233de625e8e",
+          "select_gain_points": 0.05169586488872335,
+          "gate_gain_points": 0.9526385306225293,
+          "gate_gain_lcb_points": 1.2120666058800744
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "e93f049a01138854",
+          "certification_sha256": "ebc7a99316b9721d5b6439dd400a3de5ce3da580b4568b092ef1ebeb5001e946",
+          "select_gain_points": 0.10035450504234378,
+          "gate_gain_points": 0.04391684773628057,
+          "gate_gain_lcb_points": -0.6781719530042183
+        },
+        "full_tune": {
+          "candidate_job_id": "db6eaecb4f415825",
+          "certification_sha256": "cc8cc7ef0d5aaed9ad4906590d84b07b1edac2e388cc26d760109e3470542e52",
+          "select_gain_points": 2.735443739282928,
+          "gate_gain_points": 1.6047380714139137,
+          "gate_gain_lcb_points": 2.3475978313694092
+        },
+        "lora": {
+          "candidate_job_id": "5aeaa6f274bfc87c",
+          "certification_sha256": "3e1520781282fa3514923f1c4617ad22d565ec7fab05e4b71df1845c4efcae30",
+          "select_gain_points": 0.18446385893525763,
+          "gate_gain_points": 1.2782020413401263,
+          "gate_gain_lcb_points": 0.25809016372480703
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "eec969eb08a0ddab",
+          "certification_sha256": "53e6af5f41b4dec325dd290ab1050b6562f08ab182afef8b3ab631b74d490246",
+          "select_gain_points": -0.002266999508693246,
+          "gate_gain_points": -0.021299997154478056,
+          "gate_gain_lcb_points": -0.522605919981596
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o3::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o3",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "6265a96830325465",
+      "select_gain_points": 2.1441686750146904,
+      "gate_gain_points": 2.231469250208984,
+      "gate_gain_lcb_points": 2.3757743079482823,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "277009c312a6f52c",
+          "certification_sha256": "c4d3f6f12618f89e0cc29347c7fcdbb455a79ae1855561a34b019a82d4df1e79",
+          "select_gain_points": -0.07022511344030313,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        },
+        "bottleneck": {
+          "candidate_job_id": "a5b71e5362528c68",
+          "certification_sha256": "9b56a56d2b718463856304c9af2458ea2b79fb0a17649e8c0b8b98f64a59d114",
+          "select_gain_points": 0.4141349091894564,
+          "gate_gain_points": 0.6754480955306286,
+          "gate_gain_lcb_points": -0.5447068074464961
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "1e70f31a47110074",
+          "certification_sha256": "362a83219ba931b5e7c6d5658083e7076c79b4cedf90e77c88def1263c9af9de",
+          "select_gain_points": -0.18726374873120344,
+          "gate_gain_points": 0.015039990908527479,
+          "gate_gain_lcb_points": -0.10512729112526625
+        },
+        "full_tune": {
+          "candidate_job_id": "6265a96830325465",
+          "certification_sha256": "a0737af37797dae7933c5f599db49a600c2b79e758da7f2b4aa7561ba1c1a2a7",
+          "select_gain_points": 2.1441686750146904,
+          "gate_gain_points": 2.231469250208984,
+          "gate_gain_lcb_points": 2.3757743079482823
+        },
+        "lora": {
+          "candidate_job_id": "93a44fa604794682",
+          "certification_sha256": "d1701621556a066248bfa5082ac3c22798b928ff42806bdd29a4be53bd22e07d",
+          "select_gain_points": 0.8833383402993333,
+          "gate_gain_points": 1.139916510667982,
+          "gate_gain_lcb_points": 0.6944620131958179
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "b5f157e415e15719",
+          "certification_sha256": "38ec461b07573c71352ae34b9635efd1ba1bfe436a7d5d1fa1bfd48d17fad7b2",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.09753214885076522,
+          "gate_gain_lcb_points": -0.3298447525463294
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o3::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o3",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "517f922d6e8afb58",
+      "select_gain_points": 2.4070846122577594,
+      "gate_gain_points": 2.393313825423238,
+      "gate_gain_lcb_points": 0.9896032172193174,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "df76a0cd28c762fc",
+          "certification_sha256": "c92e33eb13dea81bd40a0c73a5627cb1c38eedf20f69048aec50b3a7dfe6bbae",
+          "select_gain_points": -0.07438918404838457,
+          "gate_gain_points": 0.10193463960174176,
+          "gate_gain_lcb_points": -0.4712603451098418
+        },
+        "bottleneck": {
+          "candidate_job_id": "79a013d4dd88396a",
+          "certification_sha256": "84ca83e1e3938f750179696766e5959ea0a9e31eb6d620fc53f24ce28ae34d8b",
+          "select_gain_points": 0.4327610714451757,
+          "gate_gain_points": 0.8369354856181288,
+          "gate_gain_lcb_points": 0.10389342453283046
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "99f2de256c226293",
+          "certification_sha256": "88784f3e68b2b9c0b60b4d9c8ae7e7c206417830d4b9c3d25bd9e0368838ecd7",
+          "select_gain_points": 0.5394763811381487,
+          "gate_gain_points": 0.7945019021789679,
+          "gate_gain_lcb_points": 0.14651137374202677
+        },
+        "full_tune": {
+          "candidate_job_id": "517f922d6e8afb58",
+          "certification_sha256": "326402eb52c8ec08319c5abe951c97208799df5e81704e7f38451fb705907b52",
+          "select_gain_points": 2.4070846122577594,
+          "gate_gain_points": 2.393313825423238,
+          "gate_gain_lcb_points": 0.9896032172193174
+        },
+        "lora": {
+          "candidate_job_id": "62008191afbda04f",
+          "certification_sha256": "37e645814085c80403928176589c2a1e6962e0a42f98433e0338dd1bebd9507c",
+          "select_gain_points": 0.9059569645167187,
+          "gate_gain_points": 0.7944342356971279,
+          "gate_gain_lcb_points": -0.12130938237514544
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "4b643ae5dc704832",
+          "certification_sha256": "180af4ead84760c2bb8cb29e93cdb930c0cb662f1bc4c416abdcba8679b9abe9",
+          "select_gain_points": 0.12447022781066908,
+          "gate_gain_points": -0.05286653354696913,
+          "gate_gain_lcb_points": -0.13282239102911653
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o4::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o4",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "b029692b8425ae77",
+      "select_gain_points": 3.30455953665284,
+      "gate_gain_points": 1.1186189280660952,
+      "gate_gain_lcb_points": -0.7191281686252382,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "397e80638b615c62",
+          "certification_sha256": "b18a9127a47b6c1a00a4cb1f6b284f58bb8d138a1012bafe14cb438130b3df1b",
+          "select_gain_points": 0.022900904653910814,
+          "gate_gain_points": -0.40856075782468304,
+          "gate_gain_lcb_points": -1.3139388633746099
+        },
+        "bottleneck": {
+          "candidate_job_id": "b69e16050b9cae23",
+          "certification_sha256": "2b38152505af83542c407ecadffe21ee47ccb151bc7a257cde2ffaae7ea10eb6",
+          "select_gain_points": 0.6332908453972275,
+          "gate_gain_points": -1.0365738834767435,
+          "gate_gain_lcb_points": -2.8008037337038285
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "9dc5e446ca06e7fa",
+          "certification_sha256": "9b257b87f41b22867b10b2f977c4052af4faf3d44cd83aa135805fe149cadfa5",
+          "select_gain_points": 0.3258648557711519,
+          "gate_gain_points": -0.7189598208210302,
+          "gate_gain_lcb_points": -1.77176713284527
+        },
+        "full_tune": {
+          "candidate_job_id": "b029692b8425ae77",
+          "certification_sha256": "bb8879cffd7298b8c3568df13ec2bcfb98fc745963c95c62e5e8ab2c069f3bc5",
+          "select_gain_points": 3.30455953665284,
+          "gate_gain_points": 1.1186189280660952,
+          "gate_gain_lcb_points": -0.7191281686252382
+        },
+        "lora": {
+          "candidate_job_id": "264bc9dd0a23dd64",
+          "certification_sha256": "4cba2b90fe426c415aeb30d5eaed9859fbdf7782081a94bcd2d76b79257234cc",
+          "select_gain_points": 1.3656902968570472,
+          "gate_gain_points": -0.33646245117565643,
+          "gate_gain_lcb_points": -1.64511111694466
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "21029c60e8c543fd",
+          "certification_sha256": "24d523318d29e38031ea3e5b8ca3b16925e433b24c6d011d108c58974911c265",
+          "select_gain_points": 0.003539842296729212,
+          "gate_gain_points": -0.3264851139998637,
+          "gate_gain_lcb_points": -0.8477820626707322
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o4::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o4",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "beee2d027729383b",
+      "select_gain_points": 2.74018748942807,
+      "gate_gain_points": 3.7074812882398334,
+      "gate_gain_lcb_points": 1.500870051617213,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "c1cb8016597d35d2",
+          "certification_sha256": "a42be9085be116a43042c98abc91f2e402ce93981e9d8fd4d3af650dad839117",
+          "select_gain_points": 0.18788158496322316,
+          "gate_gain_points": 0.2886605457056657,
+          "gate_gain_lcb_points": -0.3820181326376307
+        },
+        "bottleneck": {
+          "candidate_job_id": "cc83ccd8e2cfc70c",
+          "certification_sha256": "b1638accd060abd979248032c0994036ca3c9d1ccc60064bd12ff9f630878cef",
+          "select_gain_points": 0.5616301246209376,
+          "gate_gain_points": 0.668153354862222,
+          "gate_gain_lcb_points": -0.44528590261829065
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "bb332a5c146b9429",
+          "certification_sha256": "33a585b65bc8232c9773a4f21f9c310aa3368b48813517d38ce30169c67e95ac",
+          "select_gain_points": 0.00737508637962403,
+          "gate_gain_points": 0.6045229405729047,
+          "gate_gain_lcb_points": 0.007391792858728319
+        },
+        "full_tune": {
+          "candidate_job_id": "beee2d027729383b",
+          "certification_sha256": "6be337a9d2ea3e84dff5a7dbcb18b787272550a3771c10bac31497bdd4e4766d",
+          "select_gain_points": 2.74018748942807,
+          "gate_gain_points": 3.7074812882398334,
+          "gate_gain_lcb_points": 1.500870051617213
+        },
+        "lora": {
+          "candidate_job_id": "028bbc376cb52766",
+          "certification_sha256": "6803aec5ecb793fadb5bd4ca8ae2391a5c35bfb62e64f784855e58ec14f8e74e",
+          "select_gain_points": 1.2004353686577707,
+          "gate_gain_points": 0.6137761625159555,
+          "gate_gain_lcb_points": -0.39537853486273783
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "2936b082284dad5b",
+          "certification_sha256": "4019f65c0ebeaf32fd31b1b18cb0044e2737fa31c6774996fb87851a614f0364",
+          "select_gain_points": 0.14285478206920166,
+          "gate_gain_points": 0.14795292663615234,
+          "gate_gain_lcb_points": -0.170408968312237
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o4::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o4",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "f0034265183bdbd2",
+      "select_gain_points": 2.5492665672662396,
+      "gate_gain_points": 2.828715313143493,
+      "gate_gain_lcb_points": 0.5889833042450512,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "4284b26536a5b8a4",
+          "certification_sha256": "e157cac34d5ac7ea9880270e51e3a4ed4d63793873c629a2e3877511455da492",
+          "select_gain_points": 0.005332612270980697,
+          "gate_gain_points": 0.0375450400597499,
+          "gate_gain_lcb_points": -0.12240210769622617
+        },
+        "bottleneck": {
+          "candidate_job_id": "a6011cac692374e5",
+          "certification_sha256": "ca74dbe826efb05fd739b21ec75154b6983fe28ec04a1952600414fb9e7674bc",
+          "select_gain_points": -0.39637178412457175,
+          "gate_gain_points": 0.3353655367357544,
+          "gate_gain_lcb_points": -0.5164245832392098
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "b6f03cca85c3ac0d",
+          "certification_sha256": "46d182e080cb95f3f527dbb0b093a3da524c61e0bfe5525b0f01dcc1a971a1ec",
+          "select_gain_points": -0.3544940307240063,
+          "gate_gain_points": 0.5025430690618116,
+          "gate_gain_lcb_points": -0.24468671074253934
+        },
+        "full_tune": {
+          "candidate_job_id": "f0034265183bdbd2",
+          "certification_sha256": "90e4e7772757ff47824832a0b4c9d443d8f2e46ca11977f7f7f9062750adf51a",
+          "select_gain_points": 2.5492665672662396,
+          "gate_gain_points": 2.828715313143493,
+          "gate_gain_lcb_points": 0.5889833042450512
+        },
+        "lora": {
+          "candidate_job_id": "989431be29087124",
+          "certification_sha256": "39fe1dff109aa8250b0c15a83c40fa13cec5e2add2e5fa37ce2a85a70eeb2060",
+          "select_gain_points": -0.37453462684631234,
+          "gate_gain_points": 1.0687836317809007,
+          "gate_gain_lcb_points": -0.20877588738237446
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "ec6ae253b82323d6",
+          "certification_sha256": "63ead491979a446ea6e284a8b905c44348fab48902c26e3966d6f49e68065fdf",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o5::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o5",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "7477a365c6066784",
+      "select_gain_points": 3.668193896751615,
+      "gate_gain_points": 2.3823607273700254,
+      "gate_gain_lcb_points": 1.4959380415111272,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "231010f2b6e3bbdb",
+          "certification_sha256": "15545ada7f4826f14fcbe2ed7051c74a12998634891e05f94c82881e3a26203a",
+          "select_gain_points": 0.1628080289369338,
+          "gate_gain_points": 0.34152699837282086,
+          "gate_gain_lcb_points": -0.11318051829222187
+        },
+        "bottleneck": {
+          "candidate_job_id": "b9d2a4a0fffb2ca5",
+          "certification_sha256": "34a2d072d6de8b81b472300738143e79fd30bc96f59c6897518d0f1a2edf4d0f",
+          "select_gain_points": -0.07846006583428489,
+          "gate_gain_points": -0.07996495600143261,
+          "gate_gain_lcb_points": -1.5905397473658391
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "44c50c89d8e048e7",
+          "certification_sha256": "cf66dfb1601f4039178a43e3583a3f8c111ecf397b4a90f460633b170d557967",
+          "select_gain_points": 0.2937070935927433,
+          "gate_gain_points": -0.02664315076956747,
+          "gate_gain_lcb_points": -1.128929720547188
+        },
+        "full_tune": {
+          "candidate_job_id": "7477a365c6066784",
+          "certification_sha256": "30d81594a12c175a2f5836612b1af1144e4be8944609dc82ff2407df222b8f17",
+          "select_gain_points": 3.668193896751615,
+          "gate_gain_points": 2.3823607273700254,
+          "gate_gain_lcb_points": 1.4959380415111272
+        },
+        "lora": {
+          "candidate_job_id": "8dd751c36c991f55",
+          "certification_sha256": "27deb6d3ce2721bd1348649aab87d8334a986f05dcd7b65a8279e5958729eefe",
+          "select_gain_points": 0.09043530897893115,
+          "gate_gain_points": 1.1066247038222121,
+          "gate_gain_lcb_points": -0.2482826689529316
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "073983c02da13cf4",
+          "certification_sha256": "45a785ed9619d911e1af9c69fe88d900acfb955c4a75a27ecbd2cbebb4eea7c7",
+          "select_gain_points": -0.06774618293069468,
+          "gate_gain_points": 0.03270038498774941,
+          "gate_gain_lcb_points": -0.12858085687530024
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o5::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o5",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "52ac1085e4931f5d",
+      "select_gain_points": 2.8477257336909756,
+      "gate_gain_points": 3.935078022336047,
+      "gate_gain_lcb_points": 2.4172025432659643,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "904a5fc8f3081058",
+          "certification_sha256": "3c9596708abfa65d38cc561d71130717534de0f6cefbe4484cfbbd65af0e31d6",
+          "select_gain_points": 0.35863141381168306,
+          "gate_gain_points": 0.3424955133964902,
+          "gate_gain_lcb_points": -0.28761104274542676
+        },
+        "bottleneck": {
+          "candidate_job_id": "9e01cdfe12b68ab0",
+          "certification_sha256": "463f6b6d741f9026f1f7b8177adf1397f8290defc4f3154ac121a14cde5b6c2a",
+          "select_gain_points": 1.123756849502744,
+          "gate_gain_points": 0.6069685088978427,
+          "gate_gain_lcb_points": -0.05059947112789065
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "0e0518cc64b2fabb",
+          "certification_sha256": "6b9619b177cd9e31d6f007974447f70437deef60a842fe27f0b5f8cdbccbccad",
+          "select_gain_points": 0.8856442640124085,
+          "gate_gain_points": 0.4171862908049717,
+          "gate_gain_lcb_points": -0.1699242050322361
+        },
+        "full_tune": {
+          "candidate_job_id": "52ac1085e4931f5d",
+          "certification_sha256": "4cedc34a3b1f493b61a2004100cdb8e454c87981318f9f639b3377c92088b9a3",
+          "select_gain_points": 2.8477257336909756,
+          "gate_gain_points": 3.935078022336047,
+          "gate_gain_lcb_points": 2.4172025432659643
+        },
+        "lora": {
+          "candidate_job_id": "66e6c7102df67162",
+          "certification_sha256": "c421b07996cd68173a8f7bc93950a7fd5a1665df5ff8fdb9a607bbc7c3d5730d",
+          "select_gain_points": 0.6608143128670307,
+          "gate_gain_points": 1.8916267379031626,
+          "gate_gain_lcb_points": 0.27228402146915326
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "ce8e717fc81c357e",
+          "certification_sha256": "2ad0540e9d22bbb857ce7c2c31e135c195092fb59a96df85c425765860d24f6b",
+          "select_gain_points": 0.08157149202733249,
+          "gate_gain_points": 0.018375352193944483,
+          "gate_gain_lcb_points": -0.5219773758135676
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o5::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o5",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "5b96f90f13b2a71f",
+      "select_gain_points": 4.2031911410762905,
+      "gate_gain_points": 3.366861398764176,
+      "gate_gain_lcb_points": 2.222994406677635,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "68bf93983b64f0bf",
+          "certification_sha256": "d94786bc9a6c7f702d2192c758baadf74afbd9e4cae7dd22ea54d13c7a493d4b",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.1013006539902106,
+          "gate_gain_lcb_points": -0.2632401923875968
+        },
+        "bottleneck": {
+          "candidate_job_id": "1bc42a3b15df5e96",
+          "certification_sha256": "e50be5bd4ab7d16b4d1a6a848303c6d22db534773416c2d25e628e5bf8f02561",
+          "select_gain_points": 1.3760942318945646,
+          "gate_gain_points": -0.8703177065138901,
+          "gate_gain_lcb_points": -2.0265702993008947
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "add49823ba553e10",
+          "certification_sha256": "ff225fb61c7e94b9d0da5c26139a3516dcae7e12ae3fc38e10b19bc056ae9994",
+          "select_gain_points": 0.18778260300971183,
+          "gate_gain_points": -0.1268151919107785,
+          "gate_gain_lcb_points": -0.41009450049303287
+        },
+        "full_tune": {
+          "candidate_job_id": "5b96f90f13b2a71f",
+          "certification_sha256": "0463a185d6565c75876d8b6fc3aceb10e75e7953a834684839ccece0561d9802",
+          "select_gain_points": 4.2031911410762905,
+          "gate_gain_points": 3.366861398764176,
+          "gate_gain_lcb_points": 2.222994406677635
+        },
+        "lora": {
+          "candidate_job_id": "487ed6c082c08dbc",
+          "certification_sha256": "b7b1eac5a81251361045e9871873ae5761235020503b2e5ef7d6cbc816cff6cc",
+          "select_gain_points": 2.65594883231679,
+          "gate_gain_points": 1.3603782992034907,
+          "gate_gain_lcb_points": 0.1275872993605029
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "f0e64944c3703866",
+          "certification_sha256": "46d081a0a2a9f0a874ce45cf6856470e6de801a8415bcdbe339b1aded7458cf2",
+          "select_gain_points": 0.1297593364438243,
+          "gate_gain_points": 0.12933032209246909,
+          "gate_gain_lcb_points": -0.11267682485240071
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o6::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o6",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "27796049862ab142",
+      "select_gain_points": 3.566205122105859,
+      "gate_gain_points": 0.22444988682479572,
+      "gate_gain_lcb_points": -1.6846011781450594,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "af6b9021a8a6774e",
+          "certification_sha256": "a8115697bbc7544db7d12cae1f324906861e8ca9198325592375866bb998e84b",
+          "select_gain_points": -0.2540238007816442,
+          "gate_gain_points": -0.07271877544444694,
+          "gate_gain_lcb_points": -0.6140499537274524
+        },
+        "bottleneck": {
+          "candidate_job_id": "7a05a85750e1b454",
+          "certification_sha256": "ee2a6edf88f975a99bac67d372996d96d2b995f1b6ee79416ea3ed40c69c84bc",
+          "select_gain_points": 0.19626110294788113,
+          "gate_gain_points": 0.21916529969445708,
+          "gate_gain_lcb_points": -0.5640640600923952
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "b3010c92fcae8100",
+          "certification_sha256": "2d12470bbeb684f272cb1fbab1c3fbdfd57115e341c62c5bdea94871197dc092",
+          "select_gain_points": -0.11186011707888799,
+          "gate_gain_points": -0.08329732331557871,
+          "gate_gain_lcb_points": -0.7789688655584548
+        },
+        "full_tune": {
+          "candidate_job_id": "27796049862ab142",
+          "certification_sha256": "c2d100590854211defa232989878700145e98288a317a6ce4d839a0183b4cfe2",
+          "select_gain_points": 3.566205122105859,
+          "gate_gain_points": 0.22444988682479572,
+          "gate_gain_lcb_points": -1.6846011781450594
+        },
+        "lora": {
+          "candidate_job_id": "89915a1e8b6766ec",
+          "certification_sha256": "c50c1adf23768ecf3adde65b3dd2e925a2fdd00ce254b842f482680265e0e0a5",
+          "select_gain_points": 0.574325453160085,
+          "gate_gain_points": 0.5914847916412835,
+          "gate_gain_lcb_points": -0.43565207761697144
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "8b4deb183e8a712a",
+          "certification_sha256": "62b9ba699282f8e82da1b4b970ec65df39788f50b39f194bc5b34e222399e973",
+          "select_gain_points": -0.024261664424685137,
+          "gate_gain_points": 0.2152740986992252,
+          "gate_gain_lcb_points": -0.07840309086128983
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o6::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o6",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "719c23fc49d0bfa5",
+      "select_gain_points": 0.7721667589521308,
+      "gate_gain_points": 2.356435799140666,
+      "gate_gain_lcb_points": 0.43852893396627984,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "9ea9316178ce132f",
+          "certification_sha256": "b2f68b5888033c5748dfdeb833b0746f605cc0af7b3fb7f38a83750c3766293d",
+          "select_gain_points": -0.15811846043973787,
+          "gate_gain_points": -0.3020506208429419,
+          "gate_gain_lcb_points": -0.6004861347500862
+        },
+        "bottleneck": {
+          "candidate_job_id": "c021a5b95fa00616",
+          "certification_sha256": "895a0cd7ec6a3333b17459e5fa0a9657e3999920f7e73d7309646bf09c2155df",
+          "select_gain_points": -0.24386970166206945,
+          "gate_gain_points": -0.29033297097941224,
+          "gate_gain_lcb_points": -0.6409964379741673
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "44963740b7b787c7",
+          "certification_sha256": "4fe11564a7a398e390675cb988c229ad29a0ded02e20ec264915de9af39c606f",
+          "select_gain_points": -0.5172856499833567,
+          "gate_gain_points": -0.18969929485617154,
+          "gate_gain_lcb_points": -0.5277380869891546
+        },
+        "full_tune": {
+          "candidate_job_id": "719c23fc49d0bfa5",
+          "certification_sha256": "c39a7476908dc775e17cf129ea96aa6d50a8f4949b9817e21e341f7f4e47c7f7",
+          "select_gain_points": 0.7721667589521308,
+          "gate_gain_points": 2.356435799140666,
+          "gate_gain_lcb_points": 0.43852893396627984
+        },
+        "lora": {
+          "candidate_job_id": "a60ff3c95b9cabbd",
+          "certification_sha256": "d3b0a3c4e9921ef01dae06e9a9abc91f6c880ea6d81e16531341a34a80b73369",
+          "select_gain_points": 0.13320640937873884,
+          "gate_gain_points": 1.1339527797023963,
+          "gate_gain_lcb_points": 0.0870720997213692
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "4ba4afded309887e",
+          "certification_sha256": "b851bfcfcbc400f7670e083cdba97cc25279733e27fd91aba215ee1e473ecf03",
+          "select_gain_points": 0.0737376238732046,
+          "gate_gain_points": -0.36061178384828585,
+          "gate_gain_lcb_points": -0.6938836619115263
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o6::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o6",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "f25f9b3966e301ac",
+      "select_gain_points": 2.142579108084419,
+      "gate_gain_points": 1.9087723852967642,
+      "gate_gain_lcb_points": 0.5756340085010623,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "1f11b75575ef6d63",
+          "certification_sha256": "86eeebecad2e126d9ec7f0388e50a5e465a7fa4b817bc18c1945325f583db69c",
+          "select_gain_points": -0.21680100797210056,
+          "gate_gain_points": 0.2927452572290212,
+          "gate_gain_lcb_points": -0.11864221423407151
+        },
+        "bottleneck": {
+          "candidate_job_id": "edffa2637a109eee",
+          "certification_sha256": "80bd7dceb840a987b265ae3c5e6cb2e6ec1b1c3bb242b49ede0728cc944cf3d2",
+          "select_gain_points": -0.6240697527479466,
+          "gate_gain_points": 0.470802677973714,
+          "gate_gain_lcb_points": -0.26325704246618065
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "e2c31d92f4816c93",
+          "certification_sha256": "f0f8b8538edf3c6d75630ef6ff15667a5d3125c95168743a01cff04c90ca74de",
+          "select_gain_points": -0.8558316138924216,
+          "gate_gain_points": 0.33836855411213396,
+          "gate_gain_lcb_points": -0.5156820178137705
+        },
+        "full_tune": {
+          "candidate_job_id": "f25f9b3966e301ac",
+          "certification_sha256": "377d1ce1643989a0397f8a09a57bfc1932c1c38be8a361169bb9be945d063645",
+          "select_gain_points": 2.142579108084419,
+          "gate_gain_points": 1.9087723852967642,
+          "gate_gain_lcb_points": 0.5756340085010623
+        },
+        "lora": {
+          "candidate_job_id": "bb8d3bc6afd56e73",
+          "certification_sha256": "2fb2916d99a188fbdf58b853e622561c83c72095059e4c03b703eae708b3ed55",
+          "select_gain_points": -0.08221754049897445,
+          "gate_gain_points": 1.214831543021,
+          "gate_gain_lcb_points": 0.28886266085140777
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "d82cc08a7d28c912",
+          "certification_sha256": "8382fffaf4418c5801627668408438a10315b35590bc2aba7bd6b3d98206eaeb",
+          "select_gain_points": -0.16024280755781994,
+          "gate_gain_points": -0.14972726242945544,
+          "gate_gain_lcb_points": -0.5861573044399576
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o7::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o7",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "d622c9133335ba7f",
+      "select_gain_points": 2.709356159159426,
+      "gate_gain_points": 1.3587410592546423,
+      "gate_gain_lcb_points": -0.8351825598241019,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "d10d5eb1509a2cbf",
+          "certification_sha256": "c18b7765f453840aa500c8c669c90364399d18c1287cbef10ca6676f69003134",
+          "select_gain_points": 0.1949179868869666,
+          "gate_gain_points": 0.09041988022352454,
+          "gate_gain_lcb_points": -0.3561863968126841
+        },
+        "bottleneck": {
+          "candidate_job_id": "9808df4a19db316c",
+          "certification_sha256": "52c2bd50d3aea9a773f01c177a6ddf11d357133756067cc1a31538e8ebeb1ff7",
+          "select_gain_points": 0.6086012536462793,
+          "gate_gain_points": 0.8275819265296858,
+          "gate_gain_lcb_points": 0.0829446089617436
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "071f6ac4b32f131e",
+          "certification_sha256": "4a7c76da6ba08ff08ffb4163a2c4959f98080778ff037630d2ec07e2b82c02ff",
+          "select_gain_points": 0.5024316281627139,
+          "gate_gain_points": 0.5953898099943067,
+          "gate_gain_lcb_points": -0.19531462068099054
+        },
+        "full_tune": {
+          "candidate_job_id": "d622c9133335ba7f",
+          "certification_sha256": "e773fd0274db7cd5a0227a65cb836b524ebf37534c27f4a62c3d211c82104f49",
+          "select_gain_points": 2.709356159159426,
+          "gate_gain_points": 1.3587410592546423,
+          "gate_gain_lcb_points": -0.8351825598241019
+        },
+        "lora": {
+          "candidate_job_id": "957ac32843e12af5",
+          "certification_sha256": "392cdffc13e05d67c505a3737b02fa944fda6e6372ca780a8fa11b0b48bd03c8",
+          "select_gain_points": 0.005080477597030342,
+          "gate_gain_points": 1.2975331236945942,
+          "gate_gain_lcb_points": 0.3254394321188542
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "e5ee268f0e1ca23d",
+          "certification_sha256": "2b5f0a42f8372ffa9e01b69c79ca50b9d4adaa51b41d8d2df70d0952f4fc2147",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o7::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o7",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "0b70c22b8a6c2b54",
+      "select_gain_points": 4.004635071686047,
+      "gate_gain_points": 3.0888833355634193,
+      "gate_gain_lcb_points": 2.029967700345195,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "517d8c2552930bd8",
+          "certification_sha256": "c8196c2b07a59d148c2171f80bf9d8278f4caf46080f39cedace01d554f61318",
+          "select_gain_points": -0.07573682739232535,
+          "gate_gain_points": 0.05552397294402711,
+          "gate_gain_lcb_points": -0.12367210477571555
+        },
+        "bottleneck": {
+          "candidate_job_id": "1283a8f3d8d229e8",
+          "certification_sha256": "fb0bc0b1523115500a733a95edf91f5891461ef425b78b9e048baf1492cd1a8b",
+          "select_gain_points": 0.13117699665420313,
+          "gate_gain_points": 0.6487921978161171,
+          "gate_gain_lcb_points": 0.0881033834582795
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "b97a96d340d182bb",
+          "certification_sha256": "72c045cf480029cc5bc5872c34541189c23c7b7ed8594d367f35523b46eacc66",
+          "select_gain_points": -0.07573682739232535,
+          "gate_gain_points": 0.21313483242655362,
+          "gate_gain_lcb_points": 0.003713852263688422
+        },
+        "full_tune": {
+          "candidate_job_id": "0b70c22b8a6c2b54",
+          "certification_sha256": "bf5264b91817343d98e5f10798313085bed16f371dfcb7bc887cec57a7d6727c",
+          "select_gain_points": 4.004635071686047,
+          "gate_gain_points": 3.0888833355634193,
+          "gate_gain_lcb_points": 2.029967700345195
+        },
+        "lora": {
+          "candidate_job_id": "9816b5a7e5514235",
+          "certification_sha256": "6cf3964651f9892b86a7be5bc292a233fb7ede016f06855d22aca59b608ea581",
+          "select_gain_points": 0.4528136406306116,
+          "gate_gain_points": 1.6755421490404987,
+          "gate_gain_lcb_points": 0.38262462285596066
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "d4e39b2305c6f3b4",
+          "certification_sha256": "d5b01a9c3017870781951a29ac80e82f671787a5adc5c9042ed9bfff6d3e5dd3",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.024223516882726503,
+          "gate_gain_lcb_points": -0.08053221288515378
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o7::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o7",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "562ca139ee8b7a9e",
+      "select_gain_points": 3.5798494427129346,
+      "gate_gain_points": 2.4203665172883193,
+      "gate_gain_lcb_points": 1.209654983492213,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "9d6452b5e2f6f259",
+          "certification_sha256": "e93c5a3358309272ed06ea9221ec25e9f2b1b4d638312663fc0aa8bec22f043c",
+          "select_gain_points": -0.5705448511183153,
+          "gate_gain_points": 0.3029784059564222,
+          "gate_gain_lcb_points": -0.1800177373472961
+        },
+        "bottleneck": {
+          "candidate_job_id": "4cee485723ed62a7",
+          "certification_sha256": "103c90db2852055c14e3b62ccd635d666051d735dccef1433bc2891aae49b51e",
+          "select_gain_points": -1.0273566076866358,
+          "gate_gain_points": 0.1870088438907458,
+          "gate_gain_lcb_points": -0.5499513678424467
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "1e167161223bc944",
+          "certification_sha256": "a5c16cc652a4abfb131dd5627d9d78cf5dc37f9e94ed2a83126d109bef8ed458",
+          "select_gain_points": -0.4368159162829288,
+          "gate_gain_points": 0.28032555300709916,
+          "gate_gain_lcb_points": -0.2602001600444437
+        },
+        "full_tune": {
+          "candidate_job_id": "562ca139ee8b7a9e",
+          "certification_sha256": "5c9d1970e5224cdcbb87128c518db444870437fd8820c6cb675377bbe8cdfc6e",
+          "select_gain_points": 3.5798494427129346,
+          "gate_gain_points": 2.4203665172883193,
+          "gate_gain_lcb_points": 1.209654983492213
+        },
+        "lora": {
+          "candidate_job_id": "e4832637fc9ec8dc",
+          "certification_sha256": "45f6a5203cc06885dfcb8b3d1f614505b4711701098e2bc1708b5cc8e630ecb6",
+          "select_gain_points": 0.5218012259721294,
+          "gate_gain_points": 1.1912319752017675,
+          "gate_gain_lcb_points": 0.49328555230502835
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "81725d7efdaad9f7",
+          "certification_sha256": "29383c138007bbac22a46718f95befac1a673bd90b5263023d667f8fb160fb41",
+          "select_gain_points": -0.1157333142637329,
+          "gate_gain_points": -0.01231841712148185,
+          "gate_gain_lcb_points": -0.20796197266785138
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o8::42": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o8",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "c386d3c28e89fbd8",
+      "select_gain_points": 4.977889938427216,
+      "gate_gain_points": 3.181297751613188,
+      "gate_gain_lcb_points": 0.9390649059355368,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "211df6e419ea9e23",
+          "certification_sha256": "88a1646164021ea9e2b8381c10980678d769ba81d4f59c50563d23c98b902b56",
+          "select_gain_points": -0.06675220051564068,
+          "gate_gain_points": -0.1972349189147904,
+          "gate_gain_lcb_points": -1.6391624175337558
+        },
+        "bottleneck": {
+          "candidate_job_id": "74353f1bae303653",
+          "certification_sha256": "b13e367e8b862de988d5813533ad7d9f5da2de7a168236a3fa0e1e59ea9b5dd3",
+          "select_gain_points": 0.6588287167808238,
+          "gate_gain_points": -0.15198017974593636,
+          "gate_gain_lcb_points": -1.9821137934654012
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "08ddf74a169300b1",
+          "certification_sha256": "64079e1d4867623f2556065975d53856c3fffcee28f84843d788cfa2445e8a59",
+          "select_gain_points": 0.9720375034982354,
+          "gate_gain_points": 0.4331770290239678,
+          "gate_gain_lcb_points": -0.2648621556521097
+        },
+        "full_tune": {
+          "candidate_job_id": "c386d3c28e89fbd8",
+          "certification_sha256": "931a24d15dc2653a54dc60ae69d7ed6518a415429af85fc0ee17a32fde381d5f",
+          "select_gain_points": 4.977889938427216,
+          "gate_gain_points": 3.181297751613188,
+          "gate_gain_lcb_points": 0.9390649059355368
+        },
+        "lora": {
+          "candidate_job_id": "0502e9815bb2bd3c",
+          "certification_sha256": "e1de91b9f33c305eb23654c2b43c2ce778c60c6fa1a9e391bde8dcc4fa42a881",
+          "select_gain_points": 2.4007734540181347,
+          "gate_gain_points": 0.7296721757133695,
+          "gate_gain_lcb_points": -0.698315584073711
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "9ac49c16992ae6f7",
+          "certification_sha256": "728864158ec6331c2336296076568cc42c9009c39be1fba732e984945cc7e2e2",
+          "select_gain_points": -0.06280677837265936,
+          "gate_gain_points": 0.12348358773928148,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o8::2025": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o8",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "c4ecc54cfe2873ad",
+      "select_gain_points": 4.323709646870233,
+      "gate_gain_points": 1.9362857601211925,
+      "gate_gain_lcb_points": -0.8139497359208351,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "4f47bc8ef681a7e4",
+          "certification_sha256": "e0eb0611d3652ffd94650ba27c435aa650f56bf6c2bd1fb88e349152a887bb4b",
+          "select_gain_points": 0.36207532029729483,
+          "gate_gain_points": 0.05503978275855914,
+          "gate_gain_lcb_points": -0.43893795605831065
+        },
+        "bottleneck": {
+          "candidate_job_id": "8143e0600fce8817",
+          "certification_sha256": "26742d667d0b984f3dfded856c13b0662712e7ac8a64b23d8ba440fa004d54f4",
+          "select_gain_points": 0.5976831242358038,
+          "gate_gain_points": 0.5920285459791619,
+          "gate_gain_lcb_points": 0.035627648832137204
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "4483d022067b2f05",
+          "certification_sha256": "a9e03e7306e73b2b640bbf367c51274b2b18e22c9bbf333af4fe7560836d4084",
+          "select_gain_points": 0.15570972420093643,
+          "gate_gain_points": 0.04132676843258132,
+          "gate_gain_lcb_points": -0.1369535564963234
+        },
+        "full_tune": {
+          "candidate_job_id": "c4ecc54cfe2873ad",
+          "certification_sha256": "831ca3a0c604094d77977e83d44a88a5cb79addb5a486e2c5b6ff771bdafed59",
+          "select_gain_points": 4.323709646870233,
+          "gate_gain_points": 1.9362857601211925,
+          "gate_gain_lcb_points": -0.8139497359208351
+        },
+        "lora": {
+          "candidate_job_id": "08601cb3a0cba8e8",
+          "certification_sha256": "d0687298c4801a2c03ae37ea00f76c672753bae101a5f1fa97236a8d8cef5109",
+          "select_gain_points": 1.5869318844682567,
+          "gate_gain_points": 0.8906989403810961,
+          "gate_gain_lcb_points": -1.6219482971336046
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "48846f54cb6ba107",
+          "certification_sha256": "efaf44efbe2ae9c0eb2f39cbf5623025c4b9a2f3acb18e3a6f786a736c45f828",
+          "select_gain_points": 0.08091715369594743,
+          "gate_gain_points": 0.019090530927445837,
+          "gate_gain_lcb_points": -0.11749882794186567
+        }
+      }
+    },
+    "arxiv_temporal_primary_category_v12::o8::2026": {
+      "dataset_id": "arxiv_temporal_primary_category_v12",
+      "origin_id": "o8",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "e22111fed19a2f96",
+      "select_gain_points": 1.9288410000779521,
+      "gate_gain_points": 2.492333117178047,
+      "gate_gain_lcb_points": 0.5607907935305163,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "9f385fa2c0a9be64",
+          "certification_sha256": "34e515d89e2ec4a3923147dfeee427955eef277b2b850594c5e382c205112165",
+          "select_gain_points": 0.2653427680579967,
+          "gate_gain_points": 0.045108569301643975,
+          "gate_gain_lcb_points": -0.5012333356462922
+        },
+        "bottleneck": {
+          "candidate_job_id": "e102849bfbdd7d76",
+          "certification_sha256": "8e24a0088346601f0d94ce25840b21f1dca5348ec95a6dfa2d15c20a3e21966c",
+          "select_gain_points": 0.5116121550267194,
+          "gate_gain_points": 0.3383108370140331,
+          "gate_gain_lcb_points": -0.7205851404547575
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "765ccda45cf46003",
+          "certification_sha256": "b460fa636c8e9e78b52d8d9b95fa610c8427f6efa8221b5680c3c20df7e7e2da",
+          "select_gain_points": 0.011130436249673359,
+          "gate_gain_points": 0.327252211520479,
+          "gate_gain_lcb_points": -0.17509506326355007
+        },
+        "full_tune": {
+          "candidate_job_id": "e22111fed19a2f96",
+          "certification_sha256": "a8a3b793ea315b77f737f8757c1e8cd068532ec2afbcad8c015948810dacf1f8",
+          "select_gain_points": 1.9288410000779521,
+          "gate_gain_points": 2.492333117178047,
+          "gate_gain_lcb_points": 0.5607907935305163
+        },
+        "lora": {
+          "candidate_job_id": "394189611c9f6457",
+          "certification_sha256": "b68f3a85fed9d4d6dcb6a879d0ecab1ed7a27fc02dd8ff51bada4c1274d2fc71",
+          "select_gain_points": 1.2392862755433276,
+          "gate_gain_points": 0.9615446733227118,
+          "gate_gain_lcb_points": -0.2745112425746918
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "6f6ebaadfc6e0e6a",
+          "certification_sha256": "4fb8ea28e6e9fbb76076c161c4b540dbc724fe450544a2457ac51c038ab6e7c7",
+          "select_gain_points": 0.14390686722073331,
+          "gate_gain_points": 0.018318029777941724,
+          "gate_gain_lcb_points": -0.17570676124943063
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o1::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o1",
+      "seed": 42,
+      "nominee_action": "ata_output_residual",
+      "nominee_candidate_job_id": "fcd5d41250813b9a",
+      "select_gain_points": -0.1802957539832728,
+      "gate_gain_points": 0.00034779067841217426,
+      "gate_gain_lcb_points": -0.4762802306046171,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "fcd5d41250813b9a",
+          "certification_sha256": "09d92eba73723aeb80ef5873e1cbb37fb80aa89a0eb56514b5c9cdcf8c57f487",
+          "select_gain_points": -0.1802957539832728,
+          "gate_gain_points": 0.00034779067841217426,
+          "gate_gain_lcb_points": -0.4762802306046171
+        },
+        "bottleneck": {
+          "candidate_job_id": "aa3cd9c92ca6b647",
+          "certification_sha256": "e5bbc7f55967dcba056669c534bdc9c9cc99d9fda0d3eab25cb86ab30a7bc0da",
+          "select_gain_points": -0.7816768196384771,
+          "gate_gain_points": 0.008947712872420244,
+          "gate_gain_lcb_points": -0.6995185093564047
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "63ccdd78697c283f",
+          "certification_sha256": "c77bcd13288d865896029888ac1f50784ce3246d31d47b944f2403cc141969e0",
+          "select_gain_points": -1.2823681205136994,
+          "gate_gain_points": 0.01958181729160291,
+          "gate_gain_lcb_points": -1.0531009661701494
+        },
+        "full_tune": {
+          "candidate_job_id": "8a9732961105f48d",
+          "certification_sha256": "5c193c59cc3018f10ff3bacd0f076344cbe61cc51c4d91a21ebd8ae766e4a524",
+          "select_gain_points": -0.7687451231825793,
+          "gate_gain_points": 0.7307600039813567,
+          "gate_gain_lcb_points": -2.3239557944648563
+        },
+        "lora": {
+          "candidate_job_id": "7a56f10ab707ad26",
+          "certification_sha256": "9101a94ec25e59b7c7361f32cb412a4ccc9ddeaf55cc4fdbcd851138dee60417",
+          "select_gain_points": -1.8667450647476769,
+          "gate_gain_points": 0.5716902812020308,
+          "gate_gain_lcb_points": -0.5333865861791659
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "35651d0ec546af1b",
+          "certification_sha256": "08e7da3ef95c7c12428220adfd0d359b6448b03960055d9dd32f1e7e84c04d14",
+          "select_gain_points": -0.2656636207764129,
+          "gate_gain_points": 0.04176713985600822,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o1::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o1",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "902ad1e9bca06eca",
+      "select_gain_points": 2.635974361402038,
+      "gate_gain_points": 2.549512248903296,
+      "gate_gain_lcb_points": 1.3874253251040773,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "36f7bcb883288b3c",
+          "certification_sha256": "10bc83685ffaf26e2cea24c439f875ca8df64b7014da840de0e1ec2ec0522c4b",
+          "select_gain_points": -0.24553981390929014,
+          "gate_gain_points": 0.4890035588333008,
+          "gate_gain_lcb_points": 0.05452645500812758
+        },
+        "bottleneck": {
+          "candidate_job_id": "cd32c4b7d37e3fd0",
+          "certification_sha256": "e449e5cb8dda7a4a79ceb0fd07807e21d399aaaf269edc54c30a489203efad66",
+          "select_gain_points": 1.132203311697444,
+          "gate_gain_points": -0.039738789781762485,
+          "gate_gain_lcb_points": -0.6845874879848988
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "9bb533f14cae8900",
+          "certification_sha256": "0ebacc0ed8ac2890f790c306fcc50ea0d20c12b5fefd5e19a61fcb5c7d9b23d7",
+          "select_gain_points": 0.2857792992646546,
+          "gate_gain_points": 0.45571899114552616,
+          "gate_gain_lcb_points": -0.029963808176547424
+        },
+        "full_tune": {
+          "candidate_job_id": "902ad1e9bca06eca",
+          "certification_sha256": "ce38e3d1589965167d83a116c808ed2308fa6e5766e090670296422a0585c252",
+          "select_gain_points": 2.635974361402038,
+          "gate_gain_points": 2.549512248903296,
+          "gate_gain_lcb_points": 1.3874253251040773
+        },
+        "lora": {
+          "candidate_job_id": "cd8274566b53bc21",
+          "certification_sha256": "85f2a62449df7f1b843649612800020510077b7b2b3ba7149581fd384ad42cfe",
+          "select_gain_points": 0.42218225670627163,
+          "gate_gain_points": 0.9706664212362437,
+          "gate_gain_lcb_points": 0.13760791722717824
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "b8fb72f0ff326609",
+          "certification_sha256": "4bd0c2f2d57bdc907467d793186268664a72f1a499a156f25f8d3724498273ca",
+          "select_gain_points": 0.6640121407573862,
+          "gate_gain_points": -0.30969532569660174,
+          "gate_gain_lcb_points": -0.7414460788120497
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o1::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o1",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "9c16a3642a189348",
+      "select_gain_points": 2.8102648723208667,
+      "gate_gain_points": 2.7220973722865693,
+      "gate_gain_lcb_points": 0.7427328527811583,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "e55453e7515edc3e",
+          "certification_sha256": "18cc197905d0db28cfafa9eb36548b2a673e187eb14741a26e9967d055e3e9ea",
+          "select_gain_points": 0.6586492069494465,
+          "gate_gain_points": 0.06269570055670304,
+          "gate_gain_lcb_points": -0.2851361587921958
+        },
+        "bottleneck": {
+          "candidate_job_id": "5136fe2042c47f28",
+          "certification_sha256": "d32c58bcb1fdbdb22c364b1e2a00da630c5c0ba8aa0f14b8004f769693cfb0fc",
+          "select_gain_points": 0.6494654220552065,
+          "gate_gain_points": 0.2516718103914295,
+          "gate_gain_lcb_points": -0.3099862170491949
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "f73b3e09d375a24a",
+          "certification_sha256": "e4406ceb7a52f395577feafdc4303573b3bfa0ab7c48fd0b7aebad124b19a2ca",
+          "select_gain_points": 0.8247812606863025,
+          "gate_gain_points": -0.11658817124187149,
+          "gate_gain_lcb_points": -0.4544287502437544
+        },
+        "full_tune": {
+          "candidate_job_id": "9c16a3642a189348",
+          "certification_sha256": "ef011fc2827278b80af9daed03a069d893f8fd336e1c46d8dc559fbdb90f8542",
+          "select_gain_points": 2.8102648723208667,
+          "gate_gain_points": 2.7220973722865693,
+          "gate_gain_lcb_points": 0.7427328527811583
+        },
+        "lora": {
+          "candidate_job_id": "26f3ef4a91c31c83",
+          "certification_sha256": "c2a27758d082640808c3b49936c390287d270795f64c19700822fdf87c1bdebc",
+          "select_gain_points": 1.093121454038748,
+          "gate_gain_points": 0.9141193795942693,
+          "gate_gain_lcb_points": 0.06604450131488249
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "7e454ecc74b56173",
+          "certification_sha256": "8bab4f6a25f6788460fbf96ea37b09b64350cc14d15e8e421a2dd7719c601372",
+          "select_gain_points": 0.8846614333801961,
+          "gate_gain_points": -0.009910989924832858,
+          "gate_gain_lcb_points": -0.1389304963708593
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o2::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o2",
+      "seed": 42,
+      "nominee_action": "classifier_head_only",
+      "nominee_candidate_job_id": "3225be58d6c760e3",
+      "select_gain_points": 0.5686865768612104,
+      "gate_gain_points": 0.0018391001177509025,
+      "gate_gain_lcb_points": -0.3931985098176702,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "ab1737718d922877",
+          "certification_sha256": "52b38f9033c3703c1e5bb4cf180c2ea9444c57cab11cadbc1a64782fc9c607df",
+          "select_gain_points": -0.0742591904975165,
+          "gate_gain_points": 0.3346414469041381,
+          "gate_gain_lcb_points": 0.0
+        },
+        "bottleneck": {
+          "candidate_job_id": "737659834b19f699",
+          "certification_sha256": "05f90de244297e56fd7f18762f5c1309b0250878e8705999a138a352528caa70",
+          "select_gain_points": 0.10550447796648932,
+          "gate_gain_points": 0.8473607495150359,
+          "gate_gain_lcb_points": 0.297860562601944
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "3225be58d6c760e3",
+          "certification_sha256": "7809a4a11ded35f0a0e39db7002a44fe763758718e7237ca6105ff8ecf939c05",
+          "select_gain_points": 0.5686865768612104,
+          "gate_gain_points": 0.0018391001177509025,
+          "gate_gain_lcb_points": -0.3931985098176702
+        },
+        "full_tune": {
+          "candidate_job_id": "e3cd7f671d6f955d",
+          "certification_sha256": "2f7dc1dbc5dc57d5121e0c70deac3c6d8fcaaf80f1276c5830898121e7b1a508",
+          "select_gain_points": 0.33476244427216306,
+          "gate_gain_points": 1.0956844670714005,
+          "gate_gain_lcb_points": 0.17583231939713728
+        },
+        "lora": {
+          "candidate_job_id": "3555b5877af886d2",
+          "certification_sha256": "df7ca00646184362666c6faded8871d5093155c797cdcd0e25c3b21a7ba84ab9",
+          "select_gain_points": 0.2223074681782733,
+          "gate_gain_points": 0.5110243949539739,
+          "gate_gain_lcb_points": -0.36187035110590293
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "bc7282f55a61449d",
+          "certification_sha256": "941d6b5bca8a712de8babbae6a43b9d7f7b139321a8a99f87676bc01edc2f50c",
+          "select_gain_points": 0.07704909544833383,
+          "gate_gain_points": 0.3187841070168451,
+          "gate_gain_lcb_points": 0.0006632165294118142
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o2::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o2",
+      "seed": 2025,
+      "nominee_action": "bottleneck",
+      "nominee_candidate_job_id": "c7e869468ea68d59",
+      "select_gain_points": 0.008866438430821244,
+      "gate_gain_points": -0.04162365797419909,
+      "gate_gain_lcb_points": -0.29659284237360944,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "2f5181d68d34620a",
+          "certification_sha256": "b7a957566df552b9c2ccf2213b1d5e5027d56b78f9a40e23d3e9d11a44c1b957",
+          "select_gain_points": -0.14828831170695667,
+          "gate_gain_points": 0.018707378196269886,
+          "gate_gain_lcb_points": -0.31211819765631643
+        },
+        "bottleneck": {
+          "candidate_job_id": "c7e869468ea68d59",
+          "certification_sha256": "b856fa51369d61b96a8433b1412f468dc9b0267bf87665b6b718665285eda44b",
+          "select_gain_points": 0.008866438430821244,
+          "gate_gain_points": -0.04162365797419909,
+          "gate_gain_lcb_points": -0.29659284237360944
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "e4051f337a041969",
+          "certification_sha256": "13f41c116c91543f1aba72b61f86c7f116a01885c59d7097a76ae45b7deb8688",
+          "select_gain_points": -0.06934840823087374,
+          "gate_gain_points": 0.03777936241561308,
+          "gate_gain_lcb_points": -0.31690903175849994
+        },
+        "full_tune": {
+          "candidate_job_id": "5e118b6918484727",
+          "certification_sha256": "8d41c50c82db4dcdd03621ad3cf5a6f6ab9bc2d19c06690d44491525c8d6ab7a",
+          "select_gain_points": -0.1265909883826355,
+          "gate_gain_points": 1.5191072302193742,
+          "gate_gain_lcb_points": -1.697562183470555
+        },
+        "lora": {
+          "candidate_job_id": "9f8584421d31cfd7",
+          "certification_sha256": "f320a3c981e8b013cfd6194c843543495401de25344f09084e8e4236ee6b6ac9",
+          "select_gain_points": -0.25591350829290427,
+          "gate_gain_points": 0.253122346168122,
+          "gate_gain_lcb_points": -0.2125223361717929
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "446163b85cdee99e",
+          "certification_sha256": "253e52e00dbd35ef8d476446f69c723fad21b941e634e56115f3e571d698818f",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.047269078237899276,
+          "gate_gain_lcb_points": -0.16164197242963807
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o2::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o2",
+      "seed": 2026,
+      "nominee_action": "lora",
+      "nominee_candidate_job_id": "c858976b6955eb35",
+      "select_gain_points": 0.3568557802877126,
+      "gate_gain_points": 1.1482701716862387,
+      "gate_gain_lcb_points": -0.034478968709786284,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "c7c4ab4d88ac56b4",
+          "certification_sha256": "fccf3b4b643e188f47efdd8b432d5b0e5c96b44e9e2626f1b31d6b82b8e68691",
+          "select_gain_points": -0.2810079947569766,
+          "gate_gain_points": 0.5315027432519215,
+          "gate_gain_lcb_points": -0.03551344132219636
+        },
+        "bottleneck": {
+          "candidate_job_id": "55bcbf11e4417696",
+          "certification_sha256": "14575558765f951bb5da8834783c7fcbae99b814a2e3db835c168330e98b8cee",
+          "select_gain_points": -0.30141315839005145,
+          "gate_gain_points": 0.9578677707321237,
+          "gate_gain_lcb_points": -1.423497374979904
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "14f02dd7029a0603",
+          "certification_sha256": "5ac13c11966ac4d8243092daea3f0a5d64470ed7b9cb92bd5802aa73ab669a9f",
+          "select_gain_points": 0.1495502026973461,
+          "gate_gain_points": 1.459761041201879,
+          "gate_gain_lcb_points": -0.07140976192889226
+        },
+        "full_tune": {
+          "candidate_job_id": "b95a4142a80f1537",
+          "certification_sha256": "d269c4f1c0b297516008fb31e598a439a8d86d520e5c99a74ed8839efb11be59",
+          "select_gain_points": -0.18889433838203962,
+          "gate_gain_points": 0.6546461638986867,
+          "gate_gain_lcb_points": -1.2135082256169687
+        },
+        "lora": {
+          "candidate_job_id": "c858976b6955eb35",
+          "certification_sha256": "75123b4520e200c6f3eeb47e4406ef8c4c918f8720dece1f72b57602117d0d1e",
+          "select_gain_points": 0.3568557802877126,
+          "gate_gain_points": 1.1482701716862387,
+          "gate_gain_lcb_points": -0.034478968709786284
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "f9877ea722277d66",
+          "certification_sha256": "c175a246d9384dcafc357dd11d2e2a9aadd6770958a873ef4aec563c96d738c4",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.04197989065768404,
+          "gate_gain_lcb_points": -0.1863654836639389
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o3::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o3",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "13cf00d2fa7b1acc",
+      "select_gain_points": 0.530745467721172,
+      "gate_gain_points": 2.49431481027913,
+      "gate_gain_lcb_points": 0.4601510015723661,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "c455d99d7d2f7871",
+          "certification_sha256": "b4447eda53368fff6e1379fb02a166593fd270f11740ba6ec1d030d59e670199",
+          "select_gain_points": -0.2748995715194935,
+          "gate_gain_points": 0.5906197953323922,
+          "gate_gain_lcb_points": -0.22037922799780368
+        },
+        "bottleneck": {
+          "candidate_job_id": "57583531b24ddd85",
+          "certification_sha256": "a30f8a1ee44ea5cc8a3fdebc2d001e22cb7fbd9cb6fb9cfcdd331727b621ac0e",
+          "select_gain_points": -1.0494003433317856,
+          "gate_gain_points": 0.3097467822462341,
+          "gate_gain_lcb_points": -2.2770633975582673
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "ed95136420d69764",
+          "certification_sha256": "7db9b6d08ddfbdd2f50b748dfba3fde09e2e6941ab8ea383babf80a946e7c314",
+          "select_gain_points": -0.5071949998187719,
+          "gate_gain_points": 0.2376433889368812,
+          "gate_gain_lcb_points": -0.7221107816676231
+        },
+        "full_tune": {
+          "candidate_job_id": "13cf00d2fa7b1acc",
+          "certification_sha256": "c35ab1f25e6da76a9aeb8b7894a87f50840a1a029f56640194c949138c22a28a",
+          "select_gain_points": 0.530745467721172,
+          "gate_gain_points": 2.49431481027913,
+          "gate_gain_lcb_points": 0.4601510015723661
+        },
+        "lora": {
+          "candidate_job_id": "669e91c6510a37d0",
+          "certification_sha256": "11ac242c070c7c465b6e070db9c58c9b01c6967292c7028415d7bd1867b6f5ee",
+          "select_gain_points": 0.323588221411919,
+          "gate_gain_points": -0.4505952693936499,
+          "gate_gain_lcb_points": -1.3380860065213607
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "6cbe6bb283ad2433",
+          "certification_sha256": "1b35496e00cba50af8aef53ea8e9abaff771d3e5684b1ee4397d1dacbfff1bf1",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.07368871983144398,
+          "gate_gain_lcb_points": -0.2857240758145335
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o3::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o3",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "764ccb924988a902",
+      "select_gain_points": 1.7379705322974282,
+      "gate_gain_points": 2.2639153461004424,
+      "gate_gain_lcb_points": -0.7825978948924672,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "be9477ad4d04708b",
+          "certification_sha256": "97bc1e34b17fb17e6b38f3d27756a2e69644f23d987d8c668e71aa268f6a99d4",
+          "select_gain_points": 0.07428611444142419,
+          "gate_gain_points": 0.08662760034979788,
+          "gate_gain_lcb_points": -0.25964694894970997
+        },
+        "bottleneck": {
+          "candidate_job_id": "e5c90bd74e291205",
+          "certification_sha256": "8acc9dbeb4ae292c65a8f13dd7bc6e44dd36b35ea71bb4252ba7d92987db09a9",
+          "select_gain_points": -0.2770198903262244,
+          "gate_gain_points": 0.26252204049566075,
+          "gate_gain_lcb_points": -0.2761007957999717
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "b820477fdf06b2b5",
+          "certification_sha256": "a680ece6ec1fb7fd8f5a8f7731e8473dbb4e8581de00bd01e9b09259c4dbb18f",
+          "select_gain_points": -0.20732287162925633,
+          "gate_gain_points": 0.43373853311018395,
+          "gate_gain_lcb_points": -0.5124357106938495
+        },
+        "full_tune": {
+          "candidate_job_id": "764ccb924988a902",
+          "certification_sha256": "4a1b1cb16d3e83c48f693449f1b861b8d28d544d999474409e6d9c329689ef16",
+          "select_gain_points": 1.7379705322974282,
+          "gate_gain_points": 2.2639153461004424,
+          "gate_gain_lcb_points": -0.7825978948924672
+        },
+        "lora": {
+          "candidate_job_id": "463077ce5659efd4",
+          "certification_sha256": "060e1ae851eac58fab6e5c6f587f359f2c6230ae6b671656559bcb0967ff3ca8",
+          "select_gain_points": -0.4658305272776886,
+          "gate_gain_points": 1.2227677027198292,
+          "gate_gain_lcb_points": -0.494257766292569
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "04b335c92dc648a7",
+          "certification_sha256": "641145045c7444acc18c887c0b0052cae1e22e111a6b5c25dc0a7f38f1d58252",
+          "select_gain_points": -0.052435125808081295,
+          "gate_gain_points": 0.05298902238559666,
+          "gate_gain_lcb_points": -0.09037860038502016
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o3::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o3",
+      "seed": 2026,
+      "nominee_action": "vector_logit_scaling",
+      "nominee_candidate_job_id": "3b1e689b010b40b8",
+      "select_gain_points": 0.0,
+      "gate_gain_points": 0.04512152275639725,
+      "gate_gain_lcb_points": 0.0,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "61d076c2d0573175",
+          "certification_sha256": "0eef1efa0dcd3d5dbbcdea0f093f5ebdcf047bb6ef82415744750376a75586a3",
+          "select_gain_points": -0.5014079044763697,
+          "gate_gain_points": 0.3384690410786706,
+          "gate_gain_lcb_points": -0.2542651464212786
+        },
+        "bottleneck": {
+          "candidate_job_id": "08b0913bfc5dbe71",
+          "certification_sha256": "b819864314f0fddf92ab239007a2a775a5b88348a8c954ffd6d1d348b77198ff",
+          "select_gain_points": -0.2858488175075613,
+          "gate_gain_points": 0.5250582681512128,
+          "gate_gain_lcb_points": -0.4388054835495883
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "0ef250975af938e6",
+          "certification_sha256": "3efa161f038c455e99eb8be9f233dda76f8b34a1b9ab51fefde5ec85a6de393a",
+          "select_gain_points": -0.8013719418313414,
+          "gate_gain_points": 0.4186596018874389,
+          "gate_gain_lcb_points": -0.5989273505359383
+        },
+        "full_tune": {
+          "candidate_job_id": "3d8df6db968bd23c",
+          "certification_sha256": "23c4773f1f83fca0a4dce9ea160d6fe20ddb3f88335fc03162e087c3b679ee4d",
+          "select_gain_points": -0.40286835894570716,
+          "gate_gain_points": 2.3820077533973194,
+          "gate_gain_lcb_points": -0.052575332440539524
+        },
+        "lora": {
+          "candidate_job_id": "dd780a491e894c5e",
+          "certification_sha256": "24758a031f395d41d813727d295c6af1df0f4f110c9519f0090c5968cd2431b1",
+          "select_gain_points": -0.8251153440710146,
+          "gate_gain_points": 1.0818164197130775,
+          "gate_gain_lcb_points": -0.9511377115521704
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "3b1e689b010b40b8",
+          "certification_sha256": "335a2c86ea90bedf9cb97ab968db5d40ab8af54f4610fdf2af4db8497c921e79",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.04512152275639725,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o4::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o4",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "c5a456f6e2b057f2",
+      "select_gain_points": 0.09280798502609988,
+      "gate_gain_points": 3.238673213219878,
+      "gate_gain_lcb_points": -1.88089867113993,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "e1638856af226055",
+          "certification_sha256": "3dcced23dd3bb19d95314f2dabc6f062132d2193249117ff8083f48fd5c1fa53",
+          "select_gain_points": 0.06200903336150976,
+          "gate_gain_points": -0.1446038152906559,
+          "gate_gain_lcb_points": -0.3715358109857611
+        },
+        "bottleneck": {
+          "candidate_job_id": "8e4218afd85cf2a8",
+          "certification_sha256": "1ac43c6fe5bea0387213481f8aefd708e733883d5752f18a67583557a2803004",
+          "select_gain_points": -0.7138402398976451,
+          "gate_gain_points": 0.030152706645314442,
+          "gate_gain_lcb_points": -0.37834446010591716
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "48a64e416275d0a5",
+          "certification_sha256": "735ffc648d0dbc601a7f63cca8fe5e7156ef8ba93fc6bf5b0290bfed9e410aa0",
+          "select_gain_points": -1.3188648334424125,
+          "gate_gain_points": 0.19247094931421627,
+          "gate_gain_lcb_points": -3.9194338531704496
+        },
+        "full_tune": {
+          "candidate_job_id": "c5a456f6e2b057f2",
+          "certification_sha256": "87b9c797a8102cc9dd862e9d8faf27998b9718ea782fe4482094cbe13dfd7342",
+          "select_gain_points": 0.09280798502609988,
+          "gate_gain_points": 3.238673213219878,
+          "gate_gain_lcb_points": -1.88089867113993
+        },
+        "lora": {
+          "candidate_job_id": "cd315f17769bd094",
+          "certification_sha256": "d3822cecbb502be61f047f17dd3cd569d90cb244cbf22d4264e714f394936b9c",
+          "select_gain_points": -0.3493715665429775,
+          "gate_gain_points": 1.486050368476588,
+          "gate_gain_lcb_points": -2.7887346706998506
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "25febb2c81c460d9",
+          "certification_sha256": "ba1d49be8468661095caca408e193650422d3799e045171ca69030dea818f5e3",
+          "select_gain_points": 0.06200903336150976,
+          "gate_gain_points": 0.04136082844005129,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o4::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o4",
+      "seed": 2025,
+      "nominee_action": "vector_logit_scaling",
+      "nominee_candidate_job_id": "83884214fb5f6168",
+      "select_gain_points": 0.6773030372607236,
+      "gate_gain_points": 0.0,
+      "gate_gain_lcb_points": 0.0,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "0b181f255454039a",
+          "certification_sha256": "6f63e51eefe943beb1038003cde983da03273ca24c6a567f55ca87e8773b23d2",
+          "select_gain_points": 0.017666912298808235,
+          "gate_gain_points": 0.6427772404295706,
+          "gate_gain_lcb_points": 0.20288095973906017
+        },
+        "bottleneck": {
+          "candidate_job_id": "93f5791fe51f85d0",
+          "certification_sha256": "cf3a4d51780e5c4e437fb90463f389a87ae2e1507ee71000d608664914c1e130",
+          "select_gain_points": -0.10921032545677667,
+          "gate_gain_points": 0.748812077181138,
+          "gate_gain_lcb_points": -0.1556908717847652
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "2d7beebff3631995",
+          "certification_sha256": "7fb1af7f27df3d861b38561579c5fb796bb5b8f83b47c639a9bbf40d523fedbe",
+          "select_gain_points": 0.017666912298808235,
+          "gate_gain_points": 0.36432640495935864,
+          "gate_gain_lcb_points": -0.689300656328451
+        },
+        "full_tune": {
+          "candidate_job_id": "3ec8959dc7561aaa",
+          "certification_sha256": "71e94cdcaea050df237dee0ff3b1dbb219e8bdbc8a4e80eff8b80c8abe1dea8d",
+          "select_gain_points": 0.08236745751322161,
+          "gate_gain_points": 5.187296561170829,
+          "gate_gain_lcb_points": -2.04267940972746
+        },
+        "lora": {
+          "candidate_job_id": "2370e57881390e21",
+          "certification_sha256": "7b2f485753c76d6d7805a8ff480015d305c11b4dd90962bde32e2ca83a0fecfd",
+          "select_gain_points": 0.18549056119268048,
+          "gate_gain_points": 1.725920372002543,
+          "gate_gain_lcb_points": -3.3264072375318143
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "83884214fb5f6168",
+          "certification_sha256": "395be7950fa1f41317f6bd3fc34d6ccf5b5560287828b89e78435da572d39e3a",
+          "select_gain_points": 0.6773030372607236,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o4::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o4",
+      "seed": 2026,
+      "nominee_action": "lora",
+      "nominee_candidate_job_id": "4f0ff80c900c591a",
+      "select_gain_points": 1.230116275173887,
+      "gate_gain_points": 3.0531239157396195,
+      "gate_gain_lcb_points": 0.4536122411711155,
+      "authorized": true,
+      "serialized_action": "lora",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "a1da0a95088e86c5",
+          "certification_sha256": "4957af51498c2842122a42612f1eb3130181bb7c57576ceb14f36acd240a6a17",
+          "select_gain_points": -0.13249665230852248,
+          "gate_gain_points": -0.2305810205669001,
+          "gate_gain_lcb_points": -0.509266298055082
+        },
+        "bottleneck": {
+          "candidate_job_id": "7dad601d37016b36",
+          "certification_sha256": "5aa25b30d1b57585c4981214db4e4961402a46dd1a5f06b47661519ea4a2ff68",
+          "select_gain_points": -0.029566089698396247,
+          "gate_gain_points": 0.13170083913626174,
+          "gate_gain_lcb_points": -0.06117682413109282
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "eac8fa36c206bad9",
+          "certification_sha256": "47516f24217fc07b6965b793f602fe3d7fd04e94ad7ee95367ba403320212853",
+          "select_gain_points": 0.09539204627319053,
+          "gate_gain_points": -0.04363725513940597,
+          "gate_gain_lcb_points": -0.41393624502709253
+        },
+        "full_tune": {
+          "candidate_job_id": "32ee8844c3e95d18",
+          "certification_sha256": "02126cd4b2331718fb89e1fcfc36bbb8006e23f64d20b2cb374961a562dd26ec",
+          "select_gain_points": 0.9590378160230006,
+          "gate_gain_points": 3.9720076042371266,
+          "gate_gain_lcb_points": 2.2423769974775314
+        },
+        "lora": {
+          "candidate_job_id": "4f0ff80c900c591a",
+          "certification_sha256": "2f6d1c97bf7a6fdd7e7bc8405d04bd2bce1e6f12fa9a015edcf1e7bb928e5044",
+          "select_gain_points": 1.230116275173887,
+          "gate_gain_points": 3.0531239157396195,
+          "gate_gain_lcb_points": 0.4536122411711155
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "8f73a75d76b89669",
+          "certification_sha256": "9ec1c95fe2cdb6c8252c36ab1d3372d8e188933a3ea660edbef8dc7e8fd8066e",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o5::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o5",
+      "seed": 42,
+      "nominee_action": "vector_logit_scaling",
+      "nominee_candidate_job_id": "5a44c410f14fcb65",
+      "select_gain_points": 0.0,
+      "gate_gain_points": 0.09753606718756469,
+      "gate_gain_lcb_points": 0.0,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "87b3e89ac24021d0",
+          "certification_sha256": "0fdf12d70fbd51a110336ef133e6b1c4f0788b6a2409317ecb411f78b2777445",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.005580518995396133,
+          "gate_gain_lcb_points": -0.11309413319584571
+        },
+        "bottleneck": {
+          "candidate_job_id": "13d4aebb33acf300",
+          "certification_sha256": "079b02455eccba92a29f47a0fa2ca374af93e1c1a05cb811c9746bd0ce0f29e3",
+          "select_gain_points": -1.0919762218259632,
+          "gate_gain_points": 0.6490145882192544,
+          "gate_gain_lcb_points": 0.02878803731791446
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "5679b28d24bcc2a2",
+          "certification_sha256": "39086f397493a1c230898d956fe2d29f9486433aee54356e39751547fbe261a1",
+          "select_gain_points": -1.0860034265439356,
+          "gate_gain_points": -0.019698328256489983,
+          "gate_gain_lcb_points": -0.3846538528192611
+        },
+        "full_tune": {
+          "candidate_job_id": "b275f8bcab684b0f",
+          "certification_sha256": "2b8500b5f4a7e8837e325e562c0b2a66751371d9e02b91c2d39c5bf861c33476",
+          "select_gain_points": -0.12324654655767597,
+          "gate_gain_points": 3.1140628556122985,
+          "gate_gain_lcb_points": 1.7211878139109835
+        },
+        "lora": {
+          "candidate_job_id": "87c1426745731a17",
+          "certification_sha256": "18f8871802bdedd074c9399f65c2eff6f38ac71e851d5f76fc71e1eb0923ff1c",
+          "select_gain_points": -1.169698940924102,
+          "gate_gain_points": 1.079563953588325,
+          "gate_gain_lcb_points": -0.437408280412932
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "5a44c410f14fcb65",
+          "certification_sha256": "6fbb15769f193497382a06f152e6e2da52a7235f7c9557e182ea2041c5a46f91",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.09753606718756469,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o5::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o5",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "5134aca23b0e9ab3",
+      "select_gain_points": 1.182979850997723,
+      "gate_gain_points": 0.9642928471046863,
+      "gate_gain_lcb_points": -1.8389805516152478,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "6afeb833b79f8d29",
+          "certification_sha256": "74495b7ae63221aadcdad8cbbc35e753a0d6c703c910bb834689c3ab129192b2",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.00937276589481062,
+          "gate_gain_lcb_points": -0.11821515773971503
+        },
+        "bottleneck": {
+          "candidate_job_id": "1229311e20aee758",
+          "certification_sha256": "c5dd236f53ec5222170ccdf8682ef5489f6b1781c7b01fd8626778c67f8e96e5",
+          "select_gain_points": -0.9538361343180868,
+          "gate_gain_points": 0.26969499936739805,
+          "gate_gain_lcb_points": -0.9825727059624436
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "fbe7de45fd08aba7",
+          "certification_sha256": "c7d5e9adacfbaaf39af175ce947e7c1efc9176eb0bff47745566d7b340b056bd",
+          "select_gain_points": -0.3399486298221066,
+          "gate_gain_points": 0.4411585355371228,
+          "gate_gain_lcb_points": -0.8190561486410106
+        },
+        "full_tune": {
+          "candidate_job_id": "5134aca23b0e9ab3",
+          "certification_sha256": "ce4e0388faaeba90d5f3b27cbec326e47113c0c80505b9630bd5fce9cc1d1c33",
+          "select_gain_points": 1.182979850997723,
+          "gate_gain_points": 0.9642928471046863,
+          "gate_gain_lcb_points": -1.8389805516152478
+        },
+        "lora": {
+          "candidate_job_id": "0a17bb068b985c89",
+          "certification_sha256": "dbe7a9f950ce759477846b3da9ad2a0e7ba5871730f74be1a9ed84edd22ee649",
+          "select_gain_points": 0.39757063772034584,
+          "gate_gain_points": 1.272004409442129,
+          "gate_gain_lcb_points": -0.1701270722626727
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "5f08e58593fef2b2",
+          "certification_sha256": "47badf50e49aa450d498f7990924493cb098e143438a100c3b9e47756afdd41d",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.16671964442738219,
+          "gate_gain_lcb_points": -0.5272610405323661
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o5::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o5",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "4d1e2cb6d0bf29c3",
+      "select_gain_points": 3.322645500121746,
+      "gate_gain_points": 0.7672185297832534,
+      "gate_gain_lcb_points": -0.4662490030610214,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "3a81551a6efbead7",
+          "certification_sha256": "c843f84f62eff9e6061f4314d08ae11372a0b0f8d3de856a3f42e3dc976e84a5",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        },
+        "bottleneck": {
+          "candidate_job_id": "edec299891f38f75",
+          "certification_sha256": "72dbedbc2f04f479653f4673c7346c07f93f69a5e7a9dc0008417bb1e7f62c20",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "6b64dcb29f8fec63",
+          "certification_sha256": "3a25debcb9932a300980ec3718769b06f5a7b244f33113584a15fa5c4c069e34",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        },
+        "full_tune": {
+          "candidate_job_id": "4d1e2cb6d0bf29c3",
+          "certification_sha256": "b535993ce14c2b6dce64781a101d74de6b99f620b3a28aa17e8917df151f141b",
+          "select_gain_points": 3.322645500121746,
+          "gate_gain_points": 0.7672185297832534,
+          "gate_gain_lcb_points": -0.4662490030610214
+        },
+        "lora": {
+          "candidate_job_id": "ebe8ccdfe2a25973",
+          "certification_sha256": "b69595aa52b7b0bd5dace5445ce3de8472901539d2cdae66939597a1cb3f711e",
+          "select_gain_points": -0.3976370837676102,
+          "gate_gain_points": 0.547613279530923,
+          "gate_gain_lcb_points": -1.0789935899357728
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "ba7e68c84118b5e6",
+          "certification_sha256": "4df5a15ee8386fb72ec93e2f328b919ffacdae6ab72d8ea5539ed4ad006d94ad",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o6::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o6",
+      "seed": 42,
+      "nominee_action": "lora",
+      "nominee_candidate_job_id": "c68c5b3ab696aba6",
+      "select_gain_points": 1.0815807677471256,
+      "gate_gain_points": 0.7167080745098309,
+      "gate_gain_lcb_points": -1.9489443428597097,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "5c5145bd38bf1cd6",
+          "certification_sha256": "ed207887ab9a162e4eadd6d68118fa94fc1888388e24afe81501f82e7d58c852",
+          "select_gain_points": -0.38014992627999344,
+          "gate_gain_points": 0.819662201064042,
+          "gate_gain_lcb_points": -0.30275739880565034
+        },
+        "bottleneck": {
+          "candidate_job_id": "ea9881be826b49e0",
+          "certification_sha256": "cad2667cd78fd264c1e9639153a1f6d58179ff0dec95c91b1bf9d788a388aaad",
+          "select_gain_points": -0.8148448653800155,
+          "gate_gain_points": 0.9739945933398664,
+          "gate_gain_lcb_points": -0.971771417881899
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "923f1107983f9656",
+          "certification_sha256": "6a3758764cc0c030825ef42dfbe5b4f0703c088bfb6fa8fe4e6d4b020f8a97a5",
+          "select_gain_points": 0.08452377651084753,
+          "gate_gain_points": 1.093976220222348,
+          "gate_gain_lcb_points": -0.8793357354563297
+        },
+        "full_tune": {
+          "candidate_job_id": "5e7ded529d12f2f3",
+          "certification_sha256": "e8b148130c01dca18f2195f52961fb59a4c6ddcf79377e7e9af98b6ab8e2af79",
+          "select_gain_points": 0.2607660598151318,
+          "gate_gain_points": 2.3812723941585068,
+          "gate_gain_lcb_points": -1.0936457752905318
+        },
+        "lora": {
+          "candidate_job_id": "c68c5b3ab696aba6",
+          "certification_sha256": "16504500554984d7f1508cfe97117ea26bdc3032abc10e6dbea38731c61c7212",
+          "select_gain_points": 1.0815807677471256,
+          "gate_gain_points": 0.7167080745098309,
+          "gate_gain_lcb_points": -1.9489443428597097
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "64cc199f8be1ef50",
+          "certification_sha256": "b8ce469966e6f34bec37bb124f8d966390cb9ebc591fd827614c89b46ac0da75",
+          "select_gain_points": 0.0031199263637260444,
+          "gate_gain_points": 0.08510469872599069,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o6::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o6",
+      "seed": 2025,
+      "nominee_action": "ata_output_residual",
+      "nominee_candidate_job_id": "a05cfe0a827154a9",
+      "select_gain_points": -0.06245053632132347,
+      "gate_gain_points": 0.4242089877205424,
+      "gate_gain_lcb_points": -0.06613303009360416,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "a05cfe0a827154a9",
+          "certification_sha256": "1a5cb5971e44c59021338d5a2620ea524ff6a9487ac29d93ae4c82718e77055f",
+          "select_gain_points": -0.06245053632132347,
+          "gate_gain_points": 0.4242089877205424,
+          "gate_gain_lcb_points": -0.06613303009360416
+        },
+        "bottleneck": {
+          "candidate_job_id": "2842719e3e5d5bf1",
+          "certification_sha256": "f22499042370d169d3fed3b733550cb64da739fb4d74cfe4f358d8fdc5664247",
+          "select_gain_points": -0.3235179484283979,
+          "gate_gain_points": 0.7004093355829077,
+          "gate_gain_lcb_points": -0.10057820714889226
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "0a064db2b00d1c4e",
+          "certification_sha256": "2d6933311afd7f60d7372e9e222907cb341e25bdb5cf2f675cdb4d21f658ebe1",
+          "select_gain_points": -0.5657149009271167,
+          "gate_gain_points": 0.9870074298421683,
+          "gate_gain_lcb_points": 0.04440456230715567
+        },
+        "full_tune": {
+          "candidate_job_id": "a3a26146158a06a9",
+          "certification_sha256": "b0ad1bb52a508f208d528b7765caba4fce713d7abf5fc1cf02e9eb14810fbfbc",
+          "select_gain_points": -0.3438292492146666,
+          "gate_gain_points": 3.155031939609465,
+          "gate_gain_lcb_points": 0.49209552907566595
+        },
+        "lora": {
+          "candidate_job_id": "d059a9f0475b9003",
+          "certification_sha256": "48974718ad0c106117299c9f9a0f3ef69e7f3ee2274c4f4de68567d1d674349a",
+          "select_gain_points": -1.3508849126567912,
+          "gate_gain_points": 1.7059170650017608,
+          "gate_gain_lcb_points": 0.31775285852245344
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "b59ee80b32901c6f",
+          "certification_sha256": "91b3b6a1e69283059b36513730eb17a38e29ff401aa66473dcce48915d2084ff",
+          "select_gain_points": -0.06617835475718481,
+          "gate_gain_points": 0.4338144715605674,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o6::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o6",
+      "seed": 2026,
+      "nominee_action": "lora",
+      "nominee_candidate_job_id": "bf09bae62a0f50d0",
+      "select_gain_points": 1.1625812437110916,
+      "gate_gain_points": 1.3696483978439367,
+      "gate_gain_lcb_points": 0.6270853324589474,
+      "authorized": true,
+      "serialized_action": "lora",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "650f9a1968e45821",
+          "certification_sha256": "97186ea4fdef25423e15131fbe3d65d2011e9a97c76580564a5a8bf343891e2a",
+          "select_gain_points": 0.4283220448058733,
+          "gate_gain_points": 0.3541307847491071,
+          "gate_gain_lcb_points": -0.06285961724275951
+        },
+        "bottleneck": {
+          "candidate_job_id": "21fac783d0e1e661",
+          "certification_sha256": "509592f1a0a71e5c226c27db1625624b3a4f19032b79e531a83f1f94cb7c449b",
+          "select_gain_points": 0.3079911511969513,
+          "gate_gain_points": 0.5517371077170874,
+          "gate_gain_lcb_points": -0.22207617558076126
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "ec5f196569ba82c3",
+          "certification_sha256": "d51a89f251575014d17c6e5208e20dea734e17b218375f86fe661ee216770874",
+          "select_gain_points": 0.272995653972985,
+          "gate_gain_points": 0.059335923056813566,
+          "gate_gain_lcb_points": -1.069932931295553
+        },
+        "full_tune": {
+          "candidate_job_id": "f729818c2954a949",
+          "certification_sha256": "77f319fd3dbdd0f29933e00309611d47d15b32ea4193000442946e510016fe7e",
+          "select_gain_points": 1.148147410912781,
+          "gate_gain_points": 0.781155342387696,
+          "gate_gain_lcb_points": -0.5825278187830019
+        },
+        "lora": {
+          "candidate_job_id": "bf09bae62a0f50d0",
+          "certification_sha256": "21a9a8b9795f3dd0e238b920e5ae87611f65d5802f6b8fe88d9f09b7eeae86b3",
+          "select_gain_points": 1.1625812437110916,
+          "gate_gain_points": 1.3696483978439367,
+          "gate_gain_lcb_points": 0.6270853324589474
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "3b5746535b31cd77",
+          "certification_sha256": "a77e2b42453762ad4fb4b40d4f24618cb62688f1c9feeb60673f31a9cd5ddead",
+          "select_gain_points": -0.26128848402007243,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o7::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o7",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "1eed8bda6405faf6",
+      "select_gain_points": 4.3047446904111215,
+      "gate_gain_points": 1.2848379393519682,
+      "gate_gain_lcb_points": -0.22904479028150876,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "d8ff8deb05a8f0d7",
+          "certification_sha256": "dab9bcf20633af6677621380a72caa256378e052522b2b3ad4e222529e8ff722",
+          "select_gain_points": -0.7553447736970864,
+          "gate_gain_points": -0.05772943477105885,
+          "gate_gain_lcb_points": -0.4424553170100695
+        },
+        "bottleneck": {
+          "candidate_job_id": "2de69e8d11250da4",
+          "certification_sha256": "1be5e772fa74e0f29ed6d9ffbbec1c69ca36da7c3af527e850abb19a291d191c",
+          "select_gain_points": 1.538561399225724,
+          "gate_gain_points": -0.6523068990198166,
+          "gate_gain_lcb_points": -1.3802193730372614
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "b24c3fbbdadd9d88",
+          "certification_sha256": "65ec2d03bfc195f63b5841a42c7f0468699f7491ca0cf5a23aa3251339d128f3",
+          "select_gain_points": 1.769426395205742,
+          "gate_gain_points": -0.04427737867889192,
+          "gate_gain_lcb_points": -0.5886707018677648
+        },
+        "full_tune": {
+          "candidate_job_id": "1eed8bda6405faf6",
+          "certification_sha256": "4833157f54c70dde956bf4cfc469d3b010c464b2d95b9f9555c45615a7e24a80",
+          "select_gain_points": 4.3047446904111215,
+          "gate_gain_points": 1.2848379393519682,
+          "gate_gain_lcb_points": -0.22904479028150876
+        },
+        "lora": {
+          "candidate_job_id": "57dac2a2916dcae1",
+          "certification_sha256": "f4b8691ff2c97fb6c7ab3fc5e976fe5bf009275d95cdb5fb65ec43fcc5a8fea8",
+          "select_gain_points": 3.8631333934581846,
+          "gate_gain_points": 0.22004122612803156,
+          "gate_gain_lcb_points": -0.8113760903496317
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "634e6bbe5eadee80",
+          "certification_sha256": "bcf446b4ef6f44637222ccb3d7833e56d3c1f131c318ec429801a49783f1b404",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.08505595596868254,
+          "gate_gain_lcb_points": -0.21882023400317252
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o7::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o7",
+      "seed": 2025,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "f31a8c1136eb2072",
+      "select_gain_points": 3.293602993916944,
+      "gate_gain_points": 4.476752972288822,
+      "gate_gain_lcb_points": 2.6121059574094856,
+      "authorized": true,
+      "serialized_action": "full_tune",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "de5ebd42c06279d4",
+          "certification_sha256": "987702ca6b795de3eb0e76c611dea5efb64cc1209b80c4dc26bc3f38abfdb7b4",
+          "select_gain_points": 0.014314084235156344,
+          "gate_gain_points": 0.04641881994492669,
+          "gate_gain_lcb_points": -0.10462466460061104
+        },
+        "bottleneck": {
+          "candidate_job_id": "a02e74a619409ac6",
+          "certification_sha256": "016c8cd12c97d3773f6b5fbef279ad2b551776e4947cf6827ca036b6f818451d",
+          "select_gain_points": 0.8637190792757821,
+          "gate_gain_points": 1.1380194356528595,
+          "gate_gain_lcb_points": 0.041005006038152825
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "06f008aef6ee8623",
+          "certification_sha256": "39d2c2d831b8f9d84b85b770dcaf169a248a3a6fe02de5abe414acb4123fea94",
+          "select_gain_points": 1.8808937051123964,
+          "gate_gain_points": 1.425210199590654,
+          "gate_gain_lcb_points": -0.2544353514037659
+        },
+        "full_tune": {
+          "candidate_job_id": "f31a8c1136eb2072",
+          "certification_sha256": "56ff2862ac9eac2c025f3ecc2e213a8247e9adedcd9d1f8f8ab5eefa3fa5e58c",
+          "select_gain_points": 3.293602993916944,
+          "gate_gain_points": 4.476752972288822,
+          "gate_gain_lcb_points": 2.6121059574094856
+        },
+        "lora": {
+          "candidate_job_id": "aacb50ad06ffe78f",
+          "certification_sha256": "7f63ea3cb71f6d8bd25ea45e83965a29fb841a74cd4c68745d10c8d808df6743",
+          "select_gain_points": 2.0773060841966617,
+          "gate_gain_points": 2.2486564947012733,
+          "gate_gain_lcb_points": 1.0640639480148637
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "58fa7a1c39a212b4",
+          "certification_sha256": "49a2993f2719486fef5954b91edc81778f53c8731905750524ed9d5cd933bb63",
+          "select_gain_points": 0.8898783327802917,
+          "gate_gain_points": -0.09404602074187807,
+          "gate_gain_lcb_points": -0.32779720279720315
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o7::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o7",
+      "seed": 2026,
+      "nominee_action": "lora",
+      "nominee_candidate_job_id": "bfa74bbb52211df7",
+      "select_gain_points": 2.407251235861474,
+      "gate_gain_points": 0.9867324070178873,
+      "gate_gain_lcb_points": 0.28397589624126335,
+      "authorized": true,
+      "serialized_action": "lora",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "61c5e1a5ee4f249b",
+          "certification_sha256": "c4899af6d51203158ce532bcef62381defdd04e863541b076062a6b1a2c934b6",
+          "select_gain_points": 0.0822250802854807,
+          "gate_gain_points": -0.09602994372009954,
+          "gate_gain_lcb_points": -0.3394801659320712
+        },
+        "bottleneck": {
+          "candidate_job_id": "6547fc8176ab4952",
+          "certification_sha256": "3a46b73691610810a07d74cebc8a46e5f2c83604099bba22c31cfb722d99e1d6",
+          "select_gain_points": 0.5245057874817549,
+          "gate_gain_points": -0.027028012215912778,
+          "gate_gain_lcb_points": -0.7608439446725914
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "2286caa2883f71a8",
+          "certification_sha256": "a5605fe9282f116fba1450ea4b93142262a5a10d70096929e249c878633d1609",
+          "select_gain_points": 0.6853663597208071,
+          "gate_gain_points": -0.004153369476411761,
+          "gate_gain_lcb_points": -0.2919267002058537
+        },
+        "full_tune": {
+          "candidate_job_id": "0e04a7390a714ede",
+          "certification_sha256": "67d63c5c0b51054b81e78c7365f2582d10878ada612348745fe8f8c85a960ded",
+          "select_gain_points": 1.8669104389196889,
+          "gate_gain_points": 2.728489485399721,
+          "gate_gain_lcb_points": 0.5312287443449373
+        },
+        "lora": {
+          "candidate_job_id": "bfa74bbb52211df7",
+          "certification_sha256": "c3c8469123f21c0325cc30cbd1fe1712fc8ac169e5d62c4c92a64f72e6f6c31b",
+          "select_gain_points": 2.407251235861474,
+          "gate_gain_points": 0.9867324070178873,
+          "gate_gain_lcb_points": 0.28397589624126335
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "8c9ae9b006fcb513",
+          "certification_sha256": "41a990c6e7e58f3a7ed681db1825b202d109f9a642111e8e2e6b8774c9777b79",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o8::42": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o8",
+      "seed": 42,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "42ea7ec32c822c8b",
+      "select_gain_points": 2.5646435119127786,
+      "gate_gain_points": 1.2504151364043037,
+      "gate_gain_lcb_points": -0.4663831232748508,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "bc2552d56b7533a7",
+          "certification_sha256": "fe43617a8a809f4c78c183d61b890a6adeabd0aa2a0d2dae7249bd84eb089a80",
+          "select_gain_points": 0.1816045728941118,
+          "gate_gain_points": -0.05908730781347682,
+          "gate_gain_lcb_points": -0.8456866633813329
+        },
+        "bottleneck": {
+          "candidate_job_id": "f0e54c18a5840a24",
+          "certification_sha256": "fcca45a87dbd680f8dcf8baa5343478de12511d299b09df84ab905ea5b64da11",
+          "select_gain_points": 0.4358624413336676,
+          "gate_gain_points": 0.4433374658399769,
+          "gate_gain_lcb_points": -0.7277457493467393
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "26ea8d58663a03d5",
+          "certification_sha256": "4c1ab37d91ea7fde10a501c3697bae8225dee2a0555d74ffd578a097e85fa5fb",
+          "select_gain_points": 0.4614647873543598,
+          "gate_gain_points": 0.8075616804318897,
+          "gate_gain_lcb_points": -0.530146016791741
+        },
+        "full_tune": {
+          "candidate_job_id": "42ea7ec32c822c8b",
+          "certification_sha256": "d34d7606e32180dbdfb976507c2c0ab2f8306bb639c652df94f62ebfb3b74af2",
+          "select_gain_points": 2.5646435119127786,
+          "gate_gain_points": 1.2504151364043037,
+          "gate_gain_lcb_points": -0.4663831232748508
+        },
+        "lora": {
+          "candidate_job_id": "fe53f9e9ef49b004",
+          "certification_sha256": "90b237918b060e4d3eb963f5e5979550d4ddc9d8263ba2ed876545061c5f700c",
+          "select_gain_points": -0.05224348442400828,
+          "gate_gain_points": 0.33259369374519787,
+          "gate_gain_lcb_points": -1.0166183988083388
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "1a7ad4f0d2b79cd3",
+          "certification_sha256": "14b5ea5c5763c9c3dec49734dfdb610e625aa7de4f1b5f8865af225c18db3243",
+          "select_gain_points": 0.0,
+          "gate_gain_points": -0.0822827792761216,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o8::2025": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o8",
+      "seed": 2025,
+      "nominee_action": "ata_output_residual",
+      "nominee_candidate_job_id": "873bd35798d95405",
+      "select_gain_points": 0.05967170974738867,
+      "gate_gain_points": -0.10304019065692227,
+      "gate_gain_lcb_points": -0.28392057991089154,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "873bd35798d95405",
+          "certification_sha256": "01f10a18691fb05b80f79c103411512b8ac52fad969ea5c2ff60ced03bb23b87",
+          "select_gain_points": 0.05967170974738867,
+          "gate_gain_points": -0.10304019065692227,
+          "gate_gain_lcb_points": -0.28392057991089154
+        },
+        "bottleneck": {
+          "candidate_job_id": "69aa824dc9e6c389",
+          "certification_sha256": "09cf159504eb88163c13fedc6894bf6c27b6e1cdc24a6114e743933bf77bb5ff",
+          "select_gain_points": 0.05967170974738867,
+          "gate_gain_points": 0.005832546863004939,
+          "gate_gain_lcb_points": -0.23317712182140682
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "dd1991f424c1a9fb",
+          "certification_sha256": "151bdd2e981de5cbc789da879e01a69086a9d0b873234c6b02a947bb95cb47de",
+          "select_gain_points": 0.05967170974738867,
+          "gate_gain_points": -0.08095273689692206,
+          "gate_gain_lcb_points": -0.36885509079668255
+        },
+        "full_tune": {
+          "candidate_job_id": "3d299b66ee99d920",
+          "certification_sha256": "94d16d3f6aa4ccc817ec8c82756dc5e7492c29a2d6787967754ef9f51f953775",
+          "select_gain_points": -0.9596015073274566,
+          "gate_gain_points": -0.17283179889165945,
+          "gate_gain_lcb_points": -1.2321164572251173
+        },
+        "lora": {
+          "candidate_job_id": "7d619174257115dc",
+          "certification_sha256": "2305bf317149e21af086715cfd7d2db7c1def84ae27911f728ef9e33aa319812",
+          "select_gain_points": -0.19240723749101019,
+          "gate_gain_points": 1.4553281393374085,
+          "gate_gain_lcb_points": -0.016493668622316604
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "ab254a50e1a79e4d",
+          "certification_sha256": "e180e5cffc042a4ddb6aea1ddce5fe3eff5e9ffa0e6e08a4bdb8798849a61bd4",
+          "select_gain_points": 0.0,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    },
+    "patclass_temporal_ipc_section_v12::o8::2026": {
+      "dataset_id": "patclass_temporal_ipc_section_v12",
+      "origin_id": "o8",
+      "seed": 2026,
+      "nominee_action": "full_tune",
+      "nominee_candidate_job_id": "d4e78b15be4edeb4",
+      "select_gain_points": 1.516407163554867,
+      "gate_gain_points": -0.16983254166200723,
+      "gate_gain_lcb_points": -2.037982714855957,
+      "authorized": false,
+      "serialized_action": "calibrated_frozen_base",
+      "runner_up_fallback_attempted": false,
+      "all_six_C_only_artifacts": {
+        "ata_output_residual": {
+          "candidate_job_id": "c94390148754df02",
+          "certification_sha256": "f4b49af89b0a004e5b9103ae491301fd5c64d972b200f292dd471245ed72ecc3",
+          "select_gain_points": 0.36510268175363736,
+          "gate_gain_points": 0.015075392570418344,
+          "gate_gain_lcb_points": -0.2306084681003101
+        },
+        "bottleneck": {
+          "candidate_job_id": "d26ced26a1afea17",
+          "certification_sha256": "dd08e2445633296e55db9d6b35ad6c8713a4e4270e6d8dc0ebfc7a365bfd0610",
+          "select_gain_points": 0.147727061039038,
+          "gate_gain_points": 0.011789419152674618,
+          "gate_gain_lcb_points": -0.18266104095596702
+        },
+        "classifier_head_only": {
+          "candidate_job_id": "444ba74e6b5e02b2",
+          "certification_sha256": "c03700efb0ad7aa7b14fd1c8420bd3cc6d8813b5ea084de97ae0ef3cc22c5a08",
+          "select_gain_points": 0.08663145867492394,
+          "gate_gain_points": 0.011752504170758904,
+          "gate_gain_lcb_points": -0.18006429356755282
+        },
+        "full_tune": {
+          "candidate_job_id": "d4e78b15be4edeb4",
+          "certification_sha256": "b27034fadc09e500cac59a8c3b2a284164150b98657fbaec8433f5bd689fb0e9",
+          "select_gain_points": 1.516407163554867,
+          "gate_gain_points": -0.16983254166200723,
+          "gate_gain_lcb_points": -2.037982714855957
+        },
+        "lora": {
+          "candidate_job_id": "280a1929a784f4a8",
+          "certification_sha256": "e912348f1f3eebfde2b5c429e05114e552a3a27d44066fddc5ed1acfda341f17",
+          "select_gain_points": -0.10718560452455117,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        },
+        "vector_logit_scaling": {
+          "candidate_job_id": "e3bdde76d5086793",
+          "certification_sha256": "f9067105e60dca1e03d437b9b07df2a1329664d69abd192b96862fb3c4637ad1",
+          "select_gain_points": 0.1715818756615084,
+          "gate_gain_points": 0.0,
+          "gate_gain_lcb_points": 0.0
+        }
+      }
+    }
+  },
+  "action_lock_content_sha256": "bed23be81c520b7b82f1a837c1d48f7e2467a8013b6a0a205a3fd632db56f869"
+}

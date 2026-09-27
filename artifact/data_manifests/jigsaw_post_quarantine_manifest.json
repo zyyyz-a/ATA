@@ -1,0 +1,321 @@
+{
+  "schema_version": "ata-nlp-prepared-third-external-9.0",
+  "status": "post_quarantine_requires_clean_reaudit",
+  "dataset_id": "jigsaw_civil_comments_temporal_external",
+  "registry_hash": "9307e81d463693e9e67b541fe4babb11bc58f9863266e128c54ecae636cae35a",
+  "protocol_hash": "9126f4ee28640974bb9d42d5b21004e16e66ef44243d9294b730f860d8d68318",
+  "temporal_amendment_hash": "4616d9bad4a275e8d04dbea578afa3b478b766bc7cca2190dd6a4c1d0f12527f",
+  "source_acquisition_sha256": "329587015e57d9f97d6e2de2466c0a9a1c9df9da7d1e79b411564b204b4a05d2",
+  "preflight_sha256": "1d294ce85a398361886f4109dde4022561bff90e5423d4f3f814766ee5a37630",
+  "quarantine_audit_sha256": "f2ce5e68fb6b2db63607634e50b7dc99da0547060cbc1e7eeeedd323d04c0ba9",
+  "static_source_files": [
+    {
+      "filename": "train.csv.gz",
+      "bytes": 285921926,
+      "sha256": "82d217ec5c09cf25703fec20726e40def415367f37a8ea097976dacbd6a11260"
+    },
+    {
+      "filename": "test_public_expanded.csv.gz",
+      "bytes": 16425656,
+      "sha256": "a5a8fba390af3f17639b1bcef9b1c1b38373d3e45728f7eb814bfe5f3ea1c3d2"
+    },
+    {
+      "filename": "test_private_expanded.csv.gz",
+      "bytes": 16318076,
+      "sha256": "994cda8329554422d63a6691b66dcce838bc596f8975540f8e2d8b53cd993482"
+    }
+  ],
+  "selected_article_groups": 7243,
+  "selected_group_id_hash": "03622985279c8c7b7687717007b80ffee7c827e7ac6e2af1cb12b8a6107df66b",
+  "selected_source_rows": 120000,
+  "distinct_calendar_weeks": 105,
+  "origin_audits": [
+    {
+      "origin_id": "o1",
+      "week_index_cuts": [
+        33,
+        45,
+        57,
+        69
+      ],
+      "article_boundary_quarantined_groups": 74,
+      "explicit_quarantine_ids_requested": 184,
+      "roles": {
+        "history": {
+          "raw_rows": 7389,
+          "retained_rows": 6534,
+          "article_boundary_quarantined_rows": 824,
+          "explicit_duplicate_quarantined_rows": 31,
+          "total_quarantine_fraction": 0.11571254567600488,
+          "calendar_week_buckets": 33,
+          "label_counts": {
+            "0": 6087,
+            "1": 447
+          }
+        },
+        "adapt": {
+          "raw_rows": 6665,
+          "retained_rows": 5867,
+          "article_boundary_quarantined_rows": 772,
+          "explicit_duplicate_quarantined_rows": 26,
+          "total_quarantine_fraction": 0.11972993248312078,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 5357,
+            "1": 510
+          }
+        },
+        "cert": {
+          "raw_rows": 9661,
+          "retained_rows": 8437,
+          "article_boundary_quarantined_rows": 1178,
+          "explicit_duplicate_quarantined_rows": 46,
+          "total_quarantine_fraction": 0.12669495911396336,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 7871,
+            "1": 566
+          }
+        },
+        "deploy": {
+          "raw_rows": 20584,
+          "retained_rows": 20394,
+          "article_boundary_quarantined_rows": 109,
+          "explicit_duplicate_quarantined_rows": 81,
+          "total_quarantine_fraction": 0.009230470268169451,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 18729,
+            "1": 1665
+          }
+        }
+      }
+    },
+    {
+      "origin_id": "o2",
+      "week_index_cuts": [
+        45,
+        57,
+        69,
+        81
+      ],
+      "article_boundary_quarantined_groups": 114,
+      "explicit_quarantine_ids_requested": 330,
+      "roles": {
+        "history": {
+          "raw_rows": 14054,
+          "retained_rows": 12861,
+          "article_boundary_quarantined_rows": 1128,
+          "explicit_duplicate_quarantined_rows": 65,
+          "total_quarantine_fraction": 0.08488686494948057,
+          "calendar_week_buckets": 45,
+          "label_counts": {
+            "0": 11868,
+            "1": 993
+          }
+        },
+        "adapt": {
+          "raw_rows": 9661,
+          "retained_rows": 8425,
+          "article_boundary_quarantined_rows": 1184,
+          "explicit_duplicate_quarantined_rows": 52,
+          "total_quarantine_fraction": 0.1279370665562571,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 7860,
+            "1": 565
+          }
+        },
+        "cert": {
+          "raw_rows": 20584,
+          "retained_rows": 18234,
+          "article_boundary_quarantined_rows": 2242,
+          "explicit_duplicate_quarantined_rows": 108,
+          "total_quarantine_fraction": 0.1141663427905169,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 16738,
+            "1": 1496
+          }
+        },
+        "deploy": {
+          "raw_rows": 19666,
+          "retained_rows": 19418,
+          "article_boundary_quarantined_rows": 143,
+          "explicit_duplicate_quarantined_rows": 105,
+          "total_quarantine_fraction": 0.012610596969388793,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 17976,
+            "1": 1442
+          }
+        }
+      }
+    },
+    {
+      "origin_id": "o3",
+      "week_index_cuts": [
+        57,
+        69,
+        81,
+        93
+      ],
+      "article_boundary_quarantined_groups": 157,
+      "explicit_quarantine_ids_requested": 562,
+      "roles": {
+        "history": {
+          "raw_rows": 23715,
+          "retained_rows": 21760,
+          "article_boundary_quarantined_rows": 1816,
+          "explicit_duplicate_quarantined_rows": 139,
+          "total_quarantine_fraction": 0.08243727598566308,
+          "calendar_week_buckets": 57,
+          "label_counts": {
+            "0": 20151,
+            "1": 1609
+          }
+        },
+        "adapt": {
+          "raw_rows": 20584,
+          "retained_rows": 17839,
+          "article_boundary_quarantined_rows": 2617,
+          "explicit_duplicate_quarantined_rows": 128,
+          "total_quarantine_fraction": 0.13335600466381656,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 16379,
+            "1": 1460
+          }
+        },
+        "cert": {
+          "raw_rows": 19666,
+          "retained_rows": 17985,
+          "article_boundary_quarantined_rows": 1568,
+          "explicit_duplicate_quarantined_rows": 113,
+          "total_quarantine_fraction": 0.08547747381267162,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 16655,
+            "1": 1330
+          }
+        },
+        "deploy": {
+          "raw_rows": 26535,
+          "retained_rows": 26173,
+          "article_boundary_quarantined_rows": 180,
+          "explicit_duplicate_quarantined_rows": 182,
+          "total_quarantine_fraction": 0.013642359148294704,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 24065,
+            "1": 2108
+          }
+        }
+      }
+    },
+    {
+      "origin_id": "o4",
+      "week_index_cuts": [
+        69,
+        81,
+        93,
+        105
+      ],
+      "article_boundary_quarantined_groups": 216,
+      "explicit_quarantine_ids_requested": 813,
+      "roles": {
+        "history": {
+          "raw_rows": 44299,
+          "retained_rows": 40734,
+          "article_boundary_quarantined_rows": 3289,
+          "explicit_duplicate_quarantined_rows": 276,
+          "total_quarantine_fraction": 0.08047585724282715,
+          "calendar_week_buckets": 69,
+          "label_counts": {
+            "0": 37577,
+            "1": 3157
+          }
+        },
+        "adapt": {
+          "raw_rows": 19666,
+          "retained_rows": 17534,
+          "article_boundary_quarantined_rows": 2002,
+          "explicit_duplicate_quarantined_rows": 130,
+          "total_quarantine_fraction": 0.10841045459168107,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 16228,
+            "1": 1306
+          }
+        },
+        "cert": {
+          "raw_rows": 26535,
+          "retained_rows": 23330,
+          "article_boundary_quarantined_rows": 3010,
+          "explicit_duplicate_quarantined_rows": 195,
+          "total_quarantine_fraction": 0.12078387035990201,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 21472,
+            "1": 1858
+          }
+        },
+        "deploy": {
+          "raw_rows": 29500,
+          "retained_rows": 28929,
+          "article_boundary_quarantined_rows": 359,
+          "explicit_duplicate_quarantined_rows": 212,
+          "total_quarantine_fraction": 0.019355932203389832,
+          "calendar_week_buckets": 12,
+          "label_counts": {
+            "0": 26570,
+            "1": 2359
+          }
+        }
+      }
+    }
+  ],
+  "file_rows": {
+    "o1/history.jsonl": 6534,
+    "o1/adapt.jsonl": 5867,
+    "o1/cert.jsonl": 8437,
+    "o1/deploy.jsonl": 20394,
+    "o2/history.jsonl": 12861,
+    "o2/adapt.jsonl": 8425,
+    "o2/cert.jsonl": 18234,
+    "o2/deploy.jsonl": 19418,
+    "o3/history.jsonl": 21760,
+    "o3/adapt.jsonl": 17839,
+    "o3/cert.jsonl": 17985,
+    "o3/deploy.jsonl": 26173,
+    "o4/history.jsonl": 40734,
+    "o4/adapt.jsonl": 17534,
+    "o4/cert.jsonl": 23330,
+    "o4/deploy.jsonl": 28929
+  },
+  "file_sha256": {
+    "o1/history.jsonl": "eda08a756cc2b95f1f2df93ffca2b449fc54aea165ea87fa8c789f6094d22a9e",
+    "o1/adapt.jsonl": "294c7588139364a380c667ec4e162ecbe4767c2f91399ca6277fda8ceb1c12b3",
+    "o1/cert.jsonl": "f6aa5763407230ea8d6b2ba58a823e6361d69b9706901e5ded43b7d66b075eb6",
+    "o1/deploy.jsonl": "964f2b7de69660203c3c3c83ea01d4ef50453f6faeb8fdef459436c074919d45",
+    "o2/history.jsonl": "ce7a912c855bd1f137f560fc1f44920a1909d856d7695892fcaf04b3b1ad93b2",
+    "o2/adapt.jsonl": "58e9e9489fc9a5cdaca2bac8c2b2737d8feea4222a366285c83166cdf6b0cb33",
+    "o2/cert.jsonl": "e0610afd9d26809e93f964a29a165d7d172924d6c846c8e3e34c676de4b46806",
+    "o2/deploy.jsonl": "333e18dd74c2c45c68c2f62b032907bf9baab822b11e11fed7991a0cdb99af94",
+    "o3/history.jsonl": "c712ad24a264170879700f41469846fd24dcfb61eef2f03e99e11194a120ac6d",
+    "o3/adapt.jsonl": "ac4edf055898ed0a5bd2dce53a8b6e54d67dd12589b7755d2dd73ef40971a434",
+    "o3/cert.jsonl": "db1597dc5e44b91d43ad5023ff789c9ec73b152fb8174a21735eaeaa146e7db2",
+    "o3/deploy.jsonl": "775d66e7bd1c5e00fd87e215e20bc7ed7f7869869fbf1376ff6597a5c45f8964",
+    "o4/history.jsonl": "33a17e35d5a5b9710d6f78ea8b71f6b5dcd70723269be4c59b27eb4366c1466c",
+    "o4/adapt.jsonl": "220d71922ecfae8d542d7931d955650b0a0a29aa1ca5af6921626395c9ccfa6f",
+    "o4/cert.jsonl": "f10f7a18ba55ad9a382b1c2c0864e996d69ff36f34f45ba01cf82ac669ec1a5b",
+    "o4/deploy.jsonl": "cb00b8a502789ff9c60e914863523bc3cdee664b63857281b53815242a13b858"
+  },
+  "custom_dataset_code_executed": false,
+  "model_loaded": false,
+  "model_inference_performed": false,
+  "certification_or_deployment_outcomes_computed": false,
+  "raw_text_redistribution_forbidden": true,
+  "written_at_utc": "2026-09-14T07:51:00.947683Z",
+  "artifact_content_hash": "703c87136478886cc2dc711eb146da43b83ea19f1ffc3a43d7176aadc9948ed5"
+}

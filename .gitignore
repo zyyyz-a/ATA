@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Local data and model state are never part of the public audit artifact.
+data/
+datasets/
+checkpoints/
+predictions/
+results/
+logs/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+.env
+.env.*
